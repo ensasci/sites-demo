@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Ümraniye - Your Cozy Corner in İstanbul</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        :root {
+            --dark-bg: #1A1A1A;
+            --dark-card-bg: rgba(255, 255, 255, 0.05);
+            --dark-card-border: rgba(255, 255, 255, 0.1);
+            --light-text: #E0E0E0;
+            --accent-color: #A06D43; /* Coffee bean color */
+            --accent-hover: #C28B5E;
+            --glass-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+            --blur-amount: 10px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, var(--dark-bg) 0%, #0D0D0D 100%);
+            color: var(--light-text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        a {
+            color: var(--light-text);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--accent-color);
+        }
+
+        h1, h2, h3 {
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        h1 { font-size: 3.5rem; }
+        h2 { font-size: 2.5rem; }
+        h3 { font-size: 1.8rem; }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 3rem;
+            color: var(--light-text);
+            text-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: var(--light-text);
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: var(--glass-shadow);
+        }
+
+        .btn:hover {
+            background-color: var(--accent-hover);
+            transform: translateY(-3px);
+        }
+
+        /* Header */
+        header {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            background: rgba(26, 26, 26, 0.8); /* Slightly less opaque for header */
+            backdrop-filter: blur(var(--blur-amount));
+            -webkit-backdrop-filter: blur(var(--blur-amount));
+            box-shadow: var(--glass-shadow);
+            z-index: 1000;
+            padding: 1rem 0;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--accent-color);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 2rem;
+        }
+
+        nav ul li a {
+            font-weight: 400;
+            font-size: 1.1rem;
+            position: relative;
+        }
+
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: var(--accent-color);
+            left: 0;
+            bottom: -5px;
+            transition: width 0.3s ease;
+        }
+
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+
+        /* Hero Section */
+        #hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: url('https://images.unsplash.com/photo-1517228303030-9b6d8b1e5a5f?q=80&w=1920&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+            color: var(--light-text);
+        }
+        
+        #hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+            z-index: 1;
+        }
+
+        #hero .hero-content {
+            position: relative;
+            z-index: 2;
+            padding: 3rem;
+            max-width: 800px;
+            background: rgba(255, 255, 255, 0.05); /* Lighter glass for main hero content */
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: var(--glass-shadow);
+            backdrop-filter: blur(var(--blur-amount));
+            -webkit-backdrop-filter: blur(var(--blur-amount));
+            text-shadow: 0 0 15px rgba(0,0,0,0.7);
+        }
+
+        #hero h1 {
+            font-size: 4.5rem;
+            margin-bottom: 1rem;
+            color: var(--light-text);
+            line-height: 1.1;
+        }
+
+        #hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            font-weight: 300;
+        }
+
+        /* About Us Section */
+        #about {
+            padding: 6rem 0;
+            text-align: center;
+        }
+
+        #about .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        #about .about-text {
+            flex: 2;
+            min-width: 300px;
+            max-width: 700px;
+            text-align: left;
+            background: var(--dark-card-bg);
+            border-radius: 15px;
+            border: 1px solid var(--dark-card-border);
+            box-shadow: var(--glass-shadow);
+            backdrop-filter: blur(var(--blur-amount));
+            -webkit-backdrop-filter: blur(var(--blur-amount));
+            padding: 2rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        #about .about-text:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        #about .about-image {
+            flex: 1;
+            min-width: 250px;
+            max-width: 400px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--glass-shadow);
+            transition: transform 0.3s ease;
+        }
+
+        #about .about-image:hover {
+            transform: scale(1.03);
+        }
+
+        #about .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 15px; /* Ensures image corners match container */
+        }
+
+
+        /* Services Section */
+        #services {
+            padding: 6rem 0;
+            text-align: center;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background: var(--dark-card-bg);
+            border-radius: 15px;
+            border: 1px solid var(--dark-card-border);
+            box-shadow: var(--glass-shadow);
+            backdrop-filter: blur(var(--blur-amount));
+            -webkit-backdrop-filter: blur(var(--blur-amount));
+            padding: 2.5rem;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .service-card h3 {
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            color: var(--accent-color);
+            margin-bottom: 1.5rem;
+            text-shadow: 0 0 10px rgba(160, 109, 67, 0.4);
+        }
+
+        /* Contact Section */
+        #contact {
+            padding: 6rem 0;
+            text-align: center;
+        }
+
+        #contact .contact-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        #contact .contact-info,
+        #contact .contact-map {
+            flex: 1;
+            min-width: 300px;
+            max-width: 550px;
+        }
+
+        #contact .contact-info {
+            text-align: left;
+            background: var(--dark-card-bg);
+            border-radius: 15px;
+            border: 1px solid var(--dark-card-border);
+            box-shadow: var(--glass-shadow);
+            backdrop-filter: blur(var(--blur-amount));
+            -webkit-backdrop-filter: blur(var(--blur-amount));
+            padding: 2rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        #contact .contact-info:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        #contact .contact-info p {
+            margin-bottom: 0.8rem;
+            font-size: 1.1rem;
+        }
+
+        #contact .contact-info strong {
+            color: var(--accent-color);
+            margin-right: 0.5rem;
+        }
+
+        #contact .contact-map iframe {
+            width: 100%;
+            height: 350px;
+            border-radius: 15px;
+            border: 1px solid var(--dark-card-border);
+            box-shadow: var(--glass-shadow);
+            transition: transform 0.3s ease;
+        }
+        #contact .contact-map iframe:hover {
+            transform: scale(1.01);
+            box-shadow: 0 8px 35px rgba(0, 0, 0, 0.15);
+        }
+
+
+        /* Footer */
+        footer {
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            color: var(--light-text);
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+            border-top: 1px solid var(--dark-card-border);
+        }
+
+        footer .social-links a {
+            font-size: 1.5rem;
+            margin: 0 0.8rem;
+            color: var(--light-text);
+            transition: color 0.3s ease;
+        }
+
+        footer .social-links a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 { font-size: 3rem; }
+            h2 { font-size: 2rem; }
+            #hero h1 { font-size: 3.5rem; }
+            #hero p { font-size: 1.2rem; }
+            .section-title { font-size: 2.5rem; }
+
+            header .container {
+                flex-direction: column;
+            }
+            nav ul {
+                margin-top: 1rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            nav ul li {
+                margin: 0.5rem 1rem;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+
+            .glass-card, .service-card {
+                padding: 1.5rem;
+            }
+
+            #about .about-content {
+                flex-direction: column;
+            }
+            #about .about-text,
+            #about .about-image {
+                min-width: unset;
+                max-width: 100%;
+            }
+
+            #contact .contact-content {
+                flex-direction: column;
+            }
+            #contact .contact-info,
+            #contact .contact-map {
+                min-width: unset;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Cafe Ümraniye</div>
+            <nav>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1>Welcome to Cafe Ümraniye</h1>
+                <p>Your Cozy Corner for Exceptional Coffee & Delightful Bites in İstanbul</p>
+                <a href="#services" class="btn">Explore Our Menu</a>
+            </div>
+        </section>
+
+        <section id="about" class="container">
+            <h2 class="section-title">About Our Cafe</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Experience the Warmth of Cafe Ümraniye</h3>
+                    <p>Nestled in the heart of Ümraniye, İstanbul, Cafe Ümraniye is more than just a <strong>kafe</strong>; it's a sanctuary for coffee lovers and a haven for those seeking a peaceful escape. We pride ourselves on serving expertly crafted beverages, from rich espressos to creamy lattes, alongside a delectable selection of freshly baked pastries and light meals.</p>
+                    <p>Our commitment is to create an inviting atmosphere where every visit feels like coming home. Whether you're catching up with friends, working remotely, or simply enjoying a moment of solitude, Cafe Ümraniye offers the perfect ambiance. Come, relax, and savor the unique flavors we have to offer.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?q=80&w=1920&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cozy cafe interior with coffee" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <span class="service-icon">&#9749;</span> <!-- Coffee cup icon -->
+                    <h3>Artisan Coffee</h3>
+                    <p>Enjoy a wide range of premium coffee beans, meticulously brewed to perfection by our skilled baristas.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">&#127850;</span> <!-- Croissant icon -->
+                    <h3>Fresh Pastries</h3>
+                    <p>Indulge in our daily selection of freshly baked croissants, cakes, cookies, and other sweet treats.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">&#127828;</span> <!-- Sandwich icon -->
+                    <h3>Light Bites</h3>
+                    <p>Craving something savory? We offer delicious sandwiches, salads, and snacks made with fresh ingredients.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">&#128246;</span> <!-- Wifi icon -->
+                    <h3>Free Wi-Fi</h3>
+                    <p>Stay connected with our complimentary high-speed Wi-Fi, perfect for work or leisure.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">&#128100;</span> <!-- People icon -->
+                    <h3>Cozy Ambiance</h3>
+                    <p>Relax in our warm and inviting atmosphere, designed for comfort and intimate conversations.</p>
+                </div>
+                <div class="service-card">
+                    <span class="service-icon">&#127865;</span> <!-- Tea icon -->
+                    <h3>Specialty Teas</h3>
+                    <p>Beyond coffee, explore our exquisite collection of herbal and black teas from around the world.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="container">
+            <h2 class="section-title">Visit Us & Contact</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p><strong>Address:</strong> Atatürk, Karanfil Sk. 16 A, 34764 Ümraniye/İstanbul</p>
+                    <p><strong>Phone:</strong> <a href="tel:+905321576346">0532 157 6346</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:info@cafeumraniye.com">info@cafeumraniye.com</a></p>
+                    <p><strong>Opening Hours:</strong></p>
+                    <ul>
+                        <li>Monday - Friday: 8:00 AM - 10:00 PM</li>
+                        <li>Saturday - Sunday: 9:00 AM - 11:00 PM</li>
+                    </ul>
+                </div>
+                <div class="contact-map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.68266228303!2d29.083890876400325!3d41.03310061730076!2m3!1f0!2m3!1f0!2m3!1f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac1f3089d381b%3A0xc3f5b3a9712613d5!2sAtat%C3%BCrk%2C%20Karanfil%20Sk.%20No%3A16A%2C%2034764%20%C3%9Cmraniye%2F%C4%B0stanbul!5e0!3m2!1sen!2str!4v1701389823650!5m2!1sen!2str" 
+                        width="600" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Cafe Ümraniye. All rights reserved.</p>
+            <div class="social-links">
+                <!-- Placeholder for social media icons using common unicode characters -->
+                <a href="#" aria-label="Facebook">&#x1F600;</a> <!-- Grinning Face -->
+                <a href="#" aria-label="Instagram">&#x1F4F8;</a> <!-- Camera -->
+                <a href="#" aria-label="Twitter">&#x1F426;</a> <!-- Bird -->
+            </div>
+            <p>Designed with &#x2764;&#xfe0f; for a delightful coffee experience.</p>
+        </div>
+    </footer>
+</body>
+</html>
