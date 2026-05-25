@@ -1,0 +1,1259 @@
+<!doctype html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colombia Coffee Ümraniye | Premium Kahve Deneyimi</title>
+    <style>
+        :root {
+            --color-primary: #4A2C2A; /* Koyu kahve kahverengisi */
+            --color-secondary: #C7A17A; /* Ilık karamel/altın rengi */
+            --color-tertiary: #F8F3ED; /* Kremimsi kirli beyaz */
+            --color-text: #2B2B2B; /* Derin kömür grisi */
+            --color-light-text: #777777;
+            --color-background: #FCFAF8; /* Çok açık krem */
+            --color-accent-bg: #E5E0DA; /* Soluk açık toprak rengi */
+            --color-white: #ffffff;
+            --color-black: #000000;
+
+            --font-family-heading: 'Helvetica Neue', 'Arial', sans-serif;
+            --font-family-body: 'Georgia', serif; /* Premium, editoryal bir his için serif font */
+
+            --spacing-xs: 0.5rem;
+            --spacing-sm: 1rem;
+            --spacing-md: 2rem;
+            --spacing-lg: 3rem;
+            --spacing-xl: 5rem;
+
+            --border-radius-sm: 0.25rem;
+            --border-radius-md: 0.5rem;
+
+            --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+            --shadow-md: 0 4px 12px rgba(0,0,0,0.12);
+        }
+
+        /* Temel Sıfırlama ve Gövde Stilleri */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-family-body);
+            line-height: 1.6;
+            color: var(--color-text);
+            background-color: var(--color-background);
+            font-size: clamp(1rem, 0.95rem + 0.2vw, 1.125rem);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-family-heading);
+            font-weight: 700;
+            line-height: 1.2;
+            color: var(--color-primary);
+        }
+
+        h1 { font-size: clamp(2.5rem, 1.5rem + 4vw, 5rem); }
+        h2 { font-size: clamp(2rem, 1.3rem + 2vw, 3rem); }
+        h3 { font-size: clamp(1.5rem, 1.2rem + 1.2vw, 2.25rem); }
+        h4 { font-size: clamp(1.25rem, 1rem + 1vw, 1.75rem); }
+
+        a {
+            color: var(--color-primary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover, a:focus {
+            color: var(--color-secondary);
+            outline: none;
+        }
+
+        button {
+            cursor: pointer;
+            border: none;
+            background: none;
+            padding: 0;
+            font-family: var(--font-family-heading);
+            font-size: clamp(1rem, 0.9rem + 0.5vw, 1.15rem);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-sm);
+        }
+
+        /* Yardımcı Sınıflar */
+        .text-center { text-align: center; }
+        .text-primary { color: var(--color-primary); }
+        .text-secondary { color: var(--color-secondary); }
+        .bg-primary { background-color: var(--color-primary); }
+        .bg-secondary { background-color: var(--color-secondary); }
+        .bg-accent { background-color: var(--color-accent-bg); }
+        .bg-tertiary { background-color: var(--color-tertiary); }
+        .bg-background { background-color: var(--color-background); }
+
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border-width: 0;
+        }
+
+        /* Scroll Reveal (JS tarafından yönetilir) */
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+            will-change: opacity, transform;
+        }
+
+        .scroll-reveal.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .scroll-reveal {
+                transition: none;
+            }
+            .scroll-reveal.is-visible {
+                opacity: 1;
+                transform: none;
+            }
+        }
+
+        /* Butonlar */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: var(--spacing-sm) var(--spacing-md);
+            border-radius: var(--border-radius-md);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .btn-primary {
+            background-color: var(--color-primary);
+            color: var(--color-white);
+        }
+
+        .btn-primary:hover, .btn-primary:focus {
+            background-color: var(--color-secondary);
+            color: var(--color-white);
+            box-shadow: var(--shadow-md);
+        }
+
+        .btn-secondary {
+            background-color: var(--color-secondary);
+            color: var(--color-white);
+        }
+
+        .btn-secondary:hover, .btn-secondary:focus {
+            background-color: var(--color-primary);
+            color: var(--color-white);
+            box-shadow: var(--shadow-md);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--color-primary);
+            border: 2px solid var(--color-primary);
+            padding: calc(var(--spacing-sm) - 2px) calc(var(--spacing-md) - 2px);
+        }
+        .btn-outline:hover, .btn-outline:focus {
+            background-color: var(--color-primary);
+            color: var(--color-white);
+            border-color: var(--color-primary);
+        }
+
+        /* Yapışkan Mini İletişim Çubuğu */
+        .sticky-contact-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: var(--color-primary);
+            color: var(--color-white);
+            padding: 0.5rem var(--spacing-sm);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: var(--spacing-md);
+            z-index: 1000;
+            font-size: 0.9rem;
+            box-shadow: var(--shadow-md);
+            transform: translateY(-100%);
+            transition: transform 0.3s ease-out;
+            min-height: 44px; /* Minimum dokunma boyutu */
+        }
+        .sticky-contact-bar.is-visible {
+            transform: translateY(0);
+        }
+        .sticky-contact-bar a {
+            color: var(--color-white);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.25rem 0.5rem; /* Dokunma alanını genişlet */
+        }
+        .sticky-contact-bar a:hover, .sticky-contact-bar a:focus {
+            color: var(--color-secondary);
+        }
+        .sticky-contact-bar .icon {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            filter: invert(100%); /* İkonları beyaz yapar */
+        }
+        .icon-phone { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z'%3E%3C/path%3E%3C/svg%3E"); }
+        .icon-map { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z'%3E%3C/path%3E%3Ccircle cx='12' cy='10' r='3'%3E%3C/circle%3E%3C/svg%3E"); }
+
+        /* Hero Bölümü */
+        .hero {
+            position: relative;
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            padding-top: calc(var(--spacing-xl) + 2rem); /* Yapışkan çubuk için boşluk */
+            background-color: var(--color-accent-bg);
+            overflow: hidden;
+        }
+
+        .hero::before { /* Hafif gürültülü arka plan */
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(circle at center, rgba(0,0,0,0.02) 1px, transparent 1px);
+            background-size: 8px 8px;
+            opacity: 0.7;
+            pointer-events: none;
+            z-index: 1; /* Diğer öğelerin altında kalır */
+        }
+
+        .hero-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--spacing-md);
+            align-items: center;
+            padding-bottom: var(--spacing-xl);
+            position: relative;
+            z-index: 10;
+        }
+
+        .hero-text {
+            text-align: center;
+            padding: var(--spacing-md);
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: var(--border-radius-md);
+            box-shadow: var(--shadow-md);
+            position: relative;
+            z-index: 15; /* Metin kartının diğer her şeyin üzerinde olduğundan emin olun */
+        }
+
+        .hero-text h1 {
+            color: var(--color-primary);
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .hero-text p {
+            font-size: clamp(1.1rem, 1rem + 0.5vw, 1.3rem);
+            color: var(--color-light-text);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-sm);
+            margin-top: var(--spacing-md);
+        }
+
+        .hero-visual {
+            display: none; /* Mobilde gizli, masaüstünde asimetrik düzen için gösterilir */
+            position: relative;
+            width: 100%;
+            padding-top: 100%; /* Oran 1:1 */
+            background-color: var(--color-secondary); /* Placeholder renk */
+            border-radius: var(--border-radius-md);
+            box-shadow: var(--shadow-md);
+            overflow: hidden;
+            z-index: 12; /* Metin kartının altında ama arka plan görselinin üzerinde */
+        }
+        /* Basit bir soyut şekil ekleme */
+        .hero-visual::before {
+            content: '☕';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(-15deg);
+            font-size: clamp(6rem, 4rem + 10vw, 12rem);
+            color: rgba(255, 255, 255, 0.2);
+            z-index: 2;
+        }
+
+
+        /* Bölüm Ortak Stilleri */
+        .section {
+            padding: var(--spacing-xl) 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: var(--spacing-lg);
+        }
+        .section-header h2 {
+            margin-bottom: var(--spacing-sm);
+            position: relative;
+            display: inline-block;
+        }
+        .section-header h2::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: -5px;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background-color: var(--color-secondary);
+            border-radius: 2px;
+        }
+        .section-header p {
+            max-width: 700px;
+            margin: 0 auto;
+            color: var(--color-light-text);
+        }
+
+        /* Köşeli Bölüm Geçişi */
+        .value-prop::before { /* Diyagonal üst geçiş */
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100px; /* Yüksekliği gerektiği gibi ayarlayın */
+            background-color: var(--color-tertiary); /* Bu bölümün arka planıyla eşleşmeli */
+            z-index: 2;
+            transform: skewY(2deg) translateY(-50px); /* Eğimi ve ötelemeyi ayarlayın */
+            transform-origin: top right;
+            pointer-events: none;
+        }
+
+
+        /* Lezzetlerimiz Bölümü (Editoryal/Örtüşen Izgara) */
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: var(--spacing-md);
+        }
+
+        .menu-item {
+            background-color: var(--color-white);
+            border-radius: var(--border-radius-md);
+            box-shadow: var(--shadow-sm);
+            padding: var(--spacing-md);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .menu-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .menu-item .icon-placeholder {
+            width: 80px;
+            height: 80px;
+            background-color: var(--color-secondary);
+            border-radius: 50%;
+            margin-bottom: var(--spacing-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: var(--color-white);
+            box-shadow: var(--shadow-sm);
+            position: relative;
+            z-index: 2;
+        }
+        .menu-item h3 {
+            color: var(--color-primary);
+            margin-bottom: var(--spacing-xs);
+        }
+        .menu-item p {
+            color: var(--color-light-text);
+            font-size: 0.95rem;
+        }
+
+        /* Izgaradaki Örtüşen Kart Örneği */
+        .menu-item.highlight {
+            background-color: var(--color-primary);
+            color: var(--color-white);
+            transform: translateY(var(--spacing-md)); /* Örtüşme efekti */
+            z-index: 5;
+            box-shadow: var(--shadow-md);
+            padding: var(--spacing-lg) var(--spacing-md);
+            position: relative;
+            margin-top: calc(var(--spacing-md) * -1); /* Önceki satırla örtüşmek için negatif margin */
+        }
+        .menu-item.highlight h3, .menu-item.highlight p {
+            color: var(--color-white);
+        }
+        .menu-item.highlight .icon-placeholder {
+            background-color: var(--color-tertiary);
+            color: var(--color-primary);
+        }
+        .menu-item.highlight::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(circle at center, rgba(255,255,255,0.05) 1px, transparent 1px);
+            background-size: 10px 10px;
+            opacity: 0.8;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+
+        /* Değer Alanı (Bölünmüş Bölüm) */
+        .value-prop {
+            background-color: var(--color-tertiary);
+            position: relative;
+        }
+        .value-prop .container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--spacing-lg);
+            align-items: center;
+        }
+        .value-text h2 {
+            margin-bottom: var(--spacing-md);
+        }
+        .value-text p {
+            margin-bottom: var(--spacing-sm);
+        }
+        .value-illustration {
+            background-color: var(--color-primary);
+            color: var(--color-white);
+            padding: var(--spacing-lg);
+            border-radius: var(--border-radius-md);
+            text-align: center;
+            position: relative;
+            min-height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: var(--shadow-md);
+            overflow: hidden;
+        }
+        .value-illustration::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(circle at center, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background-size: 12px 12px;
+            opacity: 0.9;
+            pointer-events: none;
+        }
+        .value-illustration span {
+            font-size: clamp(3rem, 2rem + 5vw, 6rem);
+            line-height: 1;
+            margin-bottom: var(--spacing-sm);
+            position: relative;
+            z-index: 2;
+        }
+        .value-illustration p {
+            font-size: clamp(1.1rem, 1rem + 0.5vw, 1.4rem);
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Galeri/Atmosfer (CSS Görsel Karolar, Editoryal Izgara) */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Daha küçük karo boyutu için */
+            gap: var(--spacing-sm);
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: var(--border-radius-sm);
+            padding-top: 100%; /* Oran 1:1 */
+            background-color: var(--color-accent-bg);
+            box-shadow: var(--shadow-sm);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: scale(1.03);
+            box-shadow: var(--shadow-md);
+        }
+
+        .gallery-item-content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: clamp(1.2rem, 1rem + 1vw, 2rem);
+            font-family: var(--font-family-heading);
+            font-weight: 600;
+            color: var(--color-primary);
+            background: linear-gradient(45deg, var(--color-tertiary), var(--color-background));
+        }
+
+        /* Özel görsel karolar */
+        .gallery-item:nth-child(even) .gallery-item-content {
+            background: linear-gradient(135deg, var(--color-secondary) 10%, var(--color-tertiary));
+            color: var(--color-white);
+        }
+        .gallery-item:nth-child(3n) .gallery-item-content {
+            background: linear-gradient(-45deg, var(--color-primary) 10%, var(--color-accent-bg));
+            color: var(--color-white);
+        }
+        .gallery-item:nth-child(4n) .gallery-item-content {
+             background: linear-gradient(to right, #C7A17A 0%, #D8C3A7 50%, #C7A17A 100%);
+             color: var(--color-white);
+        }
+
+        /* Görsel karolar için CSS pseudo şekiller */
+        .gallery-item-content::before {
+            content: '';
+            position: absolute;
+            width: 70%;
+            height: 70%;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            transform: translate(-50%, -50%) rotate(0deg);
+            transition: transform 0.5s ease;
+            opacity: 0.8;
+            top: 50%;
+            left: 50%;
+        }
+        .gallery-item:hover .gallery-item-content::before {
+            transform: translate(-50%, -50%) rotate(30deg);
+        }
+        .gallery-item:nth-child(odd) .gallery-item-content::before {
+            border-radius: var(--border-radius-sm);
+            transform: translate(0, 0) rotate(-15deg);
+            width: 50%;
+            height: 50%;
+            top: auto;
+            bottom: -20%;
+            left: -20%;
+        }
+        .gallery-item:hover:nth-child(odd) .gallery-item-content::before {
+            transform: translate(0, 0) rotate(5deg);
+        }
+        .gallery-note {
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--color-light-text);
+            margin-top: var(--spacing-sm);
+            opacity: 0.7;
+        }
+
+        /* Konum ve İletişim */
+        .contact-section {
+            background-color: var(--color-accent-bg);
+            padding: var(--spacing-xl) 0;
+        }
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--spacing-lg);
+            align-items: flex-start;
+        }
+        .contact-info {
+            background-color: var(--color-white);
+            padding: var(--spacing-md);
+            border-radius: var(--border-radius-md);
+            box-shadow: var(--shadow-md);
+        }
+        .contact-info h3 {
+            color: var(--color-primary);
+            margin-bottom: var(--spacing-md);
+            text-align: center;
+        }
+        .info-panel-item {
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-sm);
+            margin-bottom: var(--spacing-sm);
+            font-size: clamp(1rem, 0.95rem + 0.2vw, 1.1rem);
+            color: var(--color-text);
+        }
+        .info-panel-item a {
+            color: var(--color-text);
+        }
+        .info-panel-item a:hover {
+            color: var(--color-secondary);
+        }
+        .info-panel-item .icon {
+            filter: invert(20%) sepia(20%) saturate(800%) hue-rotate(330deg) brightness(90%) contrast(90%); /* Primary renge yakın filtre */
+            width: 20px;
+            height: 20px;
+            min-width: 20px; /* Küçülmesini engeller */
+        }
+        .contact-actions {
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-sm);
+            margin-top: var(--spacing-md);
+        }
+        .contact-map-placeholder {
+            min-height: 250px;
+            background-color: var(--color-primary);
+            border-radius: var(--border-radius-md);
+            box-shadow: var(--shadow-md);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--color-white);
+            padding: var(--spacing-md);
+            font-size: 1.1rem;
+        }
+        .contact-map-placeholder::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(circle at center, rgba(255,255,255,0.05) 1px, transparent 1px);
+            background-size: 10px 10px;
+            opacity: 0.9;
+            pointer-events: none;
+        }
+        .contact-map-placeholder span {
+            position: relative;
+            z-index: 2;
+        }
+
+        /* SSS Bölümü (Akordeon) */
+        .faq-section {
+            background-color: var(--color-background);
+        }
+        .faq-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            background-color: var(--color-white);
+            border: 1px solid var(--color-accent-bg);
+            border-radius: var(--border-radius-md);
+            margin-bottom: var(--spacing-sm);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+        }
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: var(--spacing-sm) var(--spacing-md);
+            font-family: var(--font-family-heading);
+            font-weight: 600;
+            font-size: clamp(1rem, 0.9rem + 0.5vw, 1.15rem);
+            color: var(--color-primary);
+            cursor: pointer;
+            width: 100%;
+            background-color: var(--color-tertiary);
+            border: none;
+            text-align: left;
+            transition: background-color 0.3s ease;
+            min-height: 44px; /* Minimum dokunma boyutu */
+        }
+        .faq-question:hover, .faq-question:focus {
+            background-color: var(--color-accent-bg);
+            outline: none;
+        }
+        .faq-question .arrow {
+            width: 20px;
+            height: 20px;
+            transition: transform 0.3s ease;
+            display: inline-block;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            filter: invert(20%) sepia(20%) saturate(800%) hue-rotate(330deg) brightness(90%) contrast(90%); /* Ana renge uyması için */
+        }
+        .faq-question[aria-expanded="true"] .arrow {
+            transform: rotate(180deg);
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-out;
+            padding: 0 var(--spacing-md);
+        }
+        .faq-answer p {
+            padding-bottom: var(--spacing-md);
+            color: var(--color-light-text);
+        }
+        .faq-answer.is-open {
+            max-height: 200px; /* Tipik cevaplar için yeterli maksimum yükseklik */
+        }
+
+        /* Premium CTA Bandı */
+        .premium-cta-band {
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
+            color: var(--color-white);
+            padding: var(--spacing-xl) 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+        }
+        .premium-cta-band::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(circle at center, rgba(255,255,255,0.1) 1px, transparent 1px);
+            background-size: 15px 15px;
+            opacity: 0.8;
+            pointer-events: none;
+        }
+        .premium-cta-band h2 {
+            color: var(--color-white);
+            margin-bottom: var(--spacing-sm);
+        }
+        .premium-cta-band p {
+            font-size: clamp(1.1rem, 1rem + 0.5vw, 1.3rem);
+            margin-bottom: var(--spacing-lg);
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            z-index: 2;
+        }
+        .premium-cta-band .btn {
+            background-color: var(--color-white);
+            color: var(--color-primary);
+            padding: var(--spacing-sm) var(--spacing-lg);
+            font-size: clamp(1.1rem, 1rem + 0.5vw, 1.3rem);
+            box-shadow: var(--shadow-md);
+            position: relative;
+            z-index: 2;
+        }
+        .premium-cta-band .btn:hover {
+            background-color: var(--color-tertiary);
+            color: var(--color-primary);
+        }
+
+        /* Alt Bilgi */
+        footer {
+            background-color: var(--color-primary);
+            color: var(--color-tertiary);
+            padding: var(--spacing-md) 0;
+            text-align: center;
+            font-size: 0.9rem;
+            position: relative;
+        }
+        footer a {
+            color: var(--color-tertiary);
+        }
+        footer a:hover {
+            color: var(--color-secondary);
+        }
+        .demo-note {
+            background-color: var(--color-black);
+            color: rgba(255, 255, 255, 0.7);
+            padding: var(--spacing-xs);
+            text-align: center;
+            font-size: 0.8rem;
+        }
+        .demo-note strong {
+            color: var(--color-white);
+        }
+
+        /* Kayan WhatsApp CTA */
+        .floating-whatsapp {
+            position: fixed;
+            bottom: var(--spacing-md);
+            right: var(--spacing-md);
+            z-index: 1000;
+            background-color: #25d366; /* WhatsApp yeşili */
+            color: var(--color-white);
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--shadow-md);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            min-height: 44px;
+            min-width: 44px;
+        }
+        .floating-whatsapp:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+        }
+        .floating-whatsapp .icon {
+            filter: invert(100%); /* SVG'yi beyaz yapar */
+            width: 30px;
+            height: 30px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z'%3E%3C/path%3E%3C/svg%3E");
+        }
+
+
+        /* Duyarlı Tasarım için Medya Sorguları */
+        @media (min-width: 768px) {
+            .container {
+                padding: 0 var(--spacing-md);
+            }
+            .hero-content {
+                grid-template-columns: 2fr 1fr; /* Asimetrik bölme */
+                text-align: left;
+                padding-bottom: var(--spacing-md);
+                align-items: center;
+                gap: var(--spacing-lg);
+            }
+            .hero-text {
+                padding: var(--spacing-lg);
+                max-width: none;
+                margin: 0;
+                background-color: var(--color-background); /* Metin kartı için beyaz arka plan */
+                grid-column: 1 / 2;
+                margin-left: var(--spacing-md); /* Kartı biraz sağa öteleme */
+                z-index: 15;
+            }
+            .hero-actions {
+                flex-direction: row;
+                justify-content: flex-start;
+            }
+            .hero {
+                min-height: 90vh;
+                background-color: var(--color-accent-bg); /* Hero için temel arka plan */
+            }
+
+            .hero::after { /* Hero bölümünün 'görsel' kısmı büyük bir pseudo element olarak */
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 55%; /* Gerektiği gibi ayarlayın */
+                height: 100%;
+                background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-primary) 100%);
+                border-radius: var(--border-radius-md) 0 0 var(--border-radius-md);
+                opacity: 0.9;
+                z-index: 5;
+            }
+            .hero::before { /* Görsel kısmın üzerinde gürültü */
+                z-index: 6; /* Görselin üzerinde */
+            }
+
+            .hero-visual { /* Hero-visual öğesi, pseudo görselin üzerinde yer alır */
+                display: block;
+                grid-column: 2 / 3;
+                position: relative;
+                top: auto;
+                transform: none;
+                height: 100%;
+                min-height: 400px;
+                padding-top: 0;
+                margin-right: var(--spacing-md); /* Kartı biraz sola öteleme */
+                border-radius: var(--border-radius-md);
+                background-color: var(--color-secondary);
+                box-shadow: var(--shadow-md);
+                z-index: 7;
+            }
+
+            .value-prop .container {
+                grid-template-columns: 1fr 1fr;
+            }
+            .value-illustration {
+                min-height: 400px;
+            }
+            .contact-content {
+                grid-template-columns: 1fr 1fr;
+            }
+            .faq-answer.is-open {
+                max-height: 300px; /* Masaüstü cevapları için daha fazla yükseklik */
+            }
+            .menu-grid {
+                grid-template-columns: repeat(3, 1fr); /* Masaüstü için 3 sütun */
+            }
+            .menu-item.highlight {
+                transform: translateX(var(--spacing-md)); /* Yatay örtüşme */
+                margin-top: 0; /* Dikey örtüşmeyi sıfırla */
+                grid-column: span 2; /* 2 sütun kaplamasını sağla */
+                padding: var(--spacing-xl) var(--spacing-lg);
+            }
+
+            .gallery-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+            .gallery-item:nth-child(2) { grid-column: span 2; } /* Örnek editoryal ızgara */
+            .gallery-item:nth-child(5) { grid-row: span 2; }
+            .gallery-item:nth-child(7) { grid-column: span 2; }
+        }
+
+        @media (min-width: 1024px) {
+            .hero-content {
+                grid-template-columns: 1.5fr 1fr; /* Daha belirgin asimetrik bölme */
+            }
+            .hero-text {
+                margin-left: 0; /* Metni konteynerin soluna hizala */
+            }
+            .hero-visual {
+                margin-right: 0;
+            }
+            .gallery-grid {
+                grid-template-columns: repeat(6, 1fr);
+            }
+            .gallery-item:nth-child(1) { grid-column: span 2; grid-row: span 2; }
+            .gallery-item:nth-child(4) { grid-column: span 2; }
+            .gallery-item:nth-child(6) { grid-column: span 2; grid-row: span 2; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Yapışkan Mini İletişim Çubuğu -->
+    <div id="stickyContactBar" class="sticky-contact-bar">
+        <a href="tel:05347266646" aria-label="Telefon numaramız">
+            <span class="icon icon-phone"></span>
+            0534 726 66 46
+        </a>
+        <a href="https://www.google.com/maps/place/Colombia+Coffee+%C3%9Cmraniye/data=!4m7!3m6!1s0x14cac966be4e91dd:0x83e095e13ead9f4b!8m2!3d41.0255613!4d29.0972564!16s%2Fg%2F11sjdv23db!19sChIJ3ZFOvmbJyhQRS5-tPuGV4IM?authuser=0&hl=tr&rclk=1" target="_blank" rel="noopener noreferrer" aria-label="Yol tarifi al">
+            <span class="icon icon-map"></span>
+            Yol Tarifi
+        </a>
+    </div>
+
+    <main>
+        <!-- Hero Bölümü -->
+        <section id="hero" class="hero">
+            <div class="container hero-content scroll-reveal">
+                <div class="hero-text">
+                    <h1>Colombia Coffee <span class="text-secondary">Ümraniye</span></h1>
+                    <p>Ümraniye'nin Kalbinde Gerçek Kahve Deneyimi</p>
+                    <div class="hero-actions">
+                        <a href="tel:05347266646" class="btn btn-primary">
+                            Hemen Ara
+                            <span class="sr-only">Telefon numaramız: 0534 726 66 46</span>
+                        </a>
+                        <a href="https://wa.me/905347266646" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                            WhatsApp'tan Yaz
+                            <span class="sr-only">WhatsApp hattımız: 0534 726 66 46</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <span class="sr-only">Kolombiya Kahve Deneyimi</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lezzetlerimiz Bölümü -->
+        <section id="lezzetlerimiz" class="section bg-background">
+            <div class="container scroll-reveal">
+                <div class="section-header">
+                    <h2>Kahve Sanatımız ve Lezzetlerimiz</h2>
+                    <p>Her yudumda özenle seçilmiş çekirdeklerin hikayesi, her lokmada el yapımı tazelik...</p>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item scroll-reveal">
+                        <div class="icon-placeholder">☕</div>
+                        <h3>Özenle Seçilmiş Kahveler</h3>
+                        <p>Dünya'nın dört bir yanından gelen en kaliteli kahve çekirdekleri, uzman baristalarımızla buluşuyor.</p>
+                    </div>
+                    <div class="menu-item scroll-reveal">
+                        <div class="icon-placeholder">🍰</div>
+                        <h3>El Yapımı Tatlılar</h3>
+                        <p>Kahvenizin yanında eşlik edecek, günlük taze ve enfes pastalar, kurabiyeler ve daha fazlası.</p>
+                    </div>
+                    <div class="menu-item highlight scroll-reveal">
+                        <div class="icon-placeholder">✨</div>
+                        <h3>Özel Demleme Yöntemleri</h3>
+                        <p>Chemex, V60, Aeropress... Her damak zevkine uygun, farklı demleme teknikleriyle kahve keyfinizi kişiselleştirin.</p>
+                    </div>
+                    <div class="menu-item scroll-reveal">
+                        <div class="icon-placeholder">🥤</div>
+                        <h3>Serinletici İçecekler</h3>
+                        <p>Sıcak yaz günleri veya ferahlamak istediğiniz anlar için özel olarak hazırladığımız buzlu kahveler ve içecekler.</p>
+                    </div>
+                    <div class="menu-item scroll-reveal">
+                        <div class="icon-placeholder">🌿</div>
+                        <h3>Bitki Çayları & Atıştırmalıklar</h3>
+                        <p>Kahve dışı seçenekler arayanlar için geniş bitki çayı yelpazesi ve sağlıklı atıştırmalıklar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Colombia Coffee Farkı (Değer Önermesi - Bölünmüş Bölüm) -->
+        <section id="farkimiz" class="section value-prop">
+            <div class="container scroll-reveal">
+                <div class="value-text">
+                    <h2>Colombia Coffee Farkı: Huzur ve Lezzet Bir Arada</h2>
+                    <p>Biz sadece kahve sunmuyoruz; aynı zamanda bir mola alanı, ilham veren bir köşe ve sakin bir buluşma noktası yaratıyoruz. Kaliteli çekirdekler, usta baristalar ve sıcak atmosferimizle her ziyaretinizi özel kılıyoruz.</p>
+                    <p>Günlük telaşınızda nefes almak, dostlarınızla hoş sohbetler etmek veya sadece kendinize ait bir an yaşamak için doğru adres. Her bir detayı özenle tasarladık, sizleri bekliyoruz.</p>
+                </div>
+                <div class="value-illustration scroll-reveal">
+                    <span>☕</span>
+                    <p>Her Yudumda Bir Hikaye</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mekanımızdan Anlar (Galeri/Atmosfer) -->
+        <section id="galeri" class="section bg-tertiary">
+            <div class="container scroll-reveal">
+                <div class="section-header">
+                    <h2>Mekanımızdan Anlar</h2>
+                    <p>Sıcak atmosferimizden, özenle hazırlanmış köşelerimizden ve misafirlerimizin keyifli anlarından temsili kareler.</p>
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item scroll-reveal"><div class="gallery-item-content">Sakin</div></div>
+                    <div class="gallery-item scroll-reveal"><div class="gallery-item-content">Samimi</div></div>
+                    <div class="gallery-item scroll-reveal"><div class="gallery-item-content">Ferah</div></div>
+                    <div class="gallery-item scroll-reveal"><div class="gallery-item-content">Modern</div></div>
+                    <div class="gallery-item scroll-reveal"><div class="gallery-item-content">Detay</div></div>
+                    <div class="gallery-item scroll-reveal"><div class="gallery-item-content">Kahve</div></div>
+                    <div class="gallery-item scroll-reveal"><div class="gallery-item-content">Molası</div></div>
+                    <div class="gallery-item scroll-reveal"><div class="gallery-item-content">Buluşma</div></div>
+                </div>
+                <p class="gallery-note"><strong>Not:</strong> Bu bölümde yer alan görseller, mekanımızın atmosferini temsil etmek amacıyla oluşturulmuştur.</p>
+            </div>
+        </section>
+
+        <!-- Konum ve İletişim -->
+        <section id="iletisim" class="section contact-section">
+            <div class="container scroll-reveal">
+                <div class="section-header">
+                    <h2>Bize Ulaşın</h2>
+                    <p>Ümraniye'nin kalbindeki Colombia Coffee'ye kolayca ulaşın ve kahve keyfini hemen yaşayın.</p>
+                </div>
+                <div class="contact-content">
+                    <div class="contact-info scroll-reveal">
+                        <h3>İletişim Bilgileri</h3>
+                        <div class="info-panel-item">
+                            <span class="icon icon-phone"></span>
+                            <span>Telefon: <a href="tel:05347266646">0534 726 66 46</a></span>
+                        </div>
+                        <div class="info-panel-item">
+                            <span class="icon icon-map"></span>
+                            <span>Adres: İstiklal, Alemdağ Cd No:156/1, 34760 Ümraniye/İstanbul</span>
+                        </div>
+                        <div class="contact-actions">
+                            <a href="https://www.google.com/maps/place/Colombia+Coffee+%C3%9Cmraniye/data=!4m7!3m6!1s0x14cac966be4e91dd:0x83e095e13ead9f4b!8m2!3d41.0255613!4d29.0972564!16s%2Fg%2F11sjdv23db!19sChIJ3ZFOvmbJyhQRS5-tPuGV4IM?authuser=0&hl=tr&rclk=1" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+                                Google Haritalarda Gör
+                            </a>
+                            <a href="https://wa.me/905347266646" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                                WhatsApp'tan Direkt Mesaj
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-map-placeholder scroll-reveal">
+                        <span>Konumumuza hızlıca ulaşmak için yukarıdaki "Google Haritalarda Gör" butonunu kullanabilirsiniz.</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sıkça Sorulan Sorular (SSS Akordeonu) -->
+        <section id="faq" class="section faq-section">
+            <div class="container scroll-reveal">
+                <div class="section-header">
+                    <h2>Sıkça Sorulan Sorular</h2>
+                    <p>Kahvelerimiz, servisimiz veya mekanımız hakkında merak ettikleriniz...</p>
+                </div>
+                <div class="faq-list">
+                    <div class="faq-item scroll-reveal">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-1">
+                            Hangi kahve çekirdeklerini kullanıyorsunuz?
+                            <span class="arrow" aria-hidden="true"></span>
+                        </button>
+                        <div id="faq-answer-1" class="faq-answer">
+                            <p>Özenle seçilmiş Kolombiya, Etiyopya ve Brezilya gibi farklı coğrafyalardan gelen premium Arabica çekirdeklerini kullanıyoruz. Her bir çekirdek, eşsiz aroma ve lezzet profili sunar.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item scroll-reveal">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-2">
+                            Vegan veya glutensiz seçenekleriniz mevcut mu?
+                            <span class="arrow" aria-hidden="true"></span>
+                        </button>
+                        <div id="faq-answer-2" class="faq-answer">
+                            <p>Evet, bitkisel süt seçeneklerimiz (badem, soya, yulaf sütü) bulunmaktadır. Tatlılarımız arasında da belirli vegan ve glutensiz alternatifler sunuyoruz, güncel menü için lütfen danışın.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item scroll-reveal">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-3">
+                            Toplu veya özel siparişler alıyor musunuz?
+                            <span class="arrow" aria-hidden="true"></span>
+                        </button>
+                        <div id="faq-answer-3" class="faq-answer">
+                            <p>Özel günleriniz ve etkinlikleriniz için toplu kahve veya tatlı siparişleri almaktayız. Detaylar ve fiyat teklifi için lütfen bizimle telefon veya WhatsApp üzerinden iletişime geçin.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item scroll-reveal">
+                        <button class="faq-question" aria-expanded="false" aria-controls="faq-answer-4">
+                            Mekanınızda Wi-Fi hizmeti mevcut mu?
+                            <span class="arrow" aria-hidden="true"></span>
+                        </button>
+                        <div id="faq-answer-4" class="faq-answer">
+                            <p>Evet, misafirlerimizin rahatça çalışabilmesi veya internete bağlanabilmesi için ücretsiz Wi-Fi hizmetimiz bulunmaktadır. Şifreyi baristalarımızdan talep edebilirsiniz.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Son Premium CTA Bandı -->
+        <section id="bize-ulasin-final" class="premium-cta-band">
+            <div class="container scroll-reveal">
+                <h2>Gerçek Kahve Deneyimini Keşfedin</h2>
+                <p>Ümraniye'deki sıcak ve davetkar atmosferimizde unutulmaz bir kahve molası için sizi bekliyoruz. Sadece bir telefon uzağınızdayız!</p>
+                <a href="tel:05347266646" class="btn">Hemen Bir Fincan İçin Arayın</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Kayan WhatsApp Butonu -->
+    <a href="https://wa.me/905347266646" target="_blank" rel="noopener noreferrer" class="floating-whatsapp" aria-label="WhatsApp üzerinden bize ulaşın">
+        <span class="icon"></span>
+        <span class="sr-only">WhatsApp</span>
+    </a>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Colombia Coffee Ümraniye. Tüm Hakları Saklıdır.</p>
+            <p class="demo-note"><strong>Bu bir demo web sitesidir.</strong> İşletmenize özel canlı siteye dönüştürülebilir.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Dahili bağlantılar için Yumuşak Kaydırma
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            // Yapışkan Mini İletişim Çubuğu görünürlüğü
+            const stickyContactBar = document.getElementById('stickyContactBar');
+            const handleScrollStickyBar = () => {
+                if (window.scrollY > 100) { // 100 piksel aşağı kaydıktan sonra görünür hale gelir
+                    stickyContactBar.classList.add('is-visible');
+                } else {
+                    stickyContactBar.classList.remove('is-visible');
+                }
+            };
+
+            window.addEventListener('scroll', handleScrollStickyBar);
+            handleScrollStickyBar(); // Başlangıç kontrolü
+
+            // Kaydırma ile Ortaya Çıkma Animasyonu
+            const scrollRevealElements = document.querySelectorAll('.scroll-reveal');
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            scrollRevealElements.forEach(el => observer.observe(el));
+
+            // SSS Akordeonu
+            const faqQuestions = document.querySelectorAll('.faq-question');
+
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', () => {
+                    const answer = question.nextElementSibling;
+                    const isExpanded = question.getAttribute('aria-expanded') === 'true';
+
+                    // Diğer açık akordeonları kapat
+                    faqQuestions.forEach(otherQuestion => {
+                        if (otherQuestion !== question && otherQuestion.getAttribute('aria-expanded') === 'true') {
+                            otherQuestion.setAttribute('aria-expanded', 'false');
+                            otherQuestion.nextElementSibling.classList.remove('is-open');
+                            otherQuestion.nextElementSibling.style.maxHeight = '0';
+                        }
+                    });
+
+                    // Mevcut akordeonu aç/kapat
+                    question.setAttribute('aria-expanded', !isExpanded);
+                    if (!isExpanded) {
+                        answer.classList.add('is-open');
+                        // İçeriğin gerçek yüksekliğini al ve max-height olarak ayarla
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                    } else {
+                        answer.classList.remove('is-open');
+                        answer.style.maxHeight = '0';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
