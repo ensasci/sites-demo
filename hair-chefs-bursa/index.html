@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hair Chefs Bursa | Premium Hair Studio</title>
+  <meta name="description" content="Hair Chefs Bursa; saç kesimi, renklendirme, bakım, bridal styling ve premium kuaför deneyimi sunan üst segment saç stüdyosu." />
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0b0908;
+      --bg-soft: #15100d;
+      --bg-card: rgba(255,255,255,.065);
+      --cream: #f7efe3;
+      --muted: rgba(247,239,227,.68);
+      --muted-2: rgba(247,239,227,.46);
+      --gold: #d7aa61;
+      --gold-2: #f2d49a;
+      --copper: #a96742;
+      --line: rgba(247,239,227,.14);
+      --shadow: 0 30px 120px rgba(0,0,0,.45);
+      --radius: 30px;
+      --ease: cubic-bezier(.16,1,.3,1);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at 16% 10%, rgba(215,170,97,.17), transparent 28%),
+        radial-gradient(circle at 82% 4%, rgba(169,103,66,.18), transparent 24%),
+        linear-gradient(180deg, #0b0908 0%, #110d0b 45%, #080706 100%);
+      color: var(--cream);
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 40;
+      opacity: .045;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 320 320' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.7' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      mix-blend-mode: screen;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    button, input, textarea, select { font: inherit; }
+
+    .container { width: min(1180px, calc(100% - 40px)); margin: 0 auto; }
+
+    .nav {
+      position: fixed;
+      top: 18px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 30;
+      width: min(1180px, calc(100% - 32px));
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 14px 12px 18px;
+      border: 1px solid rgba(247,239,227,.13);
+      background: rgba(14,10,8,.52);
+      backdrop-filter: blur(22px);
+      border-radius: 999px;
+      box-shadow: 0 14px 60px rgba(0,0,0,.24);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 190px;
+    }
+
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      color: #111;
+      font-weight: 900;
+      letter-spacing: -.08em;
+      background:
+        radial-gradient(circle at 35% 20%, #fff1c9, transparent 34%),
+        linear-gradient(135deg, var(--gold-2), var(--gold) 55%, var(--copper));
+      box-shadow: 0 0 0 6px rgba(215,170,97,.08), inset 0 1px 1px rgba(255,255,255,.5);
+    }
+
+    .brand small { display: block; font-size: 10px; letter-spacing: .28em; color: var(--muted-2); text-transform: uppercase; }
+    .brand strong { display: block; font-size: 15px; letter-spacing: .03em; }
+
+    .nav-links { display: flex; gap: 6px; align-items: center; }
+    .nav-links a {
+      padding: 11px 14px;
+      border-radius: 999px;
+      font-size: 13px;
+      color: rgba(247,239,227,.74);
+      transition: .35s var(--ease);
+    }
+    .nav-links a:hover { color: var(--cream); background: rgba(255,255,255,.07); }
+
+    .nav-cta, .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      border: 0;
+      cursor: pointer;
+      border-radius: 999px;
+      font-weight: 800;
+      letter-spacing: -.02em;
+      transition: transform .35s var(--ease), box-shadow .35s var(--ease), background .35s var(--ease);
+    }
+
+    .nav-cta {
+      padding: 13px 18px;
+      background: var(--cream);
+      color: #120d0a;
+      font-size: 13px;
+    }
+
+    .btn {
+      padding: 16px 23px;
+      min-height: 56px;
+      font-size: 15px;
+    }
+
+    .btn-primary {
+      background:
+        radial-gradient(circle at 20% 0%, #fff0c0, transparent 32%),
+        linear-gradient(135deg, var(--gold-2), var(--gold) 52%, var(--copper));
+      color: #130d09;
+      box-shadow: 0 18px 48px rgba(215,170,97,.24);
+    }
+
+    .btn-secondary {
+      background: rgba(255,255,255,.08);
+      color: var(--cream);
+      border: 1px solid rgba(247,239,227,.16);
+      backdrop-filter: blur(12px);
+    }
+
+    .btn:hover, .nav-cta:hover { transform: translateY(-3px); }
+    .btn-primary:hover { box-shadow: 0 28px 70px rgba(215,170,97,.34); }
+
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      padding: 145px 0 70px;
+      display: grid;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.02fr .98fr;
+      gap: 52px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 8px 12px;
+      border: 1px solid rgba(215,170,97,.25);
+      border-radius: 999px;
+      background: rgba(215,170,97,.08);
+      color: var(--gold-2);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--gold);
+      box-shadow: 0 0 22px var(--gold);
+    }
+
+    h1, h2, h3 { font-family: "Playfair Display", Georgia, serif; }
+
+    .hero h1 {
+      font-size: clamp(54px, 8vw, 112px);
+      line-height: .89;
+      letter-spacing: -.065em;
+      max-width: 780px;
+    }
+
+    .hero h1 span {
+      display: block;
+      background: linear-gradient(100deg, #fff7e8 0%, var(--gold-2) 48%, #c17b4f 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .hero-copy {
+      margin-top: 26px;
+      max-width: 620px;
+      color: var(--muted);
+      font-size: clamp(17px, 2vw, 20px);
+      line-height: 1.75;
+    }
+
+    .hero-actions { margin-top: 34px; display: flex; flex-wrap: wrap; gap: 14px; }
+
+    .hero-proof {
+      margin-top: 38px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      max-width: 620px;
+    }
+
+    .proof-card {
+      padding: 18px 16px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.045);
+      border-radius: 22px;
+    }
+
+    .proof-card strong { display: block; font-size: 26px; letter-spacing: -.05em; }
+    .proof-card span { display: block; margin-top: 6px; color: var(--muted-2); font-size: 12px; line-height: 1.35; }
+
+    .hero-visual {
+      position: relative;
+      min-height: 670px;
+    }
+
+    .portrait-stack {
+      position: absolute;
+      inset: 0;
+    }
+
+    .portrait-main {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: min(520px, 100%);
+      height: 670px;
+      border-radius: 46px;
+      overflow: hidden;
+      border: 1px solid rgba(247,239,227,.16);
+      box-shadow: var(--shadow);
+      isolation: isolate;
+    }
+
+    .portrait-main::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 35%, rgba(0,0,0,.52) 100%);
+      z-index: 1;
+    }
+
+    .portrait-main img { width: 100%; height: 100%; object-fit: cover; filter: saturate(.96) contrast(1.05); }
+
+    .floating-card {
+      position: absolute;
+      z-index: 3;
+      border: 1px solid rgba(247,239,227,.16);
+      background: rgba(16,12,10,.72);
+      backdrop-filter: blur(18px);
+      border-radius: 26px;
+      box-shadow: 0 22px 70px rgba(0,0,0,.35);
+    }
+
+    .appointment-card {
+      left: 0;
+      bottom: 68px;
+      width: 294px;
+      padding: 18px;
+    }
+
+    .appointment-card .top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+    .appointment-card b { font-size: 13px; letter-spacing: .04em; }
+    .appointment-card .badge {
+      padding: 7px 9px;
+      border-radius: 999px;
+      background: rgba(87,184,126,.13);
+      color: #a8f2c5;
+      font-size: 11px;
+      font-weight: 800;
+    }
+    .mini-row {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      padding: 13px;
+      border-radius: 18px;
+      background: rgba(255,255,255,.065);
+      margin-top: 10px;
+    }
+    .mini-icon {
+      width: 37px;
+      height: 37px;
+      border-radius: 14px;
+      background: rgba(215,170,97,.16);
+      display: grid;
+      place-items: center;
+      color: var(--gold-2);
+    }
+    .mini-row span { display: block; color: var(--muted-2); font-size: 11px; margin-bottom: 2px; }
+    .mini-row strong { display: block; font-size: 13px; }
+
+    .rate-card {
+      right: -4px;
+      bottom: 26px;
+      width: 216px;
+      padding: 18px;
+      text-align: center;
+    }
+    .stars { color: var(--gold-2); letter-spacing: 2px; margin-bottom: 8px; }
+    .rate-card strong { font-size: 30px; letter-spacing: -.06em; }
+    .rate-card p { color: var(--muted-2); font-size: 12px; margin-top: 4px; }
+
+    .vertical-label {
+      position: absolute;
+      right: -30px;
+      top: 160px;
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      letter-spacing: .36em;
+      color: rgba(247,239,227,.23);
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+
+    .section { padding: 120px 0; position: relative; }
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 30px;
+      margin-bottom: 42px;
+    }
+    .section-head h2 {
+      max-width: 760px;
+      font-size: clamp(42px, 5vw, 76px);
+      line-height: .95;
+      letter-spacing: -.055em;
+    }
+    .section-head p {
+      max-width: 420px;
+      color: var(--muted);
+      line-height: 1.75;
+    }
+
+    .marquee {
+      border-block: 1px solid var(--line);
+      overflow: hidden;
+      white-space: nowrap;
+      background: rgba(255,255,255,.025);
+    }
+    .marquee-track {
+      display: inline-flex;
+      gap: 34px;
+      padding: 22px 0;
+      animation: marquee 26s linear infinite;
+      color: rgba(247,239,227,.38);
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: clamp(28px, 4vw, 52px);
+      letter-spacing: -.04em;
+    }
+    .marquee-track span:nth-child(even) { color: rgba(215,170,97,.72); }
+    @keyframes marquee { to { transform: translateX(-50%); } }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+
+    .service-card {
+      position: relative;
+      min-height: 380px;
+      padding: 22px;
+      border: 1px solid var(--line);
+      background: var(--bg-card);
+      border-radius: var(--radius);
+      overflow: hidden;
+      transition: transform .45s var(--ease), border-color .45s var(--ease), background .45s var(--ease);
+    }
+    .service-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(255,255,255,.06), transparent 55%);
+      opacity: 0;
+      transition: .45s var(--ease);
+    }
+    .service-card:hover { transform: translateY(-10px); border-color: rgba(215,170,97,.42); background: rgba(255,255,255,.085); }
+    .service-card:hover::before { opacity: 1; }
+    .service-card .num { color: var(--gold); font-size: 12px; font-weight: 900; letter-spacing: .18em; }
+    .service-card h3 { margin-top: 92px; font-size: 31px; line-height: .98; letter-spacing: -.04em; }
+    .service-card p { margin-top: 18px; color: var(--muted); line-height: 1.65; font-size: 14px; }
+    .service-card .more {
+      position: absolute;
+      bottom: 20px;
+      left: 22px;
+      right: 22px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: var(--gold-2);
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+    .service-card .more i {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(215,170,97,.26);
+      font-style: normal;
+    }
+
+    .experience {
+      display: grid;
+      grid-template-columns: .85fr 1.15fr;
+      gap: 24px;
+      align-items: stretch;
+    }
+
+    .image-panel, .text-panel {
+      border: 1px solid var(--line);
+      border-radius: 42px;
+      overflow: hidden;
+      background: rgba(255,255,255,.045);
+      box-shadow: var(--shadow);
+    }
+    .image-panel { min-height: 680px; position: relative; }
+    .image-panel img { width: 100%; height: 100%; object-fit: cover; filter: saturate(.9) contrast(1.08); }
+    .image-panel::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 30%, rgba(0,0,0,.64) 100%);
+    }
+    .image-caption {
+      position: absolute;
+      left: 24px;
+      right: 24px;
+      bottom: 24px;
+      z-index: 2;
+      padding: 20px;
+      border-radius: 24px;
+      background: rgba(12,9,8,.62);
+      backdrop-filter: blur(14px);
+      border: 1px solid rgba(247,239,227,.14);
+    }
+    .image-caption strong { font-family: "Playfair Display"; font-size: 30px; letter-spacing: -.04em; }
+    .image-caption p { margin-top: 7px; color: var(--muted); line-height: 1.55; }
+
+    .text-panel {
+      padding: 42px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 680px;
+    }
+    .text-panel h2 { font-size: clamp(44px, 5.4vw, 82px); line-height: .93; letter-spacing: -.06em; }
+    .text-panel > p { color: var(--muted); font-size: 17px; line-height: 1.85; max-width: 720px; margin-top: 24px; }
+
+    .process {
+      margin-top: 46px;
+      display: grid;
+      gap: 12px;
+    }
+    .process-step {
+      display: grid;
+      grid-template-columns: 86px 1fr auto;
+      align-items: center;
+      gap: 18px;
+      padding: 18px;
+      border-radius: 26px;
+      border: 1px solid rgba(247,239,227,.12);
+      background: rgba(255,255,255,.045);
+    }
+    .process-step .step-no {
+      height: 58px;
+      border-radius: 20px;
+      display: grid;
+      place-items: center;
+      background: rgba(215,170,97,.12);
+      color: var(--gold-2);
+      font-weight: 900;
+    }
+    .process-step h3 { font-size: 23px; letter-spacing: -.03em; }
+    .process-step p { color: var(--muted-2); font-size: 13px; margin-top: 5px; }
+    .process-step .arrow { color: rgba(247,239,227,.28); font-size: 28px; }
+
+    .lookbook {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr 1fr;
+      grid-auto-rows: 270px;
+      gap: 14px;
+    }
+    .look {
+      position: relative;
+      overflow: hidden;
+      border-radius: 32px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.04);
+    }
+    .look.tall { grid-row: span 2; }
+    .look.wide { grid-column: span 2; }
+    .look img { width: 100%; height: 100%; object-fit: cover; transition: transform 1.1s var(--ease); filter: saturate(.9) contrast(1.04); }
+    .look:hover img { transform: scale(1.08); }
+    .look::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 40%, rgba(0,0,0,.7));
+    }
+    .look span {
+      position: absolute;
+      left: 20px;
+      bottom: 18px;
+      z-index: 2;
+      padding: 9px 12px;
+      border-radius: 999px;
+      background: rgba(12,9,8,.62);
+      border: 1px solid rgba(247,239,227,.14);
+      color: var(--cream);
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      backdrop-filter: blur(10px);
+    }
+
+    .pricing-wrap {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    .price-card {
+      padding: 28px;
+      border-radius: 34px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.05);
+      position: relative;
+      overflow: hidden;
+    }
+    .price-card.featured {
+      background:
+        radial-gradient(circle at 30% 0%, rgba(215,170,97,.18), transparent 36%),
+        rgba(255,255,255,.075);
+      border-color: rgba(215,170,97,.38);
+      transform: translateY(-16px);
+    }
+    .price-card .label {
+      color: var(--gold-2);
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+    .price-card h3 { margin-top: 18px; font-size: 38px; line-height: 1; letter-spacing: -.05em; }
+    .price-card .price { margin-top: 24px; font-size: 36px; font-weight: 900; letter-spacing: -.06em; }
+    .price-card .price small { font-size: 13px; color: var(--muted-2); font-weight: 600; letter-spacing: 0; }
+    .price-card ul { list-style: none; margin-top: 26px; display: grid; gap: 13px; color: var(--muted); }
+    .price-card li { display: flex; gap: 10px; line-height: 1.45; }
+    .price-card li::before { content: "✦"; color: var(--gold); }
+
+    .testimonials {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 20px;
+      align-items: stretch;
+    }
+    .quote-large {
+      padding: 40px;
+      border-radius: 42px;
+      border: 1px solid rgba(215,170,97,.28);
+      background:
+        linear-gradient(135deg, rgba(215,170,97,.14), rgba(255,255,255,.04)),
+        rgba(255,255,255,.045);
+      min-height: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .quote-large .mark { font-family: "Playfair Display"; font-size: 130px; line-height: .7; color: rgba(215,170,97,.42); }
+    .quote-large p { font-family: "Playfair Display"; font-size: clamp(32px, 3.6vw, 52px); line-height: 1.05; letter-spacing: -.045em; }
+    .quote-large span { color: var(--muted); margin-top: 22px; display: block; }
+    .review-list { display: grid; gap: 14px; }
+    .review {
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 30px;
+      background: rgba(255,255,255,.045);
+    }
+    .review .stars { font-size: 13px; margin-bottom: 12px; }
+    .review p { color: var(--muted); line-height: 1.7; }
+    .review strong { display: block; margin-top: 16px; }
+
+    .booking {
+      border: 1px solid rgba(215,170,97,.25);
+      border-radius: 48px;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 12% 10%, rgba(215,170,97,.2), transparent 32%),
+        linear-gradient(135deg, rgba(255,255,255,.075), rgba(255,255,255,.035));
+      box-shadow: var(--shadow);
+      display: grid;
+      grid-template-columns: .95fr 1.05fr;
+    }
+    .booking-copy { padding: 48px; }
+    .booking-copy h2 { font-size: clamp(44px, 5vw, 78px); line-height: .94; letter-spacing: -.06em; }
+    .booking-copy p { margin-top: 22px; color: var(--muted); line-height: 1.8; max-width: 530px; }
+    .booking-details { margin-top: 34px; display: grid; gap: 12px; }
+    .detail-line {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 15px 0;
+      border-bottom: 1px solid rgba(247,239,227,.12);
+      color: var(--muted);
+    }
+    .detail-line strong { color: var(--cream); }
+
+    .booking-form {
+      padding: 28px;
+      background: rgba(8,7,6,.36);
+      border-left: 1px solid rgba(247,239,227,.12);
+    }
+    form {
+      height: 100%;
+      padding: 26px;
+      border-radius: 34px;
+      border: 1px solid rgba(247,239,227,.12);
+      background: rgba(255,255,255,.04);
+      display: grid;
+      gap: 14px;
+      align-content: start;
+    }
+    .field label { display: block; font-size: 12px; color: var(--muted-2); margin-bottom: 8px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+    .field input, .field select, .field textarea {
+      width: 100%;
+      border: 1px solid rgba(247,239,227,.13);
+      background: rgba(255,255,255,.06);
+      color: var(--cream);
+      border-radius: 18px;
+      padding: 15px 16px;
+      outline: none;
+      transition: .25s var(--ease);
+    }
+    .field textarea { min-height: 110px; resize: vertical; }
+    .field input:focus, .field select:focus, .field textarea:focus { border-color: rgba(215,170,97,.58); box-shadow: 0 0 0 4px rgba(215,170,97,.08); }
+    select option { color: #111; }
+
+    footer {
+      padding: 44px 0 34px;
+      border-top: 1px solid var(--line);
+      color: var(--muted-2);
+    }
+    .footer-grid {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .footer-links { display: flex; gap: 18px; flex-wrap: wrap; }
+    .footer-links a { color: var(--muted); font-size: 13px; }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(32px);
+      transition: opacity .8s var(--ease), transform .8s var(--ease);
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    .cursor-glow {
+      position: fixed;
+      width: 460px;
+      height: 460px;
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 0;
+      background: radial-gradient(circle, rgba(215,170,97,.10), transparent 60%);
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: opacity .3s ease;
+    }
+
+    @media (max-width: 1020px) {
+      .nav-links { display: none; }
+      .hero-grid, .experience, .testimonials, .booking { grid-template-columns: 1fr; }
+      .hero { padding-top: 132px; }
+      .hero-visual { min-height: 600px; }
+      .portrait-main { left: 50%; transform: translateX(-50%); height: 600px; }
+      .appointment-card { left: 0; }
+      .service-grid, .pricing-wrap { grid-template-columns: repeat(2, 1fr); }
+      .section-head { align-items: start; flex-direction: column; }
+      .booking-form { border-left: 0; border-top: 1px solid rgba(247,239,227,.12); }
+    }
+
+    @media (max-width: 720px) {
+      .container { width: min(100% - 26px, 1180px); }
+      .nav { top: 10px; width: calc(100% - 18px); padding: 10px; }
+      .brand { min-width: auto; }
+      .brand small { display: none; }
+      .brand strong { font-size: 13px; }
+      .nav-cta { padding: 12px 13px; font-size: 12px; }
+      .hero { padding: 115px 0 54px; }
+      .hero h1 { font-size: clamp(50px, 17vw, 76px); }
+      .hero-copy { font-size: 16px; }
+      .hero-proof { grid-template-columns: 1fr; }
+      .hero-visual { min-height: 520px; margin-top: 18px; }
+      .portrait-main { height: 510px; border-radius: 34px; }
+      .appointment-card { bottom: 20px; width: 260px; }
+      .rate-card, .vertical-label { display: none; }
+      .section { padding: 78px 0; }
+      .service-grid, .pricing-wrap { grid-template-columns: 1fr; }
+      .service-card { min-height: 310px; }
+      .service-card h3 { margin-top: 60px; }
+      .image-panel, .text-panel { min-height: auto; border-radius: 32px; }
+      .image-panel { height: 520px; }
+      .text-panel, .booking-copy, .booking-form { padding: 24px; }
+      .process-step { grid-template-columns: 1fr; }
+      .process-step .arrow { display: none; }
+      .lookbook { grid-template-columns: 1fr; grid-auto-rows: 320px; }
+      .look.tall, .look.wide { grid-row: auto; grid-column: auto; }
+      .price-card.featured { transform: none; }
+      .quote-large { min-height: auto; padding: 28px; }
+      .quote-large .mark { font-size: 86px; }
+      form { padding: 18px; }
+      .footer-grid { align-items: flex-start; flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <nav class="nav">
+    <a href="#top" class="brand" aria-label="Hair Chefs Bursa ana sayfa">
+      <span class="brand-mark">HC</span>
+      <span>
+        <small>Premium Hair Studio</small>
+        <strong>Hair Chefs Bursa</strong>
+      </span>
+    </a>
+    <div class="nav-links">
+      <a href="#services">Hizmetler</a>
+      <a href="#experience">Deneyim</a>
+      <a href="#lookbook">Lookbook</a>
+      <a href="#pricing">Paketler</a>
+      <a href="#booking">Randevu</a>
+    </div>
+    <a class="nav-cta" href="#booking">Randevu Al</a>
+  </nav>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <div class="eyebrow">Bursa’da saçın gastronomisi</div>
+          <h1>Saç değil, <span>imza görünüm.</span></h1>
+          <p class="hero-copy">
+            Hair Chefs Bursa, klasik kuaför anlayışını geride bırakıp saç kesimi, renk tasarımı ve bakım ritüelini kişiye özel bir şef menüsüne dönüştüren premium hair studio deneyimi sunar.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#booking">Kişisel Saç Menünü Oluştur</a>
+            <a class="btn btn-secondary" href="#lookbook">İlham Galerisi</a>
+          </div>
+          <div class="hero-proof">
+            <div class="proof-card"><strong>01</strong><span>Kişisel yüz formu ve ten alt tonu analizi</span></div>
+            <div class="proof-card"><strong>90 dk</strong><span>Detaylı danışmanlıkla başlayan premium servis</span></div>
+            <div class="proof-card"><strong>4.9</strong><span>Misafir memnuniyeti odaklı butik deneyim</span></div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="portrait-stack">
+            <div class="portrait-main">
+              <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1100&q=86" alt="Premium saç tasarım stüdyosu" />
+            </div>
+            <div class="floating-card appointment-card">
+              <div class="top">
+                <b>Bugünün ritüeli</b>
+                <span class="badge">Müsait</span>
+              </div>
+              <div class="mini-row">
+                <div class="mini-icon">✂</div>
+                <div><span>Signature Cut</span><strong>Yüz formuna özel kesim</strong></div>
+              </div>
+              <div class="mini-row">
+                <div class="mini-icon">◐</div>
+                <div><span>Color Lab</span><strong>Ton analizi + parlaklık</strong></div>
+              </div>
+            </div>
+            <div class="floating-card rate-card">
+              <div class="stars">★★★★★</div>
+              <strong>4.9/5</strong>
+              <p>Premium salon deneyimi</p>
+            </div>
+            <div class="vertical-label">Hair Chefs Bursa</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Signature Cut</span><span>Color Lab</span><span>Gloss Therapy</span><span>Bridal Hair</span><span>Keratin Ritual</span><span>Chef’s Touch</span>
+        <span>Signature Cut</span><span>Color Lab</span><span>Gloss Therapy</span><span>Bridal Hair</span><span>Keratin Ritual</span><span>Chef’s Touch</span>
+      </div>
+    </div>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Her servis, saçın için hazırlanmış özel bir reçete.</h2>
+          <p>Hair Chefs ekibi, trendleri kopyalamaz; yüz formunu, yaşam stilini ve saç karakterini okuyarak sana ait görünümü tasarlar.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card reveal">
+            <span class="num">01 / CUT</span>
+            <h3>Signature Haircut</h3>
+            <p>Kişisel stil, yüz oranı ve saç yoğunluğuna göre tasarlanan modern kesim deneyimi.</p>
+            <div class="more"><span>Keşfet</span><i>→</i></div>
+          </article>
+          <article class="service-card reveal">
+            <span class="num">02 / COLOR</span>
+            <h3>Color Lab</h3>
+            <p>Balayage, sombre, gloss ve ton düzeltme uygulamalarında doğal geçiş odaklı renk mimarisi.</p>
+            <div class="more"><span>Keşfet</span><i>→</i></div>
+          </article>
+          <article class="service-card reveal">
+            <span class="num">03 / CARE</span>
+            <h3>Repair Rituals</h3>
+            <p>Yıpranmış saçlar için nem, protein ve parlaklık dengesini yeniden kuran bakım menüleri.</p>
+            <div class="more"><span>Keşfet</span><i>→</i></div>
+          </article>
+          <article class="service-card reveal">
+            <span class="num">04 / EVENT</span>
+            <h3>Bridal & Event</h3>
+            <p>Düğün, davet ve özel günler için uzun süre kalıcı, fotoğraf dostu profesyonel styling.</p>
+            <div class="more"><span>Keşfet</span><i>→</i></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="container experience">
+        <div class="image-panel reveal">
+          <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=1000&q=86" alt="Hair Chefs salon deneyimi" />
+          <div class="image-caption">
+            <strong>Salon değil, private studio hissi.</strong>
+            <p>Randevu ritmi, misafir deneyimi ve uygulama süreci butik bir seviyede kurgulanır.</p>
+          </div>
+        </div>
+        <div class="text-panel reveal">
+          <div>
+            <div class="eyebrow">Chef’s Method</div>
+            <h2>Saç tasarımı burada mutfak disipliniyle çalışır.</h2>
+            <p>
+              Önce saçın dokusu, geçmiş işlemleri ve hedef görünüm analiz edilir. Sonra kesim, renk ve bakım servisleri birbirini tamamlayan bir menü gibi planlanır. Sonuç: ilk gün güzel, haftalar sonra hâlâ doğru duran saç.
+            </p>
+          </div>
+          <div class="process">
+            <div class="process-step">
+              <div class="step-no">01</div>
+              <div><h3>Diagnosis</h3><p>Saç geçmişi, yüz formu, ten alt tonu ve kullanım rutini okunur.</p></div>
+              <div class="arrow">→</div>
+            </div>
+            <div class="process-step">
+              <div class="step-no">02</div>
+              <div><h3>Recipe</h3><p>Sana özel kesim, renk ve bakım kombinasyonu netleştirilir.</p></div>
+              <div class="arrow">→</div>
+            </div>
+            <div class="process-step">
+              <div class="step-no">03</div>
+              <div><h3>Finish</h3><p>Evde koruma önerileriyle görünümün kalıcılığı güçlendirilir.</p></div>
+              <div class="arrow">→</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="lookbook">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Görünüm arşivi: sade, pahalı ve zahmetsiz.</h2>
+          <p>Saçın bağırmadan fark edilmesi gerektiğine inanıyoruz. Işıltı, hareket ve form tam dozunda.</p>
+        </div>
+        <div class="lookbook">
+          <div class="look tall reveal"><img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=900&q=86" alt="Soft glam hair" /><span>Soft Glam</span></div>
+          <div class="look reveal"><img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=900&q=86" alt="Salon hair color" /><span>Color Lab</span></div>
+          <div class="look reveal"><img src="https://images.unsplash.com/photo-1523263685509-57c1d050d19b?auto=format&fit=crop&w=900&q=86" alt="Modern haircut" /><span>Modern Cut</span></div>
+          <div class="look wide reveal"><img src="https://images.unsplash.com/photo-1522336284037-91f7da073525?auto=format&fit=crop&w=1200&q=86" alt="Premium salon styling" /><span>Chef’s Finish</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="pricing">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2>Net, seçilebilir ve premium paketler.</h2>
+          <p>Fiyatlar demo amaçlıdır; gerçek salonda saç uzunluğu, işlem geçmişi ve hedef renge göre kişisel teklif verilebilir.</p>
+        </div>
+        <div class="pricing-wrap">
+          <article class="price-card reveal">
+            <span class="label">Essential</span>
+            <h3>Cut & Care</h3>
+            <div class="price">₺1.250 <small>başlayan</small></div>
+            <ul>
+              <li>Yüz formuna göre kesim</li>
+              <li>Fön ve günlük styling</li>
+              <li>Ev bakım önerisi</li>
+            </ul>
+          </article>
+          <article class="price-card featured reveal">
+            <span class="label">Most Wanted</span>
+            <h3>Color Chef</h3>
+            <div class="price">₺3.900 <small>başlayan</small></div>
+            <ul>
+              <li>Ton analizi ve renk planı</li>
+              <li>Balayage / sombre / gloss</li>
+              <li>İşlem sonrası parlaklık bakımı</li>
+              <li>Final styling</li>
+            </ul>
+          </article>
+          <article class="price-card reveal">
+            <span class="label">Private</span>
+            <h3>Bridal Menu</h3>
+            <div class="price">Teklif <small>ile</small></div>
+            <ul>
+              <li>Prova saç tasarımı</li>
+              <li>Düğün günü uygulama</li>
+              <li>Uzun süre kalıcı finish</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container testimonials">
+        <div class="quote-large reveal">
+          <div class="mark">“</div>
+          <div>
+            <p>Saçıma ilk kez gerçekten bir tasarım gibi yaklaşıldığını hissettim.</p>
+            <span>— Hair Chefs misafir deneyimi</span>
+          </div>
+        </div>
+        <div class="review-list">
+          <article class="review reveal">
+            <div class="stars">★★★★★</div>
+            <p>Renk geçişi tam istediğim gibi doğal oldu. En güzeli de işlemden sonra saçımın canlı kalmasıydı.</p>
+            <strong>Selin A.</strong>
+          </article>
+          <article class="review reveal">
+            <div class="stars">★★★★★</div>
+            <p>Kesimden önce detaylı analiz yapmaları çok iyi. Sadece trend değil, bana yakışan şeyi bulduk.</p>
+            <strong>Derya K.</strong>
+          </article>
+          <article class="review reveal">
+            <div class="stars">★★★★★</div>
+            <p>Salon atmosferi çok premium. Hizmet aceleye gelmiyor, her aşama özenli.</p>
+            <strong>Melis T.</strong>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="booking">
+      <div class="container">
+        <div class="booking reveal">
+          <div class="booking-copy">
+            <div class="eyebrow">Reserve Your Chair</div>
+            <h2>Yeni görünümün için masanı ayırt.</h2>
+            <p>Formu doldur, Hair Chefs ekibi saç hedefini ve uygun randevu saatini netleştirmek için seninle iletişime geçsin.</p>
+            <div class="booking-details">
+              <div class="detail-line"><span>Konum</span><strong>Bursa / Nilüfer</strong></div>
+              <div class="detail-line"><span>Çalışma</span><strong>10:00 — 20:00</strong></div>
+              <div class="detail-line"><span>İletişim</span><strong>+90 224 000 00 00</strong></div>
+            </div>
+          </div>
+          <div class="booking-form">
+            <form onsubmit="event.preventDefault(); alert('Demo form: Randevu talebiniz alındı.');">
+              <div class="field">
+                <label>Ad Soyad</label>
+                <input required placeholder="Adınızı yazın" />
+              </div>
+              <div class="field">
+                <label>Telefon</label>
+                <input required placeholder="05xx xxx xx xx" />
+              </div>
+              <div class="field">
+                <label>İlgilendiğiniz Servis</label>
+                <select required>
+                  <option value="">Servis seçin</option>
+                  <option>Signature Haircut</option>
+                  <option>Color Lab</option>
+                  <option>Repair Rituals</option>
+                  <option>Bridal & Event</option>
+                </select>
+              </div>
+              <div class="field">
+                <label>Notunuz</label>
+                <textarea placeholder="Hedeflediğiniz görünümü veya saç geçmişinizi kısaca yazın"></textarea>
+              </div>
+              <button class="btn btn-primary" type="submit">Randevu Talebi Gönder</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div class="brand">
+        <span class="brand-mark">HC</span>
+        <span>
+          <small>Premium Hair Studio</small>
+          <strong>Hair Chefs Bursa</strong>
+        </span>
+      </div>
+      <div class="footer-links">
+        <a href="#services">Hizmetler</a>
+        <a href="#lookbook">Lookbook</a>
+        <a href="#booking">Randevu</a>
+        <a href="tel:+902240000000">+90 224 000 00 00</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const revealItems = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), index * 70);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    revealItems.forEach(item => observer.observe(item));
+
+    const glow = document.getElementById('cursorGlow');
+    window.addEventListener('pointermove', (event) => {
+      glow.style.opacity = '1';
+      glow.style.left = event.clientX + 'px';
+      glow.style.top = event.clientY + 'px';
+    });
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (event) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (!target) return;
+        event.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+  </script>
+</body>
+</html>
