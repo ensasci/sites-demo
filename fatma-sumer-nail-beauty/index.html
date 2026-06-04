@@ -2,57 +2,1701 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fatma Sümer Nail & Beauty - Demo Site</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Inter', sans-serif;
-            background: linear-gradient(135deg, #1f1c2c, #928DAB);
-            color: white;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-height: 100vh;
-        }
-        .hero {
-            margin-top: 100px;
-            padding: 40px;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            text-align: center;
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            max-width: 800px;
-            width: 90%;
-        }
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
-        }
-        p {
-            font-size: 1.2rem;
-            opacity: 0.8;
-        }
-        .contact {
-            margin-top: 30px;
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.2);
-            border-radius: 10px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Fatma Sümer Nail & Beauty | Ümraniye Nail Studio ve Güzellik Bakımı</title>
+  <meta name="description" content="Fatma Sümer Nail & Beauty; nail art, protez tırnak, kalıcı oje, manikür, cilt bakımı, leke bakımı ve anti-aging bakım odaklı premium güzellik deneyimi sunan modern nail & beauty stüdyosudur." />
+  <meta name="keywords" content="Fatma Sümer Nail Beauty, nail studio, protez tırnak, kalıcı oje, nail art, cilt bakımı, leke bakımı, anti aging bakım, Ümraniye nail studio, güzellik merkezi" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="theme-color" content="#ffffff" />
+
+  <meta property="og:title" content="Fatma Sümer Nail & Beauty | Premium Nail ve Cilt Bakımı" />
+  <meta property="og:description" content="Nail art, protez tırnak, kalıcı oje, leke bakımı, anti-aging ve cilt bakımını ferah premium bir deneyime dönüştüren güzellik stüdyosu." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BeautySalon",
+    "name": "Fatma Sümer Nail & Beauty",
+    "description": "Nail art, protez tırnak, kalıcı oje, manikür, cilt bakımı, leke bakımı ve anti-aging bakım hizmetleri sunan modern nail & beauty stüdyosu.",
+    "priceRange": "₺₺",
+    "makesOffer": [
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Protez Tırnak"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Kalıcı Oje"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Nail Art"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Manikür ve Pedikür"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Leke Bakımı"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Anti-aging Bakım"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Cilt Bakımı"}}
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"Fatma Sümer Nail & Beauty hangi hizmetleri sunar?","acceptedAnswer":{"@type":"Answer","text":"Protez tırnak, kalıcı oje, nail art, manikür, pedikür, cilt bakımı, leke bakımı ve anti-aging bakım gibi nail & beauty hizmetleri sunar."}},
+      {"@type":"Question","name":"Nail stüdyo deneyimi nasıl ilerler?","acceptedAnswer":{"@type":"Answer","text":"Önce tırnak formu ve beklenti belirlenir, ardından protez tırnak, kalıcı oje veya nail art gibi hizmetler kişiye uygun şekilde planlanır."}},
+      {"@type":"Question","name":"Cilt bakımı tarafında hangi uygulamalar öne çıkar?","acceptedAnswer":{"@type":"Answer","text":"Cilt bakımı, leke görünümüne yönelik bakım, canlılık ve anti-aging odaklı uygulamalar öne çıkar."}}
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --white: #ffffff;
+      --milk: #fbfaf7;
+      --cream: #f5efe7;
+      --paper: #f7f2ea;
+      --ink: #111318;
+      --text: #22252d;
+      --muted: #707783;
+      --line: rgba(17, 19, 24, .10);
+      --line-soft: rgba(17, 19, 24, .075);
+      --blue: #87bdf8;
+      --blue-deep: #295f95;
+      --champagne: #d9bd87;
+      --champagne-2: #f1dcac;
+      --blush: #e9c8bf;
+      --rose: #d7a6b2;
+      --nude: #e7d7c9;
+      --sage: #b9c7bd;
+      --shadow: 0 28px 90px rgba(17, 19, 24, .12);
+      --shadow-strong: 0 40px 130px rgba(17, 19, 24, .18);
+      --radius: 34px;
+      --x: 50%;
+      --y: 24%;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; background: var(--milk); }
+    body {
+      font-family: Inter, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at var(--x) var(--y), rgba(215,166,178,.22), transparent 22rem),
+        radial-gradient(circle at 85% 12%, rgba(135,189,248,.17), transparent 25rem),
+        linear-gradient(180deg, #ffffff 0%, #fbfaf7 45%, #f6f1ea 100%);
+      overflow-x: hidden;
+    }
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; color: inherit; }
+
+    .noise {
+      position: fixed;
+      inset: 0;
+      z-index: 200;
+      pointer-events: none;
+      opacity: .032;
+      mix-blend-mode: multiply;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 260 260' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.82' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    }
+
+    .topbar {
+      position: fixed;
+      top: 18px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 120;
+      width: min(1180px, calc(100% - 28px));
+      min-height: 74px;
+      border-radius: 26px;
+      background: rgba(255,255,255,.84);
+      border: 1px solid rgba(17,19,24,.08);
+      backdrop-filter: blur(22px);
+      box-shadow: 0 16px 60px rgba(17,19,24,.09);
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      align-items: center;
+      gap: 18px;
+      padding: 12px 14px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      min-width: 0;
+    }
+
+    .brand-mark {
+      width: 50px;
+      height: 50px;
+      border-radius: 18px;
+      display: grid;
+      place-items: center;
+      background:
+        linear-gradient(135deg, #111318, #252832);
+      color: #fff;
+      font-weight: 900;
+      letter-spacing: -.08em;
+      box-shadow: 0 14px 44px rgba(17,19,24,.18);
+      flex: 0 0 auto;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .brand-mark::after {
+      content: "";
+      position: absolute;
+      inset: auto -18px -20px auto;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: rgba(215,166,178,.45);
+    }
+
+    .brand-text { min-width: 0; }
+    .brand-text strong {
+      display: block;
+      font-size: 14px;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+      color: var(--ink);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .brand-text span {
+      display: block;
+      margin-top: 5px;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .desktop-nav {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+      justify-content: center;
+      background: rgba(17,19,24,.04);
+      padding: 6px;
+      border-radius: 18px;
+    }
+
+    .desktop-nav a {
+      padding: 11px 14px;
+      border-radius: 14px;
+      color: #4c5360;
+      font-size: 13px;
+      font-weight: 800;
+      transition: .25s ease;
+    }
+
+    .desktop-nav a:hover {
+      color: var(--ink);
+      background: #fff;
+      box-shadow: 0 10px 28px rgba(17,19,24,.07);
+    }
+
+    .top-actions {
+      justify-self: end;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .header-whatsapp,
+    .header-call,
+    .menu-btn {
+      height: 50px;
+      border-radius: 17px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      transition: .25s ease;
+      border: 0;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .header-whatsapp {
+      min-width: 164px;
+      gap: 11px;
+      padding: 0 16px 0 12px;
+      background:
+        linear-gradient(135deg, rgba(255,255,255,.92), rgba(236,255,244,.96));
+      color: #083a22;
+      border: 1px solid rgba(37, 211, 102, .24);
+      box-shadow:
+        0 16px 44px rgba(37, 211, 102, .16),
+        inset 0 1px 0 rgba(255,255,255,.85);
+    }
+
+    .header-whatsapp:hover {
+      transform: translateY(-3px);
+      box-shadow:
+        0 20px 54px rgba(37, 211, 102, .23),
+        inset 0 1px 0 rgba(255,255,255,.9);
+    }
+
+    .wa-icon {
+      width: 34px;
+      height: 34px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, #25d366, #77efaa);
+      color: #06391f;
+      box-shadow: 0 10px 22px rgba(37,211,102,.25);
+      flex: 0 0 auto;
+    }
+
+    .wa-icon svg,
+    .float-icon svg {
+      width: 21px;
+      height: 21px;
+      fill: currentColor;
+    }
+
+    .wa-label {
+      display: grid;
+      line-height: 1.05;
+      text-align: left;
+    }
+
+    .wa-label strong {
+      font-size: 13px;
+      letter-spacing: .01em;
+    }
+
+    .wa-label small {
+      margin-top: 4px;
+      font-size: 10px;
+      color: rgba(8,58,34,.62);
+      font-weight: 900;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+
+    .header-call {
+      width: 50px;
+      color: var(--ink);
+      background: rgba(17,19,24,.06);
+      border: 1px solid rgba(17,19,24,.08);
+    }
+
+    .menu-btn {
+      display: none;
+      width: 50px;
+      background: var(--ink);
+      color: #fff;
+      flex-direction: column;
+      gap: 5px;
+    }
+    .menu-btn span {
+      width: 20px;
+      height: 2px;
+      border-radius: 99px;
+      background: currentColor;
+      transition: .25s ease;
+    }
+    .menu-btn[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .menu-btn[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+    .menu-btn[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    .mobile-panel {
+      display: none;
+      position: fixed;
+      left: 14px;
+      right: 14px;
+      top: 102px;
+      z-index: 110;
+      border-radius: 28px;
+      background: rgba(255,255,255,.94);
+      border: 1px solid rgba(17,19,24,.08);
+      backdrop-filter: blur(22px);
+      box-shadow: 0 30px 90px rgba(17,19,24,.16);
+      padding: 12px;
+    }
+    .mobile-panel.open { display: grid; gap: 8px; }
+    .mobile-panel a {
+      padding: 16px;
+      border-radius: 18px;
+      background: rgba(17,19,24,.035);
+      color: var(--ink);
+      font-weight: 900;
+    }
+
+    .floating-whatsapp {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      z-index: 130;
+      width: auto;
+      min-width: 178px;
+      height: 62px;
+      border-radius: 22px;
+      padding: 9px 16px 9px 10px;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 10px;
+      align-items: center;
+      background:
+        linear-gradient(135deg, rgba(255,255,255,.96), rgba(232,255,242,.96));
+      color: #083a22;
+      border: 1px solid rgba(37,211,102,.22);
+      box-shadow:
+        0 22px 70px rgba(17,19,24,.16),
+        0 14px 42px rgba(37,211,102,.18);
+      transition: .25s ease;
+      animation: whatsappBreath 3.6s ease-in-out infinite;
+    }
+    .floating-whatsapp:hover {
+      transform: translateY(-5px);
+      box-shadow:
+        0 28px 86px rgba(17,19,24,.18),
+        0 18px 50px rgba(37,211,102,.25);
+    }
+    .floating-whatsapp::after {
+      content: "";
+      position: absolute;
+      inset: -6px;
+      border-radius: 28px;
+      border: 1px solid rgba(37,211,102,.24);
+      opacity: 0;
+      animation: waRing 3.6s ease-in-out infinite;
+      pointer-events: none;
+    }
+
+    .float-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 16px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, #25d366, #8ff0b6);
+      color: #06391f;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.45);
+      flex: 0 0 auto;
+    }
+
+    .float-text {
+      display: grid;
+      line-height: 1.05;
+      text-align: left;
+    }
+
+    .float-text strong {
+      font-size: 13px;
+      color: #083a22;
+      letter-spacing: .01em;
+    }
+
+    .float-text small {
+      margin-top: 4px;
+      color: rgba(8,58,34,.60);
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+
+    .hero {
+      min-height: 100vh;
+      padding: 132px 28px 70px;
+      position: relative;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      isolation: isolate;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -3;
+      background:
+        radial-gradient(circle at 76% 18%, rgba(215,166,178,.28), transparent 28%),
+        radial-gradient(circle at 14% 82%, rgba(135,189,248,.20), transparent 30%),
+        linear-gradient(180deg, #fff, #fbfaf7 68%, #f4eee5);
+    }
+
+    .hero::after {
+      content: "NAIL BEAUTY";
+      position: absolute;
+      left: 50%;
+      top: 47%;
+      transform: translate(-50%, -50%);
+      z-index: -2;
+      font-size: clamp(70px, 13vw, 210px);
+      line-height: .8;
+      font-weight: 900;
+      letter-spacing: -.08em;
+      color: rgba(17,19,24,.034);
+      white-space: nowrap;
+      pointer-events: none;
+    }
+
+    .soft-orbit {
+      position: absolute;
+      z-index: -1;
+      border-radius: 999px;
+      border: 1px solid rgba(215,166,178,.16);
+      pointer-events: none;
+      opacity: .72;
+      filter: blur(.2px);
+    }
+
+    .orbit-one {
+      width: 520px;
+      height: 520px;
+      right: -160px;
+      top: 120px;
+      background: radial-gradient(circle at 30% 30%, rgba(215,166,178,.16), transparent 56%);
+      animation: orbitDrift 12s ease-in-out infinite alternate;
+    }
+
+    .orbit-two {
+      width: 360px;
+      height: 360px;
+      left: -120px;
+      bottom: 80px;
+      background: radial-gradient(circle at 70% 40%, rgba(135,189,248,.15), transparent 60%);
+      animation: orbitDriftTwo 14s ease-in-out infinite alternate;
+    }
+
+    .shine-line {
+      position: absolute;
+      left: 50%;
+      top: 16%;
+      width: min(860px, 78vw);
+      height: 1px;
+      transform: translateX(-50%);
+      z-index: -1;
+      background: linear-gradient(90deg, transparent, rgba(215,166,178,.42), rgba(217,189,135,.48), transparent);
+      animation: shineSweep 4.8s ease-in-out infinite;
+      opacity: .86;
+    }
+
+    .hero-shell {
+      width: min(1220px, 100%);
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 22px;
+      align-items: center;
+    }
+
+    .hero-copy {
+      min-height: 640px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: clamp(32px, 5vw, 62px);
+      border-radius: 42px;
+      background:
+        linear-gradient(135deg, rgba(255,255,255,.80), rgba(255,255,255,.48)),
+        radial-gradient(circle at 12% 12%, rgba(215,166,178,.16), transparent 30%);
+      border: 1px solid rgba(17,19,24,.075);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(18px);
+      position: relative;
+      overflow: hidden;
+      animation: heroRise .95s cubic-bezier(.2,.8,.2,1) both;
+    }
+
+    .hero-copy::before {
+      content: "";
+      position: absolute;
+      right: -90px;
+      top: -100px;
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      background: rgba(215,166,178,.15);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      width: fit-content;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(17,19,24,.055);
+      border: 1px solid rgba(17,19,24,.08);
+      color: #4f5662;
+      font-size: 12px;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      font-weight: 900;
+      margin-bottom: 26px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--rose);
+      box-shadow: 0 0 0 6px rgba(215,166,178,.16);
+    }
+
+    h1 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(56px, 7.4vw, 108px);
+      line-height: .88;
+      letter-spacing: -.06em;
+      color: var(--ink);
+      position: relative;
+      z-index: 2;
+      margin-bottom: 24px;
+    }
+
+    h1 span {
+      display: block;
+      color: transparent;
+      background: linear-gradient(135deg, var(--ink), #af7180);
+      -webkit-background-clip: text;
+      background-clip: text;
+    }
+
+    .hero-copy p {
+      color: #59616d;
+      line-height: 1.92;
+      font-size: 18px;
+      max-width: 690px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .cta-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 32px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .btn-primary,
+    .btn-secondary,
+    .btn-dark {
+      min-height: 58px;
+      padding: 0 24px;
+      border-radius: 18px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      transition: .3s ease;
+    }
+
+    .btn-primary {
+      background: var(--ink);
+      color: #fff;
+      box-shadow: 0 18px 50px rgba(17,19,24,.18);
+      gap: 10px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn-primary::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, transparent, rgba(215,166,178,.30));
+      opacity: .9;
+      pointer-events: none;
+    }
+
+    .btn-secondary {
+      background: #fff;
+      color: var(--ink);
+      border: 1px solid rgba(17,19,24,.09);
+      box-shadow: 0 14px 38px rgba(17,19,24,.07);
+    }
+
+    .btn-dark {
+      background: #111318;
+      color: #fff;
+    }
+
+    .btn-primary:hover,
+    .btn-secondary:hover,
+    .btn-dark:hover {
+      transform: translateY(-4px);
+    }
+
+    .hero-visual {
+      min-height: 660px;
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 14px;
+      position: relative;
+    }
+
+    .photo-card {
+      border-radius: 32px;
+      overflow: hidden;
+      background: #ddd;
+      position: relative;
+      box-shadow: 0 28px 90px rgba(17,19,24,.18);
+      border: 1px solid rgba(255,255,255,.72);
+      transform: translateZ(0);
+      animation-duration: 6.4s;
+      animation-timing-function: ease-in-out;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      will-change: transform;
+    }
+
+    .photo-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(180deg, transparent 40%, rgba(17,19,24,.38)),
+        radial-gradient(circle at 20% 12%, rgba(255,255,255,.38), transparent 34%);
+      pointer-events: none;
+    }
+
+    .photo-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: .7s ease;
+    }
+
+    .photo-card:hover img { transform: scale(1.06); }
+
+    .photo-main {
+      grid-column: 2;
+      grid-row: 1 / 3;
+      border-radius: 42px;
+    }
+    .photo-mini-1 { grid-column: 1; grid-row: 1; margin-top: 58px; }
+    .photo-mini-2 { grid-column: 1; grid-row: 2; margin-bottom: 54px; }
+
+    .float-a { animation-name: floatA; }
+    .float-b { animation-name: floatB; animation-delay: .5s; }
+    .float-c { animation-name: floatC; animation-delay: .2s; }
+
+    .visual-badge {
+      position: absolute;
+      left: 28px;
+      bottom: 36px;
+      z-index: 3;
+      width: min(330px, 74%);
+      border-radius: 26px;
+      padding: 22px;
+      background: rgba(255,255,255,.86);
+      backdrop-filter: blur(18px);
+      border: 1px solid rgba(17,19,24,.08);
+      box-shadow: 0 20px 70px rgba(17,19,24,.14);
+      animation: badgePulse 4.6s ease-in-out infinite;
+    }
+
+    .visual-badge b {
+      display: block;
+      color: var(--ink);
+      font-size: 13px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .visual-badge span {
+      color: #5f6671;
+      line-height: 1.65;
+      font-size: 14px;
+    }
+
+    .quick-strip {
+      width: min(1180px, calc(100% - 40px));
+      margin: -38px auto 0;
+      position: relative;
+      z-index: 5;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 12px;
+    }
+
+    .quick {
+      min-height: 120px;
+      border-radius: 28px;
+      background: rgba(255,255,255,.90);
+      border: 1px solid rgba(17,19,24,.08);
+      box-shadow: 0 18px 60px rgba(17,19,24,.08);
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      animation: softLift 5.8s ease-in-out infinite alternate;
+    }
+
+    .quick:nth-child(2) { animation-delay: .45s; }
+    .quick:nth-child(3) { animation-delay: .9s; }
+
+    .quick small {
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: .16em;
+      font-weight: 900;
+      font-size: 11px;
+    }
+
+    .quick strong {
+      color: var(--ink);
+      font-size: 17px;
+      line-height: 1.35;
+    }
+
+    .section {
+      padding: 110px 28px;
+      background: var(--milk);
+    }
+
+    .container {
+      width: min(1180px, 100%);
+      margin: 0 auto;
+    }
+
+    .section-head {
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 40px;
+      align-items: end;
+      margin-bottom: 46px;
+    }
+
+    .label {
+      color: #af7180;
+      text-transform: uppercase;
+      letter-spacing: .18em;
+      font-size: 12px;
+      font-weight: 900;
+      margin-bottom: 16px;
+    }
+
+    h2 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(42px, 5.6vw, 88px);
+      line-height: .95;
+      letter-spacing: -.045em;
+      color: var(--ink);
+    }
+
+    .section-head p {
+      color: #68707b;
+      line-height: 1.86;
+      font-size: 16px;
+    }
+
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 14px;
+    }
+
+    .service-card {
+      min-height: 310px;
+      grid-column: span 4;
+      border-radius: 32px;
+      padding: 28px;
+      background: #fff;
+      border: 1px solid rgba(17,19,24,.08);
+      box-shadow: 0 18px 68px rgba(17,19,24,.07);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+      position: relative;
+      transition: .3s ease;
+      isolation: isolate;
+    }
+
+    .service-card:nth-child(1) { grid-column: span 5; }
+    .service-card:nth-child(2) { grid-column: span 4; }
+    .service-card:nth-child(3) { grid-column: span 3; }
+    .service-card:nth-child(4),
+    .service-card:nth-child(5),
+    .service-card:nth-child(6) { grid-column: span 4; }
+
+    .service-card::before {
+      content: "";
+      position: absolute;
+      right: -80px;
+      top: -80px;
+      width: 210px;
+      height: 210px;
+      border-radius: 50%;
+      background: rgba(215,166,178,.15);
+      transition: .3s ease;
+      z-index: -1;
+    }
+
+    .service-card::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 0 0;
+      height: 6px;
+      background: linear-gradient(90deg, var(--rose), var(--champagne), var(--blue));
+      opacity: .76;
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 30px 90px rgba(17,19,24,.13);
+    }
+
+    .service-card:hover::before {
+      transform: scale(1.35);
+    }
+
+    .service-card small {
+      color: #af7180;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      font-size: 11px;
+      font-weight: 900;
+      position: relative;
+      z-index: 2;
+    }
+
+    .service-card h3 {
+      font-size: clamp(27px, 3vw, 44px);
+      line-height: 1;
+      letter-spacing: -.045em;
+      color: var(--ink);
+      position: relative;
+      z-index: 2;
+    }
+
+    .service-card p {
+      color: #68707b;
+      line-height: 1.72;
+      position: relative;
+      z-index: 2;
+    }
+
+    .signature {
+      padding: 110px 28px;
+      background:
+        linear-gradient(135deg, rgba(17,19,24,.92), rgba(17,19,24,.80)),
+        url("https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=1900&q=90") center/cover;
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .signature h2 { color: #fff; }
+
+    .signature-grid {
+      width: min(1180px, 100%);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: .95fr 1.05fr;
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    .signature-copy,
+    .steps {
+      border-radius: 40px;
+      border: 1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.08);
+      backdrop-filter: blur(22px);
+      box-shadow: var(--shadow-strong);
+    }
+
+    .signature-copy {
+      padding: clamp(32px, 5vw, 58px);
+      min-height: 620px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .signature-copy p {
+      color: rgba(255,255,255,.72);
+      line-height: 1.92;
+      max-width: 620px;
+    }
+
+    .steps {
+      padding: 18px;
+      display: grid;
+      gap: 12px;
+    }
+
+    .step {
+      border-radius: 28px;
+      background: rgba(255,255,255,.09);
+      border: 1px solid rgba(255,255,255,.10);
+      padding: 24px;
+      display: grid;
+      grid-template-columns: 72px 1fr;
+      gap: 18px;
+      align-items: center;
+      transition: .3s ease;
+    }
+
+    .step:hover {
+      transform: translateX(8px);
+      background: rgba(255,255,255,.13);
+    }
+
+    .step b {
+      width: 58px;
+      height: 58px;
+      border-radius: 20px;
+      display: grid;
+      place-items: center;
+      background: rgba(255,255,255,.14);
+      color: var(--champagne-2);
+      font-size: 22px;
+    }
+
+    .step h3 {
+      font-size: 23px;
+      margin-bottom: 8px;
+    }
+
+    .step p {
+      color: rgba(255,255,255,.68);
+      line-height: 1.68;
+    }
+
+    .skin-section {
+      padding: 110px 28px;
+      background: var(--paper);
+    }
+
+    .skin-grid {
+      width: min(1180px, 100%);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr .86fr;
+      gap: 18px;
+    }
+
+    .skin-card,
+    .care-card {
+      border-radius: 38px;
+      background: #fff;
+      border: 1px solid rgba(17,19,24,.08);
+      box-shadow: 0 24px 80px rgba(17,19,24,.08);
+      overflow: hidden;
+    }
+
+    .skin-card {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      min-height: 560px;
+    }
+
+    .skin-photo {
+      min-height: 100%;
+      background:
+        linear-gradient(180deg, transparent, rgba(17,19,24,.34)),
+        url("https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=1100&q=90") center/cover;
+    }
+
+    .skin-content,
+    .care-card {
+      padding: clamp(28px, 4.5vw, 52px);
+    }
+
+    .skin-content p,
+    .care-card p {
+      color: #68707b;
+      line-height: 1.86;
+      margin-top: 22px;
+    }
+
+    .care-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 26px;
+    }
+
+    .care-item {
+      padding: 17px;
+      border-radius: 20px;
+      background: #f7f8fa;
+      border: 1px solid rgba(17,19,24,.06);
+      color: #3e4651;
+      line-height: 1.6;
+    }
+
+    .faq {
+      padding: 110px 28px;
+      background: var(--milk);
+    }
+
+    .faq-wrap {
+      width: min(980px, 100%);
+      margin: 0 auto;
+    }
+
+    .faq-head {
+      text-align: center;
+      margin-bottom: 36px;
+    }
+
+    .faq-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    details {
+      border-radius: 24px;
+      background: #fff;
+      border: 1px solid rgba(17,19,24,.08);
+      padding: 22px 24px;
+      box-shadow: 0 16px 54px rgba(17,19,24,.06);
+    }
+
+    summary {
+      cursor: pointer;
+      list-style: none;
+      font-weight: 900;
+      color: var(--ink);
+    }
+
+    summary::-webkit-details-marker { display: none; }
+    details p {
+      margin-top: 14px;
+      color: #68707b;
+      line-height: 1.75;
+    }
+
+    .final {
+      padding: 112px 28px;
+      text-align: center;
+      color: #fff;
+      background:
+        radial-gradient(circle at center, rgba(215,166,178,.25), transparent 42%),
+        linear-gradient(135deg, #111318, #20252d);
+    }
+
+    .final h2 { color: #fff; }
+    .final p {
+      max-width: 780px;
+      margin: 24px auto 32px;
+      color: rgba(255,255,255,.72);
+      line-height: 1.9;
+    }
+
+    footer {
+      background: #0e1117;
+      color: rgba(255,255,255,.62);
+      padding: 54px 28px 30px;
+    }
+
+    .footer-grid {
+      width: min(1180px, 100%);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.15fr .85fr .85fr 1.1fr;
+      gap: 28px;
+      border-top: 1px solid rgba(255,255,255,.10);
+      padding-top: 34px;
+    }
+
+    footer strong {
+      display: block;
+      color: #fff;
+      margin-bottom: 14px;
+    }
+
+    footer a,
+    footer p {
+      display: block;
+      color: rgba(255,255,255,.62);
+      line-height: 1.85;
+      margin-bottom: 7px;
+      font-size: 14px;
+    }
+
+    .demo-note {
+      width: min(1180px, 100%);
+      margin: 30px auto 0;
+      padding-top: 22px;
+      border-top: 1px solid rgba(255,255,255,.08);
+      font-size: 12px;
+      color: rgba(255,255,255,.42);
+      line-height: 1.7;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: .82s cubic-bezier(.2,.8,.2,1);
+    }
+
+    .reveal.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @keyframes heroRise {
+      from { opacity: 0; transform: translateY(22px) scale(.985); filter: blur(10px); }
+      to { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); }
+    }
+
+    @keyframes orbitDrift {
+      from { transform: translate3d(0,0,0) rotate(0deg); }
+      to { transform: translate3d(-34px, 28px,0) rotate(9deg); }
+    }
+
+    @keyframes orbitDriftTwo {
+      from { transform: translate3d(0,0,0) rotate(0deg); }
+      to { transform: translate3d(26px, -22px,0) rotate(-8deg); }
+    }
+
+    @keyframes shineSweep {
+      0%, 100% { opacity: .28; transform: translateX(-50%) scaleX(.62); }
+      50% { opacity: .92; transform: translateX(-50%) scaleX(1); }
+    }
+
+    @keyframes floatA {
+      from { transform: translate3d(0,0,0) rotate(-1.2deg); }
+      to { transform: translate3d(0,-14px,0) rotate(.6deg); }
+    }
+
+    @keyframes floatB {
+      from { transform: translate3d(0,0,0) rotate(1deg); }
+      to { transform: translate3d(0,12px,0) rotate(-.8deg); }
+    }
+
+    @keyframes floatC {
+      from { transform: translate3d(0,0,0) scale(1); }
+      to { transform: translate3d(0,-10px,0) scale(1.012); }
+    }
+
+    @keyframes badgePulse {
+      0%, 100% { transform: translateY(0); box-shadow: 0 20px 70px rgba(17,19,24,.14); }
+      50% { transform: translateY(-7px); box-shadow: 0 26px 86px rgba(17,19,24,.18); }
+    }
+
+    @keyframes softLift {
+      from { transform: translateY(0); }
+      to { transform: translateY(-8px); }
+    }
+
+    @keyframes whatsappBreath {
+      0%, 100% { transform: translateY(0) scale(1); }
+      50% { transform: translateY(-3px) scale(1.018); }
+    }
+
+    @keyframes waRing {
+      0% { opacity: 0; transform: scale(.92); }
+      38% { opacity: .55; transform: scale(1); }
+      100% { opacity: 0; transform: scale(1.16); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+      }
+    }
+
+    @media (max-width: 1040px) {
+      .topbar {
+        grid-template-columns: 1fr auto;
+      }
+      .desktop-nav { display: none; }
+      .menu-btn { display: inline-flex; }
+      .header-whatsapp { display: none; }
+      .hero-shell,
+      .section-head,
+      .signature-grid,
+      .skin-grid {
+        grid-template-columns: 1fr;
+      }
+      .hero-copy { min-height: auto; }
+      .hero-visual { min-height: 560px; }
+      .quick-strip { grid-template-columns: 1fr 1fr 1fr; }
+      .service-card:nth-child(n) { grid-column: span 6; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .skin-card { grid-template-columns: 1fr; }
+      .skin-photo { min-height: 320px; }
+    }
+
+    @media (max-width: 680px) {
+      .topbar {
+        top: 10px;
+        width: calc(100% - 20px);
+        min-height: 64px;
+        border-radius: 22px;
+        padding: 9px;
+      }
+      .brand-mark { width: 46px; height: 46px; border-radius: 16px; }
+      .brand-text strong {
+        max-width: 160px;
+        font-size: 11px;
+        letter-spacing: .08em;
+      }
+      .brand-text span { display: none; }
+      .header-call,
+      .menu-btn {
+        width: 46px;
+        height: 46px;
+        border-radius: 16px;
+      }
+      .mobile-panel { top: 84px; }
+      .hero {
+        padding: 96px 14px 54px;
+        min-height: auto;
+      }
+      .hero::after {
+        top: 35%;
+        font-size: 70px;
+      }
+      .soft-orbit {
+        opacity: .35;
+        transform: scale(.72);
+      }
+      .shine-line {
+        top: 12%;
+        width: 72vw;
+      }
+      .hero-shell { gap: 14px; }
+      .hero-copy {
+        padding: 30px 22px;
+        border-radius: 32px;
+      }
+      .eyebrow {
+        font-size: 10px;
+        letter-spacing: .08em;
+        margin-bottom: 20px;
+      }
+      h1 {
+        font-size: 50px;
+      }
+      .hero-copy p {
+        font-size: 15px;
+        line-height: 1.76;
+      }
+      .btn-primary,
+      .btn-secondary,
+      .btn-dark {
+        width: 100%;
+        min-height: 54px;
+      }
+      .hero-visual {
+        min-height: auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 180px 230px;
+      }
+      .photo-card {
+        animation: none;
+      }
+      .photo-main {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        border-radius: 30px;
+      }
+      .photo-mini-1,
+      .photo-mini-2 {
+        margin: 0;
+        border-radius: 26px;
+      }
+      .photo-mini-1 { grid-column: 1; grid-row: 1; }
+      .photo-mini-2 { grid-column: 2; grid-row: 1; }
+      .visual-badge {
+        left: 14px;
+        bottom: 14px;
+        width: calc(100% - 28px);
+        border-radius: 22px;
+        padding: 16px;
+        animation: none;
+      }
+      .quick-strip {
+        width: calc(100% - 28px);
+        grid-template-columns: 1fr;
+        margin-top: -24px;
+      }
+      .quick {
+        animation: none;
+      }
+      .section,
+      .signature,
+      .skin-section,
+      .faq,
+      .final {
+        padding: 74px 16px;
+      }
+      .section-head {
+        gap: 18px;
+        margin-bottom: 28px;
+      }
+      h2 { font-size: 40px; }
+      .service-grid { grid-template-columns: 1fr; }
+      .service-card:nth-child(n) { grid-column: auto; }
+      .service-card { min-height: 250px; border-radius: 28px; }
+      .signature-copy,
+      .steps,
+      .skin-card,
+      .care-card {
+        border-radius: 30px;
+      }
+      .signature-copy { min-height: auto; }
+      .step {
+        grid-template-columns: 1fr;
+        border-radius: 24px;
+      }
+      .footer-grid { grid-template-columns: 1fr; }
+      .floating-whatsapp {
+        right: 16px;
+        bottom: 16px;
+        min-width: 58px;
+        width: 58px;
+        height: 58px;
+        padding: 7px;
+        border-radius: 20px;
+        grid-template-columns: 1fr;
+      }
+      .floating-whatsapp .float-text { display: none; }
+      .floating-whatsapp .float-icon {
+        width: 44px;
+        height: 44px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-    <div class="hero">
-        <h1>Fatma Sümer Nail & Beauty</h1>
-        <p>İstanbul, Ümraniye</p>
-        <div class="contact">
-            <p>📍 Çamlık, Şht. Burak Kurtuluş Cd. No:60-74 D:21, 34774 Ümraniye/İstanbul </p>
-            <p>📞 05325986987</p>
-        </div>
-        <p><i>(Bu, geçerli bir API anahtarı olmadığında oluşturulan dummy bir sayfadır.)</i></p>
+  <div class="noise"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Fatma Sümer Nail & Beauty ana sayfa">
+      <span class="brand-mark">FS</span>
+      <span class="brand-text">
+        <strong>Fatma Sümer</strong>
+        <span>Nail & Beauty Studio</span>
+      </span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="Ana menü">
+      <a href="#services">Hizmetler</a>
+      <a href="#signature">Nail Studio</a>
+      <a href="#skin">Cilt Bakımı</a>
+      <a href="#faq">SSS</a>
+    </nav>
+
+    <div class="top-actions">
+      <a class="header-whatsapp" href="https://wa.me/?text=Merhaba%2C%20Fatma%20S%C3%BCmer%20Nail%20%26%20Beauty%20i%C3%A7in%20randevu%20almak%20istiyorum." aria-label="WhatsApp ile randevu al">
+        <span class="wa-icon" aria-hidden="true">
+          <svg viewBox="0 0 32 32" role="img">
+            <path d="M16.04 3.2c-7.03 0-12.74 5.55-12.74 12.4 0 2.19.6 4.33 1.74 6.2L3.2 28.8l7.2-1.78a13.1 13.1 0 0 0 5.64 1.28c7.03 0 12.76-5.55 12.76-12.4S23.07 3.2 16.04 3.2Zm0 22.98c-1.82 0-3.6-.47-5.17-1.36l-.37-.21-4.27 1.06 1.1-4.05-.24-.4a10.28 10.28 0 0 1-1.6-5.52c0-5.68 4.73-10.3 10.55-10.3 5.83 0 10.57 4.62 10.57 10.3s-4.74 10.48-10.57 10.48Zm5.8-7.72c-.32-.16-1.88-.9-2.17-1-.29-.1-.5-.16-.71.16-.21.31-.82 1-.99 1.2-.18.2-.36.23-.67.08-.32-.16-1.34-.48-2.55-1.53-.94-.82-1.58-1.84-1.76-2.15-.18-.31-.02-.48.14-.64.14-.14.32-.36.48-.54.16-.18.21-.31.32-.52.1-.21.05-.39-.03-.54-.08-.16-.71-1.68-.98-2.3-.26-.6-.52-.52-.71-.53h-.61c-.21 0-.55.08-.84.39-.29.31-1.1 1.05-1.1 2.57 0 1.52 1.13 2.99 1.29 3.2.16.21 2.23 3.32 5.4 4.65.75.32 1.34.51 1.8.65.76.23 1.45.2 2 .12.61-.09 1.88-.75 2.14-1.47.26-.72.26-1.34.18-1.47-.08-.13-.29-.21-.61-.36Z"/>
+          </svg>
+        </span>
+        <span class="wa-label"><strong>Randevu Al</strong><small>WhatsApp</small></span>
+      </a>
+      <a class="header-call" href="tel:" aria-label="Fatma Sümer telefon">☎</a>
+      <button class="menu-btn" aria-label="Menüyü aç" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
+  </header>
+
+  <nav class="mobile-panel" id="mobilePanel" aria-label="Mobil menü">
+    <a href="#services">Hizmetler</a>
+    <a href="#signature">Nail Studio</a>
+    <a href="#skin">Cilt Bakımı</a>
+    <a href="#faq">Sık sorulanlar</a>
+    <a href="https://wa.me/?text=Merhaba%2C%20Fatma%20S%C3%BCmer%20Nail%20%26%20Beauty%20i%C3%A7in%20randevu%20almak%20istiyorum.">WhatsApp ile randevu</a>
+  </nav>
+
+  <a class="floating-whatsapp" href="https://wa.me/?text=Merhaba%2C%20Fatma%20S%C3%BCmer%20Nail%20%26%20Beauty%20i%C3%A7in%20randevu%20almak%20istiyorum." aria-label="WhatsApp ile randevu al">
+    <span class="float-icon" aria-hidden="true">
+      <svg viewBox="0 0 32 32" role="img">
+        <path d="M16.04 3.2c-7.03 0-12.74 5.55-12.74 12.4 0 2.19.6 4.33 1.74 6.2L3.2 28.8l7.2-1.78a13.1 13.1 0 0 0 5.64 1.28c7.03 0 12.76-5.55 12.76-12.4S23.07 3.2 16.04 3.2Zm0 22.98c-1.82 0-3.6-.47-5.17-1.36l-.37-.21-4.27 1.06 1.1-4.05-.24-.4a10.28 10.28 0 0 1-1.6-5.52c0-5.68 4.73-10.3 10.55-10.3 5.83 0 10.57 4.62 10.57 10.3s-4.74 10.48-10.57 10.48Zm5.8-7.72c-.32-.16-1.88-.9-2.17-1-.29-.1-.5-.16-.71.16-.21.31-.82 1-.99 1.2-.18.2-.36.23-.67.08-.32-.16-1.34-.48-2.55-1.53-.94-.82-1.58-1.84-1.76-2.15-.18-.31-.02-.48.14-.64.14-.14.32-.36.48-.54.16-.18.21-.31.32-.52.1-.21.05-.39-.03-.54-.08-.16-.71-1.68-.98-2.3-.26-.6-.52-.52-.71-.53h-.61c-.21 0-.55.08-.84.39-.29.31-1.1 1.05-1.1 2.57 0 1.52 1.13 2.99 1.29 3.2.16.21 2.23 3.32 5.4 4.65.75.32 1.34.51 1.8.65.76.23 1.45.2 2 .12.61-.09 1.88-.75 2.14-1.47.26-.72.26-1.34.18-1.47-.08-.13-.29-.21-.61-.36Z"/>
+      </svg>
+    </span>
+    <span class="float-text"><strong>Randevu</strong><small>WhatsApp</small></span>
+  </a>
+
+  <main id="top">
+    <section class="hero" aria-label="Fatma Sümer Nail & Beauty giriş alanı">
+      <div class="soft-orbit orbit-one" aria-hidden="true"></div>
+      <div class="soft-orbit orbit-two" aria-hidden="true"></div>
+      <div class="shine-line" aria-hidden="true"></div>
+
+      <div class="hero-shell">
+        <article class="hero-copy reveal show">
+          <div class="eyebrow">Nail Studio · Beauty Care · Skin Rituals</div>
+          <h1>Tırnakta imza, <span>ciltte ışıltı.</span></h1>
+          <p>
+            Fatma Sümer Nail & Beauty; protez tırnak, kalıcı oje ve nail art ağırlıklı premium stüdyo deneyimini; leke bakımı, anti-aging ve cilt bakımıyla tamamlayan modern bir güzellik rotası sunar.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn-primary" href="https://wa.me/?text=Merhaba%2C%20Fatma%20S%C3%BCmer%20Nail%20%26%20Beauty%20i%C3%A7in%20randevu%20almak%20istiyorum.">WhatsApp’tan Randevu Al</a>
+            <a class="btn-secondary" href="#services">Hizmetleri incele</a>
+          </div>
+        </article>
+
+        <section class="hero-visual reveal show" aria-label="Fatma Sümer görsel atmosfer">
+          <figure class="photo-card photo-mini-1 float-a">
+            <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=900&q=90" alt="Nail art ve bakımlı tırnak uygulaması" />
+          </figure>
+          <figure class="photo-card photo-mini-2 float-b">
+            <img src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=900&q=90" alt="Cilt bakımı ve anti-aging güzellik deneyimi" />
+          </figure>
+          <figure class="photo-card photo-main float-c">
+            <img src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?auto=format&fit=crop&w=1200&q=90" alt="Premium nail studio atmosferi" />
+          </figure>
+
+          <div class="visual-badge">
+            <b>Fatma Sümer imzası</b>
+            <span>Tırnak tasarımındaki detay hissi, cilt bakımındaki temiz ve aydınlık görünümle birleşir.</span>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="quick-strip" aria-label="Fatma Sümer kısa bilgiler">
+      <div class="quick reveal show"><small>Odak</small><strong>Nail art, protez tırnak ve kalıcı oje</strong></div>
+      <div class="quick reveal show"><small>Beauty</small><strong>Leke, anti-aging ve cilt bakımı</strong></div>
+      <div class="quick reveal show"><small>Deneyim</small><strong>Temiz, zarif ve kişiye özel bakım rotası</strong></div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-head reveal show">
+          <div>
+            <div class="label">Hizmet menüsü</div>
+            <h2>Nail ağırlıklı, beauty ile tamamlanan premium bakım.</h2>
+          </div>
+          <p>
+            Fatma Sümer Nail & Beauty için hizmet dili tırnak stüdyosu odağında kuruldu. Nail art, protez tırnak ve kalıcı oje ana vitrini oluştururken; leke bakımı, anti-aging ve cilt bakımı markanın beauty tarafını güçlendirir.
+          </p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card reveal show">
+            <small>01 · Nail</small>
+            <h3>Protez Tırnak</h3>
+            <p>El formuna ve stile göre planlanan, daha uzun, düzenli ve bakımlı tırnak görünümü.</p>
+          </article>
+
+          <article class="service-card reveal show">
+            <small>02 · Renk</small>
+            <h3>Kalıcı Oje</h3>
+            <p>Günlük yaşamda daha uzun süre temiz, parlak ve düzenli görünen tırnak rengi deneyimi.</p>
+          </article>
+
+          <article class="service-card reveal show">
+            <small>03 · Tasarım</small>
+            <h3>Nail Art</h3>
+            <p>Minimal çizgilerden özel detaylara kadar kişisel stile uyum sağlayan tırnak tasarımları.</p>
+          </article>
+
+          <article class="service-card reveal show">
+            <small>04 · Bakım</small>
+            <h3>Manikür & Pedikür</h3>
+            <p>Tırnak ve el-ayak bakımında daha temiz, sağlıklı ve özenli bir görünüm hedefleyen uygulamalar.</p>
+          </article>
+
+          <article class="service-card reveal show">
+            <small>05 · Cilt</small>
+            <h3>Leke Bakımı</h3>
+            <p>Cilt tonunu daha dengeli ve aydınlık göstermeye yardımcı bakım yaklaşımı.</p>
+          </article>
+
+          <article class="service-card reveal show">
+            <small>06 · Işıltı</small>
+            <h3>Anti-aging Bakım</h3>
+            <p>Cildin daha canlı, bakımlı ve taze görünmesini destekleyen kişisel bakım ritüeli.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="signature" id="signature">
+      <div class="signature-grid">
+        <article class="signature-copy reveal show">
+          <div>
+            <div class="label">Nail Studio Deneyimi</div>
+            <h2>Her tırnak, küçük bir imza gibi görünmeli.</h2>
+          </div>
+          <p>
+            Nail tarafında amaç yalnızca renk seçmek değil; el formuna, günlük stile ve kişinin istediği görünüme göre daha bütünlüklü bir tasarım oluşturmaktır. Bu yüzden protez tırnak, kalıcı oje ve nail art hizmetleri birer hızlı işlem değil, stil tamamlayıcı bir bakım deneyimi olarak ele alınır.
+          </p>
+        </article>
+
+        <div class="steps">
+          <article class="step reveal show"><b>1</b><div><h3>Form seçimi</h3><p>Tırnak uzunluğu, şekli ve günlük kullanım beklentisi netleştirilir.</p></div></article>
+          <article class="step reveal show"><b>2</b><div><h3>Renk ve tasarım</h3><p>Minimal, şık, nude, parlak ya da özel tasarım seçenekleri birlikte değerlendirilir.</p></div></article>
+          <article class="step reveal show"><b>3</b><div><h3>Özenli uygulama</h3><p>Temiz görünüm, simetri ve kalıcılık hissi öncelikli tutulur.</p></div></article>
+          <article class="step reveal show"><b>4</b><div><h3>Bakım önerisi</h3><p>Sonraki randevu, kullanım ve bakım önerileri anlaşılır şekilde paylaşılır.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="skin-section" id="skin">
+      <div class="skin-grid">
+        <article class="skin-card reveal show">
+          <div class="skin-photo" aria-hidden="true"></div>
+          <div class="skin-content">
+            <div class="label">Beauty Care</div>
+            <h2>Cilt tarafında temiz, aydınlık ve taze bir görünüm.</h2>
+            <p>
+              Fatma Sümer Nail & Beauty’nin beauty tarafı; cilt bakımı, leke görünümüne yönelik bakım ve anti-aging odaklı ritüellerle nail studio deneyimini tamamlar. Böylece müşteri yalnızca tırnak için değil, bütün görünümünü daha özenli hissetmek için de gelebilir.
+            </p>
+            <div class="cta-row">
+              <a class="btn-dark" href="https://wa.me/?text=Merhaba%2C%20Fatma%20S%C3%BCmer%20Nail%20%26%20Beauty%20cilt%20bak%C4%B1m%C4%B1%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum.">Cilt bakımı için yaz</a>
+            </div>
+          </div>
+        </article>
+
+        <aside class="care-card reveal show">
+          <div class="label">Hızlı bilgi</div>
+          <h2>Fatma Sümer Nail & Beauty nedir?</h2>
+          <p>
+            Nail art, protez tırnak ve kalıcı oje odağını; cilt bakımı, leke bakımı ve anti-aging bakım hizmetleriyle birleştiren modern bir nail & beauty stüdyosudur.
+          </p>
+
+          <div class="care-list">
+            <div class="care-item"><strong>Nail odağı:</strong> Protez tırnak, kalıcı oje, nail art, manikür ve pedikür.</div>
+            <div class="care-item"><strong>Beauty odağı:</strong> Leke bakımı, anti-aging bakım ve cilt bakımı.</div>
+            <div class="care-item"><strong>Marka hissi:</strong> Zarif, temiz, kadınsı, soft ve premium bakım atmosferi.</div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="faq" id="faq">
+      <div class="faq-wrap">
+        <div class="faq-head reveal show">
+          <div class="label">Sık sorulanlar</div>
+          <h2>Randevu öncesi net cevaplar.</h2>
+        </div>
+
+        <div class="faq-list">
+          <details open class="reveal show">
+            <summary>Fatma Sümer Nail & Beauty hangi hizmetlerde öne çıkar?</summary>
+            <p>Protez tırnak, kalıcı oje, nail art, manikür ve pedikür ana hizmet odağını oluşturur. Bunun yanında cilt bakımı, leke bakımı ve anti-aging bakım hizmetleri de beauty tarafını destekler.</p>
+          </details>
+          <details open class="reveal show">
+            <summary>Nail art hizmeti kişiye özel planlanır mı?</summary>
+            <p>Evet. Tırnak formu, renk tercihi, günlük kullanım ve istenen stile göre sade, şık veya daha dikkat çekici tasarımlar planlanabilir.</p>
+          </details>
+          <details open class="reveal show">
+            <summary>Cilt bakımı tarafında hangi ihtiyaçlara odaklanılır?</summary>
+            <p>Daha temiz, aydınlık, canlı ve bakımlı bir görünüm hedeflenir. Leke görünümü, yorgun cilt hissi ve anti-aging bakım beklentileri için kişisel bakım rotası oluşturulabilir.</p>
+          </details>
+          <details open class="reveal show">
+            <summary>Randevu nasıl alınır?</summary>
+            <p>WhatsApp üzerinden mesaj göndererek protez tırnak, kalıcı oje, nail art veya cilt bakımı için randevu ve bilgi talebi oluşturabilirsiniz.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="final">
+      <div class="container reveal show">
+        <div class="label">Fatma Sümer Nail & Beauty</div>
+        <h2>Bakımlı eller, aydınlık cilt ve sana özel bir güzellik imzası.</h2>
+        <p>Nail ağırlıklı premium güzellik deneyimini cilt bakımıyla tamamlamak istiyorsan, Fatma Sümer Nail & Beauty sana daha zarif, daha temiz ve daha kendine ait bir bakım rotası sunar.</p>
+        <div class="cta-row" style="justify-content:center">
+          <a class="btn-primary" href="https://wa.me/?text=Merhaba%2C%20Fatma%20S%C3%BCmer%20Nail%20%26%20Beauty%20i%C3%A7in%20randevu%20almak%20istiyorum.">WhatsApp’tan Randevu Al</a>
+          <a class="btn-secondary" href="#services">Hizmetleri tekrar incele</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <strong>Fatma Sümer Nail & Beauty</strong>
+        <p>Nail art, protez tırnak, kalıcı oje ve cilt bakımıyla tamamlanan premium güzellik deneyimi.</p>
+      </div>
+      <div>
+        <strong>Nail Hizmetleri</strong>
+        <a href="#services">Protez Tırnak</a>
+        <a href="#services">Kalıcı Oje</a>
+        <a href="#services">Nail Art</a>
+        <a href="#services">Manikür & Pedikür</a>
+      </div>
+      <div>
+        <strong>Beauty</strong>
+        <a href="#skin">Cilt Bakımı</a>
+        <a href="#skin">Leke Bakımı</a>
+        <a href="#skin">Anti-aging Bakım</a>
+      </div>
+      <div>
+        <strong>İletişim</strong>
+        <a href="https://wa.me/?text=Merhaba%2C%20Fatma%20S%C3%BCmer%20Nail%20%26%20Beauty%20i%C3%A7in%20randevu%20almak%20istiyorum.">WhatsApp ile yaz</a>
+        <p>Adres ve telefon bilgisi eklendiğinde bu alan güncellenir.</p>
+      </div>
+    </div>
+
+    <div class="demo-note">
+      Bu web sitesi, Fatma Sümer Nail & Beauty için CBuildTech tarafından demo amaçlı hazırlanmıştır. Tasarım; nail studio odağı, soft premium renk paleti, tırnak tasarımı ve cilt bakımı atmosferinden ilham alınarak hazırlanmıştır.
+    </div>
+  </footer>
+
+  <script>
+    const root = document.documentElement;
+    window.addEventListener('pointermove', (e) => {
+      root.style.setProperty('--x', `${(e.clientX / innerWidth) * 100}%`);
+      root.style.setProperty('--y', `${(e.clientY / innerHeight) * 100}%`);
+    });
+
+    const menuBtn = document.querySelector('.menu-btn');
+    const mobilePanel = document.querySelector('#mobilePanel');
+
+    menuBtn?.addEventListener('click', () => {
+      const isOpen = mobilePanel.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    mobilePanel?.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => {
+        mobilePanel.classList.remove('open');
+        menuBtn?.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        mobilePanel?.classList.remove('open');
+        menuBtn?.setAttribute('aria-expanded', 'false');
+      }
+    });
+
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) entry.target.classList.add('show');
+      });
+    }, { threshold: 0.14 });
+
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+    document.querySelectorAll('.service-card, .quick, .step, .care-item').forEach((card) => {
+      card.addEventListener('pointermove', (e) => {
+        const r = card.getBoundingClientRect();
+        const dx = ((e.clientX - r.left) / r.width - .5) * 8;
+        const dy = ((e.clientY - r.top) / r.height - .5) * -8;
+        card.style.transform = `perspective(800px) rotateY(${dx}deg) rotateX(${dy}deg) translateY(-5px)`;
+      });
+      card.addEventListener('pointerleave', () => card.style.transform = '');
+    });
+  </script>
 </body>
 </html>
