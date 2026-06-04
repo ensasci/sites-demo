@@ -1,58 +1,3132 @@
+<html lang="tr" style="--mx: 62.301587301587304%; --my: 26.85851318944844%;"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sıla Özben Güzellik Salonu - Demo Site</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Inter', sans-serif;
-            background: linear-gradient(135deg, #1f1c2c, #928DAB);
-            color: white;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-height: 100vh;
+  <meta name="description" content="Sıla Özben Güzellik Salonu, İstanbul Ümraniye Atakent’te cilt bakımı, buz lazer epilasyon, kalıcı makyaj, microblading, protez tırnak, saç vitamini ve bölgesel incelme için hizmet verir. Adres: Atakent Güleryüz Sk. No:38. Randevu: 0538 662 71 02.">
+  <meta name="keywords" content="Sıla Özben Güzellik Salonu, Sıla Özben Ümraniye, Ümraniye güzellik salonu, Atakent güzellik salonu, Atakent cilt bakımı, Ümraniye cilt bakımı, Ümraniye buz lazer, Atakent buz lazer, Ümraniye kalıcı makyaj, microblading Ümraniye, protez tırnak Ümraniye, saç vitamini Ümraniye, bölgesel incelme Ümraniye, Güleryüz Sokak güzellik salonu">
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="author" content="Sıla Özben Güzellik Salonu">
+  <meta name="theme-color" content="#22272d">
+  <meta name="geo.region" content="TR-34">
+  <meta name="geo.placename" content="Atakent, Ümraniye, İstanbul">
+  <meta name="format-detection" content="telephone=yes">
+
+  <meta property="og:type" content="business.business">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:title" content="Sıla Özben Güzellik Salonu | Ümraniye Atakent">
+  <meta property="og:description" content="Ümraniye Atakent Güleryüz Sokak’ta cilt bakımı, buz lazer epilasyon, kalıcı makyaj, microblading, protez tırnak, saç vitamini ve bölgesel incelme için Sıla Özben Güzellik Salonu.">
+  <meta property="og:site_name" content="Sıla Özben Güzellik Salonu">
+  <meta property="business:contact_data:locality" content="Ümraniye">
+  <meta property="business:contact_data:region" content="İstanbul">
+  <meta property="business:contact_data:country_name" content="Türkiye">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sıla Özben Güzellik Salonu | Atakent Ümraniye">
+  <meta name="twitter:description" content="Ümraniye Atakent’te profesyonel güzellik ve bakım hizmetleri. Randevu: 0538 662 71 02.">
+
+  <!-- Yayına alınan gerçek domain belli olduğunda canonical URL mutlak adresle güncellenmeli. -->
+
+
+  <title>Sıla Özben Güzellik Salonu | Ümraniye Atakent Güzellik Salonu, Cilt Bakımı ve Buz Lazer</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&amp;family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --dark: #22272d;
+      --dark-2: #2d333a;
+      --dark-3: #3a424b;
+      --cream: #f4ecd9;
+      --paper: #fffaf0;
+      --paper-2: #e6d8bb;
+      --muted: rgba(248,239,229,.66);
+      --text: #25282c;
+      --text-muted: #7d7568;
+      --gold: #d9c34f;
+      --gold-soft: rgba(217,195,79,.22);
+      --rose: #b8a85a;
+      --rose-dark: #817231;
+      --line: rgba(255,255,255,.14);
+      --paper-line: rgba(38,26,24,.12);
+      --shadow: 0 42px 130px rgba(18, 10, 10, .32);
+      --radius: 34px;
+      --mx: 50%;
+      --my: 50%;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Inter, sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    .grain {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 999;
+      opacity: .045;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 260 260' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+    }
+
+    .intro {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      background:
+        radial-gradient(circle at center, rgba(217,195,79,.14), transparent 30%),
+        linear-gradient(135deg, #070404, #130c0d 52%, #070404);
+      display: grid;
+      place-items: center;
+      color: var(--cream);
+      animation: introExit 1.15s ease forwards;
+      animation-delay: 2.55s;
+      pointer-events: none;
+    }
+
+    .intro-inner {
+      width: min(860px, calc(100% - 40px));
+      text-align: center;
+      position: relative;
+    }
+
+    .intro-line {
+      height: 1px;
+      width: 0;
+      margin: 0 auto 30px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+      animation: lineGrow 1.4s ease forwards;
+    }
+
+    .intro-kicker {
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: .22em;
+      font-weight: 900;
+      font-size: 12px;
+      opacity: 0;
+      animation: fadeUp .9s ease forwards;
+      animation-delay: .35s;
+      margin-bottom: 20px;
+    }
+
+    .intro h1 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(46px, 7vw, 112px);
+      line-height: .86;
+      letter-spacing: -.07em;
+      opacity: 0;
+      animation: fadeUp .9s ease forwards;
+      animation-delay: .65s;
+    }
+
+    .intro h1 span {
+      display: block;
+      background: linear-gradient(135deg, #fff5e8, var(--gold), var(--gold));
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .intro-small {
+      margin-top: 28px;
+      color: rgba(248,239,229,.62);
+      opacity: 0;
+      animation: fadeUp .9s ease forwards;
+      animation-delay: 1s;
+    }
+
+    @keyframes lineGrow {
+      to { width: min(540px, 82%); }
+    }
+
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(18px);
+        filter: blur(8px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+      }
+    }
+
+    @keyframes introExit {
+      to {
+        opacity: 0;
+        visibility: hidden;
+        filter: blur(14px);
+      }
+    }
+
+    .hero {
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at var(--mx) var(--my), rgba(217,195,79,.22), transparent 28%),
+        linear-gradient(90deg, rgba(9,6,6,.97), rgba(9,6,6,.50), rgba(9,6,6,.9)),
+        url("https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=2200&q=92") center/cover;
+      color: var(--cream);
+      position: relative;
+      overflow: hidden;
+      display: grid;
+      place-items: center;
+      padding: 34px;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 74% 22%, rgba(217,195,79,.25), transparent 28%),
+        radial-gradient(circle at 20% 70%, rgba(184,168,90,.20), transparent 30%),
+        linear-gradient(115deg, transparent 0%, rgba(255,255,255,.13) 44%, transparent 48%);
+      pointer-events: none;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px),
+        linear-gradient(180deg, rgba(255,255,255,.025) 1px, transparent 1px);
+      background-size: 86px 86px;
+      mask-image: radial-gradient(circle at center, black, transparent 72%);
+      opacity: .5;
+      pointer-events: none;
+    }
+
+    .hero-shell {
+      width: min(1260px, 100%);
+      min-height: calc(100vh - 68px);
+      border: 1px solid rgba(255,255,255,.16);
+      border-radius: 54px;
+      background: rgba(255,255,255,.055);
+      backdrop-filter: blur(22px);
+      box-shadow: 0 46px 140px rgba(0,0,0,.48);
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 1fr 410px;
+      overflow: hidden;
+      transform-style: preserve-3d;
+    }
+
+    .hero-main {
+      padding: clamp(34px, 6vw, 78px);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 42px;
+    }
+
+    .brand-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-weight: 900;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      font-size: 13px;
+    }
+
+    .brand-mark {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background:
+        radial-gradient(circle at 33% 24%, #fff5dd, transparent 21%),
+        linear-gradient(135deg, var(--gold), var(--gold));
+      color: #160e0e;
+      font-family: "Playfair Display", serif;
+      font-size: 24px;
+      font-weight: 900;
+      box-shadow: 0 0 50px rgba(217,195,79,.28);
+    }
+
+    .hero-nav {
+      display: flex;
+      gap: 22px;
+      color: rgba(248,239,229,.66);
+      font-size: 14px;
+    }
+
+    .hero-nav a:hover {
+      color: white;
+    }
+
+    .hero-copy {
+      max-width: 880px;
+    }
+
+    .kicker {
+      color: var(--gold);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: .17em;
+      font-weight: 900;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(58px, 8vw, 132px);
+      line-height: .83;
+      letter-spacing: -.075em;
+      margin-bottom: 28px;
+    }
+
+    .hero h1 span {
+      display: block;
+      background: linear-gradient(135deg, #fff5e8, var(--gold), var(--gold));
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .hero p {
+      max-width: 700px;
+      color: rgba(248,239,229,.74);
+      line-height: 1.85;
+      font-size: 18px;
+      margin-bottom: 32px;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+    }
+
+    .btn-primary,
+    .btn-ghost,
+    .btn-dark {
+      min-height: 54px;
+      padding: 0 23px;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      transition: .3s ease;
+      border: 0;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--gold), #f3dcc0);
+      color: #160f0e;
+      box-shadow: 0 24px 70px rgba(217,195,79,.24);
+    }
+
+    .btn-ghost {
+      color: var(--cream);
+      border: 1px solid rgba(255,255,255,.16);
+      background: rgba(255,255,255,.07);
+      backdrop-filter: blur(16px);
+    }
+
+    .btn-dark {
+      background: var(--dark);
+      color: var(--cream);
+    }
+
+    .btn-primary:hover,
+    .btn-ghost:hover,
+    .btn-dark:hover {
+      transform: translateY(-3px);
+    }
+
+    .hero-side {
+      border-left: 1px solid rgba(255,255,255,.12);
+      background: rgba(9,6,6,.42);
+      padding: 34px;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      gap: 24px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-side::before {
+      content: "";
+      position: absolute;
+      width: 360px;
+      height: 360px;
+      border-radius: 50%;
+      background: rgba(217,195,79,.1);
+      top: -140px;
+      right: -160px;
+      filter: blur(10px);
+    }
+
+    .side-title {
+      font-family: "Playfair Display", serif;
+      font-size: 43px;
+      line-height: .95;
+      letter-spacing: -.04em;
+      position: relative;
+      z-index: 2;
+    }
+
+    .mini-map {
+      border: 1px solid rgba(255,255,255,.13);
+      border-radius: 34px;
+      background:
+        linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px),
+        linear-gradient(180deg, rgba(255,255,255,.04) 1px, transparent 1px);
+      background-size: 42px 42px;
+      position: relative;
+      overflow: hidden;
+      min-height: 360px;
+      isolation: isolate;
+    }
+
+    .mini-map::before {
+      content: "";
+      position: absolute;
+      inset: 28px;
+      border: 1px dashed rgba(217,195,79,.28);
+      border-radius: 999px;
+    }
+
+    .mini-map span {
+      position: absolute;
+      border-radius: 18px;
+      border: 1px solid rgba(255,255,255,.18);
+      background: rgba(255,255,255,.08);
+      display: grid;
+      place-items: center;
+      color: rgba(248,239,229,.75);
+      font-size: 11px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.09);
+    }
+
+    .m1 { left: 10%; top: 10%; width: 42%; height: 26%; }
+    .m2 { right: 9%; top: 14%; width: 34%; height: 34%; }
+    .m3 { left: 12%; bottom: 12%; width: 36%; height: 34%; }
+    .m4 { right: 10%; bottom: 10%; width: 38%; height: 28%; }
+
+    .hero-side-note {
+      color: rgba(248,239,229,.63);
+      line-height: 1.65;
+      font-size: 14px;
+    }
+
+    .section-dark {
+      background:
+        radial-gradient(circle at 22% 8%, rgba(184,168,90,.2), transparent 27%),
+        radial-gradient(circle at 85% 20%, rgba(217,195,79,.16), transparent 26%),
+        linear-gradient(135deg, #090606, #181011 55%, #090606);
+      color: var(--cream);
+    }
+
+    .house-section {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 96px 1fr 460px;
+      position: relative;
+      isolation: isolate;
+    }
+
+    .house-section::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px),
+        linear-gradient(180deg, rgba(255,255,255,.035) 1px, transparent 1px);
+      background-size: 80px 80px;
+      mask-image: radial-gradient(circle at center, black, transparent 78%);
+      opacity: .25;
+      pointer-events: none;
+    }
+
+    .side-rail {
+      border-right: 1px solid var(--line);
+      padding: 28px 16px;
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 5;
+      background: rgba(255,255,255,.025);
+      backdrop-filter: blur(20px);
+    }
+
+    .rail-logo {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background:
+        radial-gradient(circle at 33% 24%, #fff5dd, transparent 21%),
+        linear-gradient(135deg, var(--gold), var(--gold));
+      color: #160e0e;
+      font-family: "Playfair Display", serif;
+      font-size: 22px;
+      font-weight: 900;
+    }
+
+    .vertical {
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      color: rgba(248,239,229,.5);
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .rail-links {
+      display: grid;
+      gap: 11px;
+    }
+
+    .rail-links a {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      border: 1px solid var(--line);
+      display: grid;
+      place-items: center;
+      color: rgba(248,239,229,.68);
+      transition: .3s ease;
+      font-size: 13px;
+    }
+
+    .rail-links a:hover {
+      background: var(--cream);
+      color: var(--dark);
+    }
+
+    .map-area {
+      position: relative;
+      z-index: 2;
+      padding: 42px;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      gap: 28px;
+      min-width: 0;
+      perspective: 1200px;
+    }
+
+    .welcome {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 28px;
+    }
+
+    .welcome h2 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(46px, 5vw, 90px);
+      line-height: .87;
+      letter-spacing: -.065em;
+      max-width: 780px;
+    }
+
+    .welcome p {
+      max-width: 400px;
+      color: var(--muted);
+      line-height: 1.75;
+      padding-top: 30px;
+    }
+
+    .floor-wrap {
+      position: relative;
+      transform-style: preserve-3d;
+      transition: transform .25s ease;
+    }
+
+    .floor {
+      min-height: 670px;
+      border: 1px solid rgba(255,255,255,.16);
+      border-radius: 44px;
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at var(--mx) var(--my), rgba(217,195,79,.18), transparent 32%),
+        linear-gradient(135deg, rgba(255,255,255,.075), rgba(255,255,255,.025)),
+        rgba(255,255,255,.03);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(24px);
+      transform: rotateX(2deg);
+      isolation: isolate;
+    }
+
+    .floor::before {
+      content: "";
+      position: absolute;
+      inset: 26px;
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: 32px;
+      pointer-events: none;
+    }
+
+    .floor::after {
+      content: "";
+      position: absolute;
+      width: 440px;
+      height: 440px;
+      border-radius: 50%;
+      background: rgba(217,195,79,.14);
+      right: -130px;
+      top: -130px;
+      filter: blur(10px);
+      pointer-events: none;
+    }
+
+    .blueprint-line {
+      position: absolute;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(217,195,79,.8), transparent);
+      transform-origin: left center;
+      opacity: .42;
+      z-index: 2;
+    }
+
+    .bl1 { left: 30%; top: 23%; width: 36%; transform: rotate(10deg); }
+    .bl2 { left: 26%; top: 74%; width: 43%; transform: rotate(-12deg); }
+    .bl3 { left: 53%; top: 46%; width: 28%; transform: rotate(8deg); }
+    .bl4 { left: 16%; top: 43%; width: 33%; transform: rotate(26deg); }
+
+    .corridor {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 34%;
+      height: 28%;
+      transform: translate(-50%, -50%);
+      border: 1px dashed rgba(248,239,229,.22);
+      border-radius: 999px;
+      display: grid;
+      place-items: center;
+      color: rgba(248,239,229,.42);
+      font-size: 12px;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      z-index: 1;
+    }
+
+    .active-ray {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      width: 24%;
+      height: 2px;
+      border-radius: 99px;
+      background: linear-gradient(90deg, var(--gold), rgba(217,195,79,.1));
+      transform-origin: left center;
+      transform: rotate(-24deg);
+      opacity: .85;
+      z-index: 2;
+      box-shadow: 0 0 30px rgba(217,195,79,.42);
+      transition: transform .55s cubic-bezier(.2,.8,.2,1), width .55s cubic-bezier(.2,.8,.2,1);
+    }
+
+    .ambient-label {
+      position: absolute;
+      color: rgba(248,239,229,.32);
+      font-size: 11px;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      z-index: 2;
+    }
+
+    .al1 { left: 45%; top: 39%; }
+    .al2 { left: 22%; top: 48%; }
+    .al3 { right: 18%; top: 61%; }
+
+    .room {
+      position: absolute;
+      border: 1px solid rgba(255,255,255,.16);
+      border-radius: 26px;
+      background:
+        linear-gradient(135deg, rgba(255,255,255,.1), rgba(255,255,255,.035));
+      backdrop-filter: blur(16px);
+      cursor: pointer;
+      padding: 19px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+      transition: .45s cubic-bezier(.2,.8,.2,1);
+      z-index: 3;
+      color: var(--cream);
+      text-align: left;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.08);
+    }
+
+    .room::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      opacity: .18;
+      transition: .35s ease;
+      z-index: -2;
+    }
+
+    .room::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent, rgba(0,0,0,.42));
+      z-index: -1;
+    }
+
+    .room:hover,
+    .room.active {
+      transform: translateY(-8px) scale(1.015);
+      border-color: rgba(217,195,79,.72);
+      box-shadow:
+        0 24px 80px rgba(0,0,0,.36),
+        0 0 0 1px rgba(217,195,79,.18),
+        0 0 44px rgba(217,195,79,.16);
+    }
+
+    .room:hover::before,
+    .room.active::before {
+      opacity: .46;
+    }
+
+    .room span {
+      color: var(--gold);
+      font-size: 11px;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      font-weight: 900;
+    }
+
+    .room strong {
+      font-family: "Playfair Display", serif;
+      font-size: 28px;
+      line-height: .95;
+      letter-spacing: -.04em;
+      max-width: 230px;
+    }
+
+    .room small {
+      color: rgba(248,239,229,.64);
+      line-height: 1.45;
+      font-size: 12px;
+      max-width: 230px;
+    }
+
+    .analysis { left: 5%; top: 8%; width: 27%; height: 25%; }
+    .glow { left: 36%; top: 7%; width: 23%; height: 24%; }
+    .silk { right: 5%; top: 11%; width: 25%; height: 29%; }
+    .frame { left: 6%; bottom: 8%; width: 25%; height: 28%; }
+    .sculpt { left: 35%; bottom: 7%; width: 24%; height: 25%; }
+    .nail { right: 7%; bottom: 8%; width: 24%; height: 24%; }
+    .hair { left: 37%; top: 37%; width: 22%; height: 20%; }
+    .mirror-room { right: 7%; top: 44%; width: 23%; height: 21%; }
+
+    .analysis::before { background-image: url("https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=900&q=92"); }
+    .glow::before { background-image: url("https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=900&q=92"); }
+    .silk::before { background-image: url("https://images.unsplash.com/photo-1519415510236-718bdfcd89c8?auto=format&fit=crop&w=900&q=92"); }
+    .frame::before { background-image: url("https://images.unsplash.com/photo-1560750588-73207b1ef5b8?auto=format&fit=crop&w=900&q=92"); }
+    .sculpt::before { background-image: url("https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=900&q=92"); }
+    .nail::before { background-image: url("https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=900&q=92"); }
+    .hair::before { background-image: url("https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=900&q=92"); }
+    .mirror-room::before { background-image: url("https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=900&q=92"); }
+
+    .bottom-info {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 13px;
+    }
+
+    .info-pill {
+      border: 1px solid rgba(255,255,255,.13);
+      border-radius: 22px;
+      padding: 17px;
+      background: rgba(255,255,255,.045);
+      backdrop-filter: blur(16px);
+      transition: .3s ease;
+    }
+
+    .info-pill:hover {
+      transform: translateY(-4px);
+      border-color: rgba(217,195,79,.34);
+    }
+
+    .info-pill span {
+      display: block;
+      color: var(--gold);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: .14em;
+      font-weight: 900;
+      margin-bottom: 8px;
+    }
+
+    .info-pill strong {
+      color: rgba(248,239,229,.9);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    .detail-panel {
+      min-height: 100vh;
+      border-left: 1px solid var(--line);
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.025)),
+        rgba(9,6,6,.75);
+      backdrop-filter: blur(26px);
+      position: sticky;
+      top: 0;
+      z-index: 4;
+      padding: 30px;
+      display: grid;
+      grid-template-rows: auto 235px 1fr auto;
+      gap: 22px;
+      overflow: hidden;
+    }
+
+    .detail-panel::before {
+      content: "";
+      position: absolute;
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      top: -110px;
+      right: -110px;
+      background: rgba(217,195,79,.1);
+      filter: blur(10px);
+      pointer-events: none;
+    }
+
+    .panel-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    .panel-top span {
+      color: var(--gold);
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      font-size: 12px;
+      font-weight: 900;
+    }
+
+    .panel-top button {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.06);
+      color: var(--cream);
+      cursor: pointer;
+      transition: .3s ease;
+    }
+
+    .panel-top button:hover {
+      background: var(--cream);
+      color: var(--dark);
+    }
+
+    .panel-image {
+      border-radius: 30px;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 24px 80px rgba(0,0,0,.24);
+      transition: .5s ease;
+      z-index: 2;
+    }
+
+    .panel-image::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(180deg, transparent, rgba(0,0,0,.5)),
+        linear-gradient(115deg, transparent 0%, rgba(255,255,255,.18) 44%, transparent 50%);
+    }
+
+    .panel-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .panel-content.switching,
+    .panel-image.switching {
+      animation: panelSwitch .55s cubic-bezier(.2,.8,.2,1) both;
+    }
+
+    @keyframes panelSwitch {
+      from {
+        opacity: .25;
+        transform: translateY(16px);
+        filter: blur(8px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+      }
+    }
+
+    .panel-content h2 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(38px, 4vw, 62px);
+      line-height: .88;
+      letter-spacing: -.06em;
+      margin-bottom: 18px;
+    }
+
+    .panel-content p {
+      color: var(--muted);
+      line-height: 1.72;
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    .meta-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 18px;
+    }
+
+    .meta {
+      border-radius: 18px;
+      background: rgba(255,255,255,.055);
+      border: 1px solid rgba(255,255,255,.1);
+      padding: 13px;
+    }
+
+    .meta span {
+      display: block;
+      color: rgba(248,239,229,.46);
+      font-size: 11px;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      font-weight: 900;
+      margin-bottom: 7px;
+    }
+
+    .meta strong {
+      color: rgba(248,239,229,.9);
+      font-size: 13px;
+      line-height: 1.4;
+    }
+
+    .service-list {
+      display: grid;
+      gap: 9px;
+      margin-bottom: 18px;
+    }
+
+    .service-list div {
+      padding: 13px 14px;
+      border-radius: 17px;
+      background: rgba(255,255,255,.055);
+      border: 1px solid rgba(255,255,255,.1);
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 12px;
+      color: rgba(248,239,229,.68);
+      font-size: 13px;
+      line-height: 1.45;
+    }
+
+    .service-list div b {
+      color: var(--cream);
+      font-weight: 800;
+    }
+
+    .panel-note {
+      border-radius: 22px;
+      background: rgba(217,195,79,.1);
+      border: 1px solid rgba(217,195,79,.24);
+      padding: 16px;
+      color: rgba(248,239,229,.72);
+      line-height: 1.6;
+      font-size: 13px;
+    }
+
+    .panel-actions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 11px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .primary,
+    .ghost {
+      border-radius: 999px;
+      min-height: 52px;
+      display: grid;
+      place-items: center;
+      font-weight: 900;
+      transition: .3s ease;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .primary {
+      background: linear-gradient(135deg, var(--gold), #f2dcc1);
+      color: #160e0e;
+    }
+
+    .ghost {
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.06);
+      color: var(--cream);
+    }
+
+    .primary:hover,
+    .ghost:hover {
+      transform: translateY(-3px);
+    }
+
+    .mobile-room-list {
+      display: none;
+    }
+
+    .paper-section {
+      background:
+        radial-gradient(circle at 18% 8%, rgba(184,168,90,.18), transparent 26%),
+        linear-gradient(180deg, var(--cream), #eadbcc);
+      color: var(--text);
+      padding: 112px 0;
+    }
+
+    .container {
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .section-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 34px;
+      margin-bottom: 44px;
+    }
+
+    .section-label {
+      color: var(--rose-dark);
+      font-size: 12px;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      font-weight: 900;
+      margin-bottom: 16px;
+    }
+
+    .section-title {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(42px, 5vw, 84px);
+      line-height: .91;
+      letter-spacing: -.065em;
+      max-width: 800px;
+    }
+
+    .section-desc {
+      color: var(--text-muted);
+      line-height: 1.8;
+      max-width: 430px;
+    }
+
+    .journal {
+      display: grid;
+      grid-template-columns: 1.05fr .95fr;
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    .journal-feature {
+      min-height: 650px;
+      border-radius: 44px;
+      background:
+        linear-gradient(180deg, rgba(13,8,8,.12), rgba(13,8,8,.72)),
+        url("https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&w=1300&q=92") center/cover;
+      color: var(--cream);
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .journal-feature::before {
+      content: "";
+      position: absolute;
+      inset: 26px;
+      border: 1px solid rgba(255,255,255,.15);
+      border-radius: 32px;
+      pointer-events: none;
+    }
+
+    .journal-feature h3 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(44px, 5vw, 78px);
+      line-height: .9;
+      letter-spacing: -.06em;
+      max-width: 600px;
+      margin-bottom: 20px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .journal-feature p {
+      color: rgba(248,239,229,.73);
+      line-height: 1.8;
+      max-width: 560px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .journal-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .journal-card {
+      border-radius: 30px;
+      background: rgba(255,248,238,.76);
+      border: 1px solid var(--paper-line);
+      padding: 28px;
+      display: grid;
+      grid-template-columns: 76px 1fr;
+      gap: 18px;
+      box-shadow: 0 18px 60px rgba(38,26,24,.08);
+      transition: .3s ease;
+    }
+
+    .journal-card:hover {
+      transform: translateX(6px);
+    }
+
+    .journal-card span {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: var(--text);
+      color: var(--gold);
+      font-family: "Playfair Display", serif;
+      font-size: 28px;
+    }
+
+    .journal-card h4 {
+      font-family: "Playfair Display", serif;
+      font-size: 32px;
+      line-height: 1;
+      letter-spacing: -.035em;
+      margin-bottom: 10px;
+    }
+
+    .journal-card p {
+      color: var(--text-muted);
+      line-height: 1.7;
+      font-size: 14px;
+    }
+
+    .care-card-section {
+      background:
+        radial-gradient(circle at 80% 15%, rgba(217,195,79,.18), transparent 28%),
+        linear-gradient(180deg, #eadbcc, var(--paper));
+      padding: 112px 0;
+      color: var(--text);
+    }
+
+    .care-card {
+      border-radius: 48px;
+      border: 1px solid var(--paper-line);
+      background:
+        linear-gradient(90deg, rgba(255,248,238,.8), rgba(255,248,238,.48)),
+        repeating-linear-gradient(0deg, transparent 0 34px, rgba(38,26,24,.035) 35px);
+      box-shadow: var(--shadow);
+      padding: 28px;
+      display: grid;
+      grid-template-columns: 310px 1fr;
+      gap: 18px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .care-card::before {
+      content: "SILA OZBEN";
+      position: absolute;
+      right: -24px;
+      bottom: 18px;
+      font-size: 130px;
+      line-height: 1;
+      font-weight: 900;
+      letter-spacing: -.08em;
+      color: rgba(38,26,24,.045);
+      pointer-events: none;
+    }
+
+    .care-card-cover {
+      border-radius: 36px;
+      background:
+        linear-gradient(135deg, rgba(9,6,6,.92), rgba(9,6,6,.72)),
+        url("https://images.unsplash.com/photo-1596178065887-1198b6148b2b?auto=format&fit=crop&w=900&q=92") center/cover;
+      color: var(--cream);
+      min-height: 620px;
+      padding: 34px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .care-card-cover::after {
+      content: "";
+      position: absolute;
+      inset: 24px;
+      border: 1px solid rgba(217,195,79,.28);
+      border-radius: 26px;
+      pointer-events: none;
+    }
+
+    .care-card-cover h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 54px;
+      line-height: .9;
+      letter-spacing: -.055em;
+      position: relative;
+      z-index: 2;
+    }
+
+    .care-card-cover p {
+      color: rgba(248,239,229,.7);
+      line-height: 1.75;
+      position: relative;
+      z-index: 2;
+    }
+
+    .stamp-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .stamp {
+      min-height: 230px;
+      border: 1px dashed rgba(120,72,66,.34);
+      border-radius: 28px;
+      padding: 24px;
+      background: rgba(255,255,255,.42);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transform: rotate(-1deg);
+      transition: .35s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .stamp:nth-child(even) {
+      transform: rotate(1.2deg);
+    }
+
+    .stamp:hover {
+      transform: rotate(0) translateY(-8px);
+      box-shadow: 0 22px 60px rgba(38,26,24,.11);
+      background: rgba(255,255,255,.64);
+    }
+
+    .stamp::after {
+      content: "ÖZENLİ";
+      position: absolute;
+      right: -18px;
+      bottom: 18px;
+      color: rgba(120,72,66,.08);
+      font-size: 44px;
+      font-weight: 900;
+      transform: rotate(-14deg);
+      pointer-events: none;
+    }
+
+    .stamp small {
+      color: var(--rose-dark);
+      font-size: 12px;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      font-weight: 900;
+    }
+
+    .stamp h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 38px;
+      line-height: .92;
+      letter-spacing: -.045em;
+      margin: 14px 0;
+    }
+
+    .stamp p {
+      color: var(--text-muted);
+      line-height: 1.6;
+      font-size: 14px;
+    }
+
+    .stamp b {
+      font-size: 13px;
+      color: var(--text);
+    }
+
+    .campaign {
+      margin-top: 18px;
+      border-radius: 44px;
+      background:
+        linear-gradient(135deg, rgba(9,6,6,.92), rgba(9,6,6,.55)),
+        url("https://images.unsplash.com/photo-1596178065887-1198b6148b2b?auto=format&fit=crop&w=1500&q=92") center/cover;
+      color: var(--cream);
+      padding: 46px;
+      min-height: 420px;
+      display: flex;
+      align-items: flex-end;
+      box-shadow: var(--shadow);
+    }
+
+    .campaign h3 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(44px, 5vw, 78px);
+      line-height: .9;
+      letter-spacing: -.06em;
+      margin-bottom: 18px;
+    }
+
+    .campaign p {
+      color: rgba(248,239,229,.72);
+      max-width: 680px;
+      line-height: 1.8;
+    }
+
+    .notes-grid {
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 18px;
+    }
+
+    .note-big {
+      min-height: 520px;
+      border-radius: 44px;
+      background:
+        linear-gradient(135deg, rgba(9,6,6,.92), rgba(9,6,6,.56)),
+        url("https://images.unsplash.com/photo-1596178065887-1198b6148b2b?auto=format&fit=crop&w=1300&q=92") center/cover;
+      color: var(--cream);
+      padding: 42px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .note-big::before {
+      content: "";
+      position: absolute;
+      inset: 24px;
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: 34px;
+      pointer-events: none;
+    }
+
+    .note-big h3 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(44px, 5vw, 80px);
+      line-height: .9;
+      letter-spacing: -.06em;
+      max-width: 670px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .note-big p {
+      color: rgba(248,239,229,.72);
+      line-height: 1.8;
+      max-width: 560px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .note-stack {
+      display: grid;
+      gap: 14px;
+    }
+
+    .trust-note {
+      border-radius: 30px;
+      background: var(--paper);
+      border: 1px solid var(--paper-line);
+      padding: 28px;
+      display: grid;
+      grid-template-columns: 60px 1fr;
+      gap: 18px;
+      box-shadow: 0 18px 60px rgba(38,26,24,.08);
+      transition: .3s ease;
+    }
+
+    .trust-note:hover {
+      transform: translateX(6px);
+    }
+
+    .trust-note span {
+      width: 54px;
+      height: 54px;
+      border-radius: 50%;
+      background: var(--paper-2);
+      color: var(--rose-dark);
+      display: grid;
+      place-items: center;
+      font-weight: 900;
+    }
+
+    .trust-note h4 {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+
+    .trust-note p {
+      color: var(--text-muted);
+      line-height: 1.65;
+      font-size: 14px;
+    }
+
+    .appointment {
+      background:
+        radial-gradient(circle at var(--mx) var(--my), rgba(217,195,79,.20), transparent 30%),
+        linear-gradient(90deg, rgba(9,6,6,.95), rgba(9,6,6,.45), rgba(9,6,6,.88)),
+        url("https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=1900&q=92") center/cover;
+      color: var(--cream);
+      padding: 112px 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .appointment-card {
+      min-height: 640px;
+      border-radius: 54px;
+      border: 1px solid rgba(255,255,255,.16);
+      background: rgba(255,255,255,.055);
+      backdrop-filter: blur(20px);
+      box-shadow: 0 42px 130px rgba(0,0,0,.36);
+      padding: clamp(34px, 6vw, 70px);
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 34px;
+      align-items: end;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .appointment-card::before {
+      content: "";
+      position: absolute;
+      inset: 28px;
+      border: 1px solid rgba(255,255,255,.13);
+      border-radius: 38px;
+      pointer-events: none;
+    }
+
+    .appointment h2 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(54px, 7vw, 112px);
+      line-height: .83;
+      letter-spacing: -.075em;
+      margin-bottom: 24px;
+      max-width: 850px;
+    }
+
+    .appointment p {
+      color: rgba(248,239,229,.73);
+      line-height: 1.85;
+      max-width: 620px;
+      font-size: 17px;
+      margin-bottom: 32px;
+    }
+
+    .desk {
+      border-radius: 36px;
+      background: rgba(9,6,6,.48);
+      border: 1px solid rgba(255,255,255,.13);
+      padding: 28px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .desk h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 42px;
+      line-height: 1;
+      letter-spacing: -.045em;
+      margin-bottom: 18px;
+    }
+
+    .desk-row {
+      padding: 17px 0;
+      border-bottom: 1px solid rgba(255,255,255,.11);
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      color: rgba(248,239,229,.7);
+      font-size: 14px;
+    }
+
+    .desk-row:last-child {
+      border-bottom: 0;
+    }
+
+    .desk-row strong {
+      color: var(--cream);
+      text-align: right;
+    }
+
+
+
+    .local-seo-section {
+      background:
+        radial-gradient(circle at 15% 12%, rgba(217,195,79,.16), transparent 28%),
+        linear-gradient(180deg, #fffaf0, #f4ecd9);
+      color: var(--text);
+      padding: 112px 0;
+    }
+
+    .local-grid {
+      display: grid;
+      grid-template-columns: .95fr 1.05fr;
+      gap: 18px;
+      align-items: stretch;
+    }
+
+    .local-card,
+    .faq-card,
+    .answer-card {
+      border: 1px solid var(--paper-line);
+      background: rgba(255,250,240,.82);
+      border-radius: 34px;
+      box-shadow: 0 18px 60px rgba(38,26,24,.08);
+    }
+
+    .local-card {
+      padding: 34px;
+    }
+
+    .local-card h3,
+    .answer-card h3 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(34px, 4vw, 56px);
+      line-height: .95;
+      letter-spacing: -.045em;
+      margin-bottom: 18px;
+    }
+
+    .local-card p,
+    .answer-card p,
+    .faq-card p {
+      color: var(--text-muted);
+      line-height: 1.8;
+      font-size: 15px;
+    }
+
+    .local-list {
+      display: grid;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .local-list li {
+      list-style: none;
+      padding: 16px 18px;
+      border-radius: 20px;
+      background: rgba(34,39,45,.055);
+      border: 1px solid rgba(34,39,45,.08);
+      line-height: 1.55;
+    }
+
+    .local-list b {
+      color: var(--text);
+    }
+
+    .faq-grid {
+      display: grid;
+      gap: 12px;
+    }
+
+    .faq-card {
+      padding: 24px;
+    }
+
+    .faq-card h3 {
+      font-size: 20px;
+      margin-bottom: 9px;
+    }
+
+    .answer-card {
+      padding: 34px;
+      margin-top: 18px;
+    }
+
+    .nearby-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 22px;
+    }
+
+    .nearby-tags span {
+      border: 1px solid rgba(34,39,45,.12);
+      background: rgba(217,195,79,.13);
+      border-radius: 999px;
+      padding: 10px 14px;
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--text);
+    }
+
+    @media (max-width: 940px) { .local-grid { grid-template-columns: 1fr; } }
+
+
+    .demo-notice {
+      background: linear-gradient(135deg, #22272d, #303740);
+      color: rgba(248,239,229,.78);
+      padding: 24px 0;
+      border-top: 1px solid rgba(217,195,79,.24);
+      border-bottom: 1px solid rgba(217,195,79,.18);
+    }
+
+    .demo-notice-inner {
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .demo-notice strong {
+      color: var(--gold);
+    }
+
+    .demo-notice span {
+      display: inline-flex;
+      align-items: center;
+      border: 1px solid rgba(217,195,79,.32);
+      border-radius: 999px;
+      padding: 10px 14px;
+      font-weight: 900;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      font-size: 12px;
+      color: var(--cream);
+      background: rgba(255,255,255,.045);
+    }
+
+    footer {
+      background: var(--dark);
+      color: rgba(248,239,229,.62);
+      padding: 46px 0;
+    }
+
+    .footer-inner {
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+      border-top: 1px solid rgba(255,255,255,.1);
+      padding-top: 34px;
+    }
+
+    footer strong {
+      color: var(--cream);
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(26px);
+      transition: .9s cubic-bezier(.2,.8,.2,1);
+    }
+
+    .reveal.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+
+
+    /* Faz 3: Odalar bölümünde dekoratif katmanların tıklamayı engellemesini önler */
+    .floor::before,
+    .floor::after,
+    .blueprint-line,
+    .corridor,
+    .active-ray,
+    .ambient-label {
+      pointer-events: none !important;
+    }
+
+    .room,
+    .mobile-room {
+      pointer-events: auto !important;
+      touch-action: manipulation;
+      -webkit-tap-highlight-color: transparent;
+      user-select: none;
+      position: absolute;
+      z-index: 20;
+    }
+
+    .mobile-room {
+      position: relative;
+      z-index: 20;
+    }
+
+    .room.active,
+    .mobile-room.active {
+      border-color: rgba(217,195,79,.8);
+      box-shadow:
+        0 24px 80px rgba(0,0,0,.36),
+        0 0 0 1px rgba(217,195,79,.22),
+        0 0 44px rgba(217,195,79,.18);
+    }
+
+    @media (max-width: 1260px) {
+      .house-section {
+        grid-template-columns: 86px 1fr;
+      }
+
+      .detail-panel {
+        grid-column: 1 / -1;
+        min-height: auto;
+        position: relative;
+        grid-template-rows: auto 360px auto auto;
+        border-left: 0;
+        border-top: 1px solid var(--line);
+      }
+
+      .panel-content {
+        max-width: 980px;
+      }
+
+      .hero-shell {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-side {
+        border-left: 0;
+        border-top: 1px solid rgba(255,255,255,.12);
+      }
+
+      .mini-map {
+        min-height: 280px;
+      }
+    }
+
+    @media (max-width: 940px) {
+      .hero {
+        padding: 16px;
+      }
+
+      .hero-shell {
+        border-radius: 34px;
+      }
+
+      .brand-row,
+      .welcome,
+      .section-head,
+      .appointment-card {
+        display: block;
+      }
+
+      .hero-nav {
+        display: none;
+      }
+
+      .hero-main,
+      .hero-side {
+        padding: 28px;
+      }
+
+      .house-section {
+        grid-template-columns: 1fr;
+      }
+
+      .side-rail {
+        display: none;
+      }
+
+      .map-area {
+        padding: 24px;
+      }
+
+      .welcome p {
+        padding-top: 20px;
+      }
+
+      .floor-wrap {
+        display: none;
+      }
+
+      .mobile-room-list {
+        display: grid;
+        gap: 12px;
+      }
+
+      .mobile-room {
+        min-height: 150px;
+        border-radius: 28px;
+        border: 1px solid var(--line);
+        padding: 22px;
+        background:
+          linear-gradient(135deg, rgba(255,255,255,.08), rgba(255,255,255,.03));
+        color: var(--cream);
+        font-family: inherit;
+        text-align: left;
+        cursor: pointer;
+      }
+
+      .mobile-room span {
+        color: var(--gold);
+        text-transform: uppercase;
+        font-size: 11px;
+        letter-spacing: .14em;
+        font-weight: 900;
+        display: block;
+        margin-bottom: 16px;
+      }
+
+      .mobile-room strong {
+        font-family: "Playfair Display", serif;
+        font-size: 34px;
+        display: block;
+        margin-bottom: 12px;
+      }
+
+      .mobile-room small {
+        color: var(--muted);
+        line-height: 1.5;
+      }
+
+      .bottom-info,
+      .journal,
+      .notes-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .care-card {
+        grid-template-columns: 1fr;
+      }
+
+      .stamp-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .section-desc {
+        margin-top: 18px;
+      }
+
+      .journal-feature,
+      .note-big,
+      .care-card-cover {
+        min-height: 480px;
+      }
+
+      .appointment-card {
+        min-height: auto;
+      }
+
+      .desk {
+        margin-top: 32px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .intro h1 {
+        font-size: 52px;
+      }
+
+      .hero h1 {
+        font-size: 58px;
+      }
+
+      .welcome h2,
+      .section-title,
+      .appointment h2 {
+        font-size: 48px;
+      }
+
+      .bottom-info,
+      .journal,
+      .notes-grid,
+      .meta-grid,
+      .panel-actions,
+      .stamp-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .container {
+        width: min(100% - 28px, 1180px);
+      }
+
+      .paper-section,
+      .care-card-section,
+      .appointment {
+        padding: 74px 0;
+      }
+
+      .detail-panel {
+        padding: 22px;
+        grid-template-rows: auto 260px auto auto;
+      }
+
+      .service-list div {
+        grid-template-columns: 1fr;
+      }
+
+      .journal-card {
+        grid-template-columns: 1fr;
+      }
+
+      .campaign {
+        padding: 28px;
+        min-height: 360px;
+      }
+
+      .desk-row {
+        display: block;
+      }
+
+      .desk-row strong {
+        display: block;
+        text-align: left;
+        margin-top: 7px;
+      }
+
+      .care-card {
+        padding: 16px;
+        border-radius: 34px;
+      }
+
+      .care-card-cover,
+      .stamp,
+      .campaign,
+      .journal-feature,
+      .note-big,
+      .appointment-card {
+        border-radius: 30px;
+      }
+    }
+
+    /* Faz 4: Üst sıra oda kartları için kesin tıklama katmanı düzeltmesi */
+    .floor {
+      pointer-events: auto !important;
+    }
+
+    .floor > * {
+      pointer-events: none !important;
+    }
+
+    .floor > .room {
+      pointer-events: auto !important;
+      z-index: 999 !important;
+      cursor: pointer !important;
+      isolation: isolate;
+    }
+
+    .floor > .room * {
+      pointer-events: none !important;
+    }
+
+    .floor > .room::before,
+    .floor > .room::after {
+      pointer-events: none !important;
+    }
+
+    .analysis,
+    .glow,
+    .silk {
+      z-index: 1001 !important;
+    }
+
+  </style>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BeautySalon",
+  "@id": "#sila-ozben-guzellik-salonu",
+  "name": "Sıla Özben Güzellik Salonu",
+  "alternateName": "Sıla Özben",
+  "description": "Ümraniye Atakent’te cilt bakımı, buz lazer epilasyon, kalıcı makyaj, microblading, protez tırnak, saç vitamini ve bölgesel incelme hizmetleri sunan güzellik salonu.",
+  "telephone": "+90 538 662 71 02",
+  "priceRange": "₺₺",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Atakent, Güleryüz Sk. No:38",
+    "postalCode": "34764",
+    "addressLocality": "Ümraniye",
+    "addressRegion": "İstanbul",
+    "addressCountry": "TR"
+  },
+  "areaServed": [
+    "Atakent",
+    "Ümraniye",
+    "İstanbul"
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "08:00",
+      "closes": "18:00"
+    }
+  ],
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "telephone": "+90 538 662 71 02",
+      "contactType": "Randevu",
+      "availableLanguage": [
+        "tr"
+      ]
+    }
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Sıla Özben Güzellik Salonu Hizmetleri",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Cilt Bakımı",
+          "areaServed": "Ümraniye"
         }
-        .hero {
-            margin-top: 100px;
-            padding: 40px;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            text-align: center;
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            max-width: 800px;
-            width: 90%;
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Buz Lazer Epilasyon",
+          "areaServed": "Ümraniye"
         }
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Kalıcı Makyaj ve Microblading",
+          "areaServed": "Ümraniye"
         }
-        p {
-            font-size: 1.2rem;
-            opacity: 0.8;
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Protez Tırnak",
+          "areaServed": "Ümraniye"
         }
-        .contact {
-            margin-top: 30px;
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.2);
-            border-radius: 10px;
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Saç Vitamini",
+          "areaServed": "Ümraniye"
         }
-    </style>
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Bölgesel İncelme",
+          "areaServed": "Ümraniye"
+        }
+      }
+    ]
+  }
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Sıla Özben Güzellik Salonu nerede?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sıla Özben Güzellik Salonu, Atakent, Güleryüz Sk. No:38, 34764 Ümraniye / İstanbul adresindedir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Sıla Özben Güzellik Salonu telefon numarası nedir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Randevu ve bilgi için 0538 662 71 02 numarasından Sıla Özben Güzellik Salonu’na ulaşabilirsiniz."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Sıla Özben Güzellik Salonu hangi hizmetleri sunuyor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cilt bakımı, buz lazer epilasyon, kalıcı makyaj, microblading, protez tırnak, saç vitamini ve bölgesel incelme hizmetleri sunulmaktadır."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ümraniye Atakent’te cilt bakımı için randevu alınabilir mi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Evet. Sıla Özben Güzellik Salonu’nda cilt bakımı için telefon veya WhatsApp üzerinden randevu oluşturabilirsiniz."
+      }
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Ana Sayfa",
+      "item": "#"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Ümraniye Güzellik Salonu",
+      "item": "#house"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Sıla Özben Güzellik Salonu",
+      "item": "#appointment"
+    }
+  ]
+}
+  </script>
 </head>
+
 <body>
-    <div class="hero">
-        <h1>Sıla Özben Güzellik Salonu</h1>
-        <p>İstanbul, Ümraniye</p>
-        <div class="contact">
-            <p>📍 Atakent, Güleryüz Sk. no:38, 34764 Ümraniye/İstanbul </p>
-            <p>📞 05386627102</p>
-        </div>
-        <p><i>(Bu, geçerli bir API anahtarı olmadığında oluşturulan dummy bir sayfadır.)</i></p>
+  <div class="grain"></div>
+
+  <div class="intro">
+    <div class="intro-inner">
+      <div class="intro-line"></div>
+      <div class="intro-kicker">Sıla Özben Güzellik Salonu</div>
+      <h1>Sıla Özben <span>Atakent’te.</span></h1>
+      <div class="intro-small">Güzellik salonu deneyimi</div>
     </div>
-</body>
-</html>
+  </div>
+
+  <section class="hero">
+    <div class="hero-shell reveal show">
+      <div class="hero-main">
+        <div class="brand-row">
+          <a class="brand" href="#">
+            <span class="brand-mark">SÖ</span>
+            <span>Sıla Özben Güzellik Salonu</span>
+          </a>
+
+          <nav class="hero-nav">
+            <a href="#house">Hizmetler</a>
+            <a href="#journal">Deneyim</a>
+            <a href="#care-card">Bakım Kartı</a>
+            <a href="#appointment">Randevu</a>
+          </nav>
+        </div>
+
+        <div class="hero-copy">
+          <div class="kicker">Atakent’te Güzellik & Bakım</div>
+          <h1>
+            Sadece işlem değil,
+            <span>bakımlı hisset.</span>
+          </h1>
+
+          <p>
+            Sıla Özben Güzellik Salonu, Ümraniye Atakent Güleryüz Sokak No:38’de cilt bakımı, buz lazer epilasyon, kalıcı makyaj, microblading, protez tırnak, saç vitamini ve bölgesel incelme hizmetlerini kişiye özel bakım yaklaşımıyla sunar.
+          </p>
+
+          <div class="actions">
+            <a class="btn-primary" href="#house">Hizmetleri keşfet</a>
+            <a class="btn-ghost" href="#appointment">WhatsApp’tan randevu al</a>
+          </div>
+        </div>
+      </div>
+
+      <aside class="hero-side">
+        <div>
+          <div class="kicker">Güzellik Salonu</div>
+          <h2 class="side-title">Hizmet listesi değil, sana özel bakım rotası.</h2>
+        </div>
+
+        <div class="mini-map">
+          <span class="m1">Cilt</span>
+          <span class="m2">Buz Lazer</span>
+          <span class="m3">Kalıcı Makyaj</span>
+          <span class="m4">Bakım Aynası</span>
+        </div>
+
+        <p class="hero-side-note">
+          Her oda farklı bir hizmete değil, farklı bir iyi hissetme haline açılır.
+        </p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="section-dark house-section" id="house">
+    <aside class="side-rail">
+      <a href="#" class="rail-logo">SÖ</a>
+
+      <div class="vertical">Sıla Özben Bakım Rotası</div>
+
+      <div class="rail-links">
+        <a href="tel:+905386627102">☎</a>
+        <a href="https://wa.me/905386627102">W</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=Atakent%20G%C3%BClery%C3%BCz%20Sk.%20No%3A38%20%C3%9Cmraniye%20%C4%B0stanbul">⌖</a>
+      </div>
+    </aside>
+
+    <section class="map-area">
+      <div class="welcome reveal show">
+        <div>
+          <div class="kicker">Bakım Haritası</div>
+          <h2>Bugün hangi bakım alanına geçelim?</h2>
+        </div>
+
+        <p>
+          Bir hizmet seçmek zorunda değilsin. Cildin, tenin, bakışın, saçın, tırnağın ya da bedenin için doğru odayı seç.
+        </p>
+      </div>
+
+      <div class="floor-wrap reveal show" id="floorWrap" style="transform: rotateX(1.15707deg) rotateY(0.861111deg);">
+        <div class="floor" id="floor">
+          <div class="blueprint-line bl1"></div>
+          <div class="blueprint-line bl2"></div>
+          <div class="blueprint-line bl3"></div>
+          <div class="blueprint-line bl4"></div>
+
+          <div class="corridor">Bakım Rotası</div>
+          <div class="active-ray" id="activeRay" style="transform: rotate(42deg); width: 35%;"></div>
+
+          <div class="ambient-label al1">Karşılama</div>
+          <div class="ambient-label al2">Kişisel Analiz</div>
+          <div class="ambient-label al3">Özel Uygulama Hizmetlerı</div>
+
+          <button class="room analysis" data-room="analysis">
+            <span>İlk durak</span>
+            <strong>Sıla Özben Karşılama</strong>
+            <small>Bir kahve eşliğinde ihtiyacını anladığımız ilk oda.</small>
+          </button>
+
+          <button class="room glow" data-room="glow">
+            <span>Cilt</span>
+            <strong>Ümraniye Cilt Bakımı</strong>
+            <small>Sağlıklı ve ışıltılı cilt için bakım alanı.</small>
+          </button>
+
+          <button class="room silk" data-room="silk">
+            <span>Ten</span>
+            <strong>Atakent Buz Lazer</strong>
+            <small>Pürüzsüzlük, konfor ve modern lazer deneyimi.</small>
+          </button>
+
+          <button class="room frame" data-room="frame">
+            <span>Bakış</span>
+            <strong>Kalıcı Makyaj & Microblading</strong>
+            <small>Microblading, dipliner ve dudak renklendirme.</small>
+          </button>
+
+          <button class="room sculpt" data-room="sculpt">
+            <span>Form</span>
+            <strong>Bölgesel İncelme</strong>
+            <small>Vücut hedeflerine göre kişisel bakım planı.</small>
+          </button>
+
+          <button class="room nail active" data-room="nail">
+            <span>Stil</span>
+            <strong>Protez Tırnak</strong>
+            <small>Bakımlı ve estetik tırnak görünümü.</small>
+          </button>
+
+          <button class="room hair" data-room="hair">
+            <span>Saç</span>
+            <strong>Saç Vitamini</strong>
+            <small>Sağlıklı ve güçlü saç hissi için bakım.</small>
+          </button>
+
+          <button class="room mirror-room" data-room="mirror">
+            <span>Son dokunuş</span>
+            <strong>Bakım Aynası</strong>
+            <small>Sonuç burada görünmez, burada hissedilir.</small>
+          </button>
+        </div>
+      </div>
+
+      <div class="mobile-room-list">
+        <button class="mobile-room" data-room="analysis">
+          <span>İlk durak</span>
+          <strong>Sıla Özben Karşılama</strong>
+          <small>Bir kahve eşliğinde ihtiyacını anladığımız ilk oda.</small>
+        </button>
+
+        <button class="mobile-room" data-room="glow">
+          <span>Cilt</span>
+          <strong>Ümraniye Cilt Bakımı</strong>
+          <small>Sağlıklı ve ışıltılı cilt için bakım alanı.</small>
+        </button>
+
+        <button class="mobile-room" data-room="silk">
+          <span>Ten</span>
+          <strong>Atakent Buz Lazer</strong>
+          <small>Pürüzsüzlük, konfor ve modern lazer deneyimi.</small>
+        </button>
+
+        <button class="mobile-room" data-room="frame">
+          <span>Bakış</span>
+          <strong>Kalıcı Makyaj & Microblading</strong>
+          <small>Microblading, dipliner ve dudak renklendirme.</small>
+        </button>
+
+        <button class="mobile-room" data-room="sculpt">
+          <span>Form</span>
+          <strong>Bölgesel İncelme</strong>
+          <small>Vücut hedeflerine göre kişisel bakım planı.</small>
+        </button>
+
+        <button class="mobile-room" data-room="nail">
+          <span>Stil</span>
+          <strong>Protez Tırnak</strong>
+          <small>Bakımlı ve estetik tırnak görünümü.</small>
+        </button>
+
+        <button class="mobile-room" data-room="hair">
+          <span>Saç</span>
+          <strong>Saç Vitamini</strong>
+          <small>Sağlıklı ve güçlü saç hissi için bakım.</small>
+        </button>
+
+        <button class="mobile-room" data-room="mirror">
+          <span>Son dokunuş</span>
+          <strong>Bakım Aynası</strong>
+          <small>Sonuç burada görünmez, burada hissedilir.</small>
+        </button>
+      </div>
+
+      <div class="bottom-info reveal show">
+        <div class="info-pill">
+          <span>Adres</span>
+          <strong>Atakent, Güleryüz Sk. No:38, 34764 Ümraniye / İstanbul</strong>
+        </div>
+
+        <div class="info-pill">
+          <span>Saatler</span>
+          <strong>Cuma 08:00 itibarıyla açık · Güncel saat için arayın</strong>
+        </div>
+
+        <div class="info-pill">
+          <span>İletişim</span>
+          <strong>0538 662 71 02</strong>
+        </div>
+
+        <div class="info-pill">
+          <span>Kampanya</span>
+          <strong>Arkadaşını getir, paket işlemlerde %15 indirim</strong>
+        </div>
+      </div>
+    </section>
+
+    <aside class="detail-panel">
+      <div class="panel-top">
+        <span id="panelKicker">Protez Tırnak</span>
+        <button onclick="nextRoom()">→</button>
+      </div>
+
+      <div class="panel-image switching" id="panelImage" style="background-image: url(&quot;https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&amp;fit=crop&amp;w=1000&amp;q=92&quot;);"></div>
+
+      <div class="panel-content switching" id="panelContent">
+        <h2 id="panelTitle">Protez Tırnak Bar</h2>
+
+        <p id="panelText">Uzun, bakımlı ve estetik tırnak görünümü isteyenler için protez tırnak uygulamaları, güzellik deneyiminin stil tamamlayıcısıdır.</p>
+
+        <div class="meta-grid">
+          <div class="meta">
+            <span>Kimler için?</span>
+            <strong id="panelFor">Bakımlı, uzun ve güçlü tırnak görünümü isteyenler</strong>
+          </div>
+
+          <div class="meta">
+            <span>Ortalama süre</span>
+            <strong id="panelTime">60 - 90 dk</strong>
+          </div>
+
+          <div class="meta">
+            <span>İlk öneri</span>
+            <strong id="panelFirst">Tırnak formu + stil seçimi</strong>
+          </div>
+
+          <div class="meta">
+            <span>Beklenen his</span>
+            <strong id="panelFeeling">Bakımlı, zarif ve tamamlanmış görünüm</strong>
+          </div>
+        </div>
+
+        <div class="service-list" id="serviceList"><div><b>Protez</b><span>Uzun ve estetik tırnak görünümü</span></div><div><b>Form</b><span>El yapısına uygun tırnak şekli belirleme</span></div><div><b>Bakım</b><span>Daha düzenli ve temiz görünüm</span></div></div>
+
+        <div class="panel-note" id="panelNote">Protez tırnak, Sıla Özben’in sık tercih edilen hizmetlerinden biri olarak stil ve bakım hissini tamamlar.</div>
+      </div>
+
+      <div class="panel-actions">
+        <a class="primary" id="waBtn" href="https://wa.me/905386627102?text=Merhaba%2C%20S%C4%B1la%20%C3%96zben%20G%C3%BCzellik%20Salonu%27nda%20randevu%20almak%20istiyorum.">
+          Bu oda için yaz
+        </a>
+
+        <a class="ghost" href="tel:+905386627102">
+          Merkezi ara
+        </a>
+      </div>
+    </aside>
+  </section>
+
+  <section class="paper-section" id="journal">
+    <div class="container">
+      <div class="section-head reveal show">
+        <div>
+          <div class="section-label">Sıla Özben Deneyimi</div>
+          <h2 class="section-title">Dış güzelliğin ötesinde, özgüven hissi.</h2>
+        </div>
+
+        <p class="section-desc">
+          Sıla Özben’in yaklaşımında güven, kalite, dürüstlük ve kişiye özel çözüm merkezdedir. Amaç yalnızca bakım değil; kendini iyi hissetme halini güçlendirmektir.
+        </p>
+      </div>
+
+      <div class="journal">
+        <div class="journal-feature reveal show">
+          <h3>Bakım yalnızca görünüm değil, iyi hissetme atmosferidir.</h3>
+          <p>
+            İçeri girdiğinde hızlı işlem hissi değil; dinlendiğin, anlaşıldığın ve sana özel yönlendirildiğin bir güzellik deneyimi başlar.
+          </p>
+        </div>
+
+        <div class="journal-list">
+          <div class="journal-card reveal show">
+            <span>01</span>
+            <div>
+              <h4>Karşılama</h4>
+              <p>Bir kahve eşliğinde beklentin, ihtiyacın ve nasıl hissetmek istediğin anlaşılır.</p>
+            </div>
+          </div>
+
+          <div class="journal-card reveal show">
+            <span>02</span>
+            <div>
+              <h4>Güven</h4>
+              <p>Her bireyin benzersiz olduğu kabul edilir; bakım rotası kişiye özel planlanır.</p>
+            </div>
+          </div>
+
+          <div class="journal-card reveal show">
+            <span>03</span>
+            <div>
+              <h4>Kalite</h4>
+              <p>Güvenli ve güvenilir bir deneyim için kaliteli ürün ve güncel uygulama yaklaşımı kullanılır.</p>
+            </div>
+          </div>
+
+          <div class="journal-card reveal show">
+            <span>04</span>
+            <div>
+              <h4>Sonuç</h4>
+              <p>Hedef yalnızca iyi görünmek değil; kendini daha özgüvenli ve iyi hissetmektir.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="care-card-section" id="care-card">
+    <div class="container">
+      <div class="section-head reveal show">
+        <div>
+          <div class="section-label">Sıla Özben Bakım Kartı</div>
+          <h2 class="section-title">Hizmet listesi değil, sana özel bakım kartı.</h2>
+        </div>
+
+        <p class="section-desc">
+          Her hizmet bakım kartında kişisel bir adım gibi düşünülür. Cilt, ten, bakış, saç, tırnak ve form için farklı bir bakım durağı.
+        </p>
+      </div>
+
+      <div class="care-card reveal show">
+        <aside class="care-card-cover">
+          <div>
+            <div class="kicker">Bakım Kartı</div>
+            <h3>Bakım adımını seç.</h3>
+          </div>
+
+          <p>
+            Sıla Özben Güzellik Salonu deneyimi; tek bir işlemden değil, sana uygun güzellik rotasının doğru sırayla kurulmasından doğar.
+          </p>
+        </aside>
+
+        <div class="stamp-grid">
+          <article class="stamp">
+            <small>Bakım 01</small>
+            <div>
+              <h3>Cilt Bakımı</h3>
+              <p>Sağlıklı, temiz ve ışıltılı cilt hissi için bakım rotası.</p>
+            </div>
+            <b>Glow Atelier</b>
+          </article>
+
+          <article class="stamp">
+            <small>Bakım 02</small>
+            <div>
+              <h3>Buz Lazer</h3>
+              <p>Pürüzsüzlük, konfor ve modern lazer deneyimi.</p>
+            </div>
+            <b>Silk Studio</b>
+          </article>
+
+          <article class="stamp">
+            <small>Bakım 03</small>
+            <div>
+              <h3>Kalıcı Makyaj</h3>
+              <p>Microblading, dipliner ve dudak renklendirme ile ifade tasarımı.</p>
+            </div>
+            <b>Frame Room</b>
+          </article>
+
+          <article class="stamp">
+            <small>Bakım 04</small>
+            <div>
+              <h3>Protez Tırnak</h3>
+              <p>Bakımlı, zarif ve stil tamamlayıcı tırnak görünümü.</p>
+            </div>
+            <b>Nail Bar</b>
+          </article>
+
+          <article class="stamp">
+            <small>Bakım 05</small>
+            <div>
+              <h3>Saç Vitamini</h3>
+              <p>Sağlıklı ve güçlü saç hissini destekleyen bakım yaklaşımı.</p>
+            </div>
+            <b>Hair Lab</b>
+          </article>
+
+          <article class="stamp">
+            <small>Bakım 06</small>
+            <div>
+              <h3>Bölgesel İncelme</h3>
+              <p>Vücut hedeflerine göre kişisel analiz ve bakım planı.</p>
+            </div>
+            <b>Sculpt Studio</b>
+          </article>
+        </div>
+      </div>
+
+      <div class="campaign reveal show">
+        <div>
+          <div class="section-label" style="color: var(--gold);">Arkadaşını Getir</div>
+          <h3>Bakım paketlerinde özel avantaj.</h3>
+          <p>
+            Daha önce Sıla Özben Güzellik Salonu’ndan hizmet aldıysan, arkadaşınla birlikte dilediğiniz paket işlemlerde %15 indirim fırsatından yararlanabilirsiniz.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="paper-section">
+    <div class="container">
+      <div class="notes-grid">
+        <div class="note-big reveal show">
+          <div class="section-label" style="color: var(--gold);">Organik Bakım Yaklaşımı</div>
+          <h3>Doğal formüller, uzun süreli iyi his.</h3>
+          <p>
+            Organik ürün, sağlıklı yaşam ve uzun süreli kullanım yaklaşımı; cilt, saç ve bakım deneyimini tek seansın ötesine taşır.
+          </p>
+        </div>
+
+        <div class="note-stack">
+          <div class="trust-note reveal show">
+            <span>01</span>
+            <div>
+              <h4>Organik Ürün</h4>
+              <p>Doğal formülasyonlarla sağlıklı ve parlak görünüm hissi desteklenir.</p>
+            </div>
+          </div>
+
+          <div class="trust-note reveal show">
+            <span>02</span>
+            <div>
+              <h4>Sağlıklı Yaşam</h4>
+              <p>Cildin doğal güzelliğini korumaya yardımcı bakım yaklaşımı benimsenir.</p>
+            </div>
+          </div>
+
+          <div class="trust-note reveal show">
+            <span>03</span>
+            <div>
+              <h4>Uzun Süreli Kullanım</h4>
+              <p>Cilt ve saç bakımında sürdürülebilir iyi görünüm hedeflenir.</p>
+            </div>
+          </div>
+
+          <div class="trust-note reveal show">
+            <span>04</span>
+            <div>
+              <h4>Kurumsal Deneyim</h4>
+              <p>Prestijli firmalarla yapılan iş birlikleriyle özel güzellik deneyimi sunulur.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="local-seo-section" id="umraniye-guzellik-salonu" aria-labelledby="localSeoTitle">
+    <div class="container">
+      <div class="section-head reveal show">
+        <div>
+          <div class="section-label">Ümraniye Atakent Güzellik Salonu</div>
+          <h2 class="section-title" id="localSeoTitle">Ümraniye Atakent’te cilt bakımı, buz lazer ve kalıcı makyaj için Sıla Özben.</h2>
+        </div>
+
+        <p class="section-desc">
+          Sıla Özben Güzellik Salonu; Atakent, Güleryüz Sokak No:38 adresinde, Ümraniye, Çakmak, Ihlamurkuyu, Dudullu ve çevresinden gelen misafirlerine kişiye özel güzellik ve bakım hizmetleri sunar.
+        </p>
+      </div>
+
+      <div class="local-grid">
+        <article class="local-card reveal show">
+          <h3>Yerel aramalarda net cevap.</h3>
+          <p>
+            “Ümraniye güzellik salonu”, “Atakent güzellik salonu”, “Atakent cilt bakımı”, “Ümraniye buz lazer”, “Ümraniye kalıcı makyaj”, “microblading Ümraniye” ve “Atakent protez tırnak” aramalarında ihtiyaç duyulan bilgiler; açık adres, telefon, WhatsApp, hizmet kapsamı, çalışma saatleri ve randevu yönlendirmesiyle bu sayfada net şekilde yer alır.
+          </p>
+
+          <ul class="local-list">
+            <li><b>Adres:</b> Atakent, Güleryüz Sk. No:38, 34764 Ümraniye / İstanbul</li>
+            <li><b>Telefon / WhatsApp:</b> <a href="tel:+905386627102">0538 662 71 02</a></li>
+            <li><b>Hizmetler:</b> Cilt bakımı, buz lazer epilasyon, kalıcı makyaj, microblading, protez tırnak, saç vitamini ve bölgesel incelme</li>
+            <li><b>Randevu:</b> Telefon veya WhatsApp üzerinden hızlıca bilgi alınabilir.</li>
+          </ul>
+
+          <div class="nearby-tags" aria-label="Hizmet bölgesi">
+            <span>Atakent</span>
+            <span>Ümraniye</span>
+            <span>İstanbul</span>
+            <span>Çakmak</span>
+            <span>Ihlamurkuyu</span>
+            <span>Dudullu</span>
+            <span>Güzellik Salonu</span>
+            <span>Cilt Bakımı</span>
+            <span>Buz Lazer</span>
+          </div>
+        </article>
+
+        <div class="faq-grid" aria-label="Sık sorulan sorular">
+          <article class="faq-card reveal show">
+            <h3>Sıla Özben Güzellik Salonu nerede?</h3>
+            <p>Atakent, Güleryüz Sk. No:38, 34764 Ümraniye / İstanbul adresinde hizmet verir.</p>
+          </article>
+
+          <article class="faq-card reveal show">
+            <h3>Hangi güzellik hizmetleri var?</h3>
+            <p>Cilt bakımı, buz lazer epilasyon, kalıcı makyaj, microblading, protez tırnak, saç vitamini ve bölgesel incelme hizmetleri; Atakent Ümraniye lokasyonunda randevu ile sunulur.</p>
+          </article>
+
+          <article class="faq-card reveal show">
+            <h3>Randevu nasıl alınır?</h3>
+            <p>0538 662 71 02 numarasını arayarak veya WhatsApp üzerinden yazarak randevu ve hizmet bilgisi alınabilir.</p>
+          </article>
+
+          <article class="faq-card reveal show">
+            <h3>Ümraniye Atakent çevresinden ulaşım kolay mı?</h3>
+            <p>Salon Atakent’te, Güleryüz Sokak üzerinde konumlandığı için Ümraniye ve çevresinden gelen misafirler için kolay ulaşılabilir bir noktadadır.</p>
+          </article>
+        </div>
+      </div>
+
+      <article class="answer-card reveal show">
+        <h3>Yapay zekâ cevapları için kısa özet</h3>
+        <p>
+          Sıla Özben Güzellik Salonu, İstanbul Ümraniye Atakent Güleryüz Sokak No:38’de bulunan bir güzellik salonudur. Cilt bakımı, buz lazer epilasyon, kalıcı makyaj, microblading, protez tırnak, saç vitamini ve bölgesel incelme hizmetleri sunar. Salon; Atakent, Çakmak, Ihlamurkuyu, Dudullu ve Ümraniye çevresinden gelen misafirler için kolay ulaşılabilir konumdadır. Telefon ve WhatsApp numarası 0538 662 71 02’dir.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section class="appointment" id="appointment">
+    <div class="container">
+      <div class="appointment-card reveal show">
+        <div>
+          <div class="kicker">Randevu Bilgileri</div>
+          <h2>Ümraniye Atakent’te güzellik randevunu oluştur.</h2>
+          <p>
+            Cilt bakımı, buz lazer, kalıcı makyaj, microblading, protez tırnak, saç vitamini veya bölgesel incelme için bilgi almak istersen Sıla Özben Güzellik Salonu’na telefon ya da WhatsApp üzerinden ulaşabilirsin.
+          </p>
+
+          <div class="actions">
+            <a class="btn-primary" href="https://wa.me/905386627102?text=Merhaba%2C%20S%C4%B1la%20%C3%96zben%20G%C3%BCzellik%20Salonu%27nda%20randevu%20almak%20istiyorum.">
+              WhatsApp’tan yaz
+            </a>
+
+            <a class="btn-ghost" href="tel:+905386627102">0538 662 71 02</a>
+            <a class="btn-ghost" href="https://www.google.com/maps/search/?api=1&query=Atakent%20G%C3%BClery%C3%BCz%20Sk.%20No%3A38%20%C3%9Cmraniye%20%C4%B0stanbul">Konumu gör</a>
+          </div>
+        </div>
+
+        <aside class="desk">
+          <h3>Randevu Masası</h3>
+
+          <div class="desk-row">
+            <span>Çalışma saatleri</span>
+            <strong>Pzt - Cmt 08:00 - 18:00</strong>
+          </div>
+
+          <div class="desk-row">
+            <span>Pazar</span>
+            <strong>Kapalı</strong>
+          </div>
+
+          <div class="desk-row">
+            <span>Adres</span>
+            <strong>Atakent, Güleryüz Sk. No:38, 34764 Ümraniye / İstanbul</strong>
+          </div>
+
+          <div class="desk-row">
+            <span>Telefon</span>
+            <strong>0538 662 71 02</strong>
+          </div>
+
+          <div class="desk-row">
+            <span>WhatsApp</span>
+            <strong>0538 662 71 02</strong>
+          </div>
+
+          <div class="desk-row">
+            <span>E-posta</span>
+            <strong>Telefon veya WhatsApp üzerinden ulaşabilirsiniz</strong>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="demo-notice" aria-label="Demo site bilgilendirmesi">
+    <div class="demo-notice-inner">
+      <p>
+        Bu web sitesi, <strong>Sıla Özben Güzellik Salonu</strong> için <strong>CBuildTech</strong> tarafından demo amaçlı hazırlanmıştır.
+      </p>
+      <span>CBuildTech Demo</span>
+    </div>
+  </section>
+
+  <footer aria-label="Sıla Özben Güzellik Salonu iletişim bilgileri">
+    <div class="footer-inner">
+      <div>
+        <strong>Sıla Özben Güzellik Salonu</strong>
+        <br>
+        Atakent’te Güzellik & Bakım.
+      </div>
+
+      <div>
+        Cilt Bakımı · Kalıcı Makyaj · Buz Lazer · Protez Tırnak · Saç Vitamini
+      </div>
+
+      <div>
+        Atakent, Güleryüz Sk. No:38, 34764 Ümraniye / İstanbul · 0538 662 71 02
+        <br><small>Demo tasarım: CBuildTech</small>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const rooms = {
+      analysis: {
+        kicker: "Sıla Özben Karşılama",
+        title: "Sıla Özben Güzellik Salonu",
+        text: "Sıla Özben Güzellik Salonu’nda ilk adım, hangi işlemi yaptıracağını seçmek değil; kendini nasıl hissetmek istediğini anlamaktır.",
+        image: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1000&q=92",
+        forText: "İlk kez gelenler ve nereden başlayacağını bilmeyenler",
+        time: "20 - 30 dk",
+        first: "Kişisel güzellik danışmanlığı",
+        feeling: "Güven, netlik ve Sıla Özben özeni",
+        ray: "-142deg",
+        width: "31%",
+        services: [
+          ["Karşılama", "Bir kahve eşliğinde ihtiyaç ve beklenti analizi"],
+          ["Yönlendirme", "Cilt, ten, bakış, saç veya vücut ihtiyacına göre rota"],
+          ["Planlama", "Sana uygun ilk bakım ritüelinin belirlenmesi"]
+        ],
+        note: "Sıla Özben Güzellik Salonu kalite güvencesiyle, bir kahve eşliğinde tüm sorularınızı yanıtlamaktan mutluluk duyar.",
+        message: "Merhaba, Sıla Özben Güzellik Salonu’nda kişisel güzellik danışmanlığı almak istiyorum."
+      },
+
+      glow: {
+        kicker: "Cilt Bakımı",
+        title: "Ümraniye Cilt Bakımı",
+        text: "Ümraniye Atakent’te cilt bakımı arayanlar için Sıla Özben Güzellik Salonu; temiz, sağlıklı ve ışıltılı cilt görünümünü kişiye özel bakım yaklaşımıyla destekler.",
+        image: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&w=1000&q=92",
+        forText: "Mat, yorgun, nemsiz veya bakıma ihtiyaç duyan ciltler",
+        time: "45 - 60 dk",
+        first: "Cilt analizi + profesyonel bakım",
+        feeling: "Temiz, canlı ve dinlenmiş cilt hissi",
+        ray: "-86deg",
+        width: "29%",
+        services: [
+          ["Cilt Bakımı", "Sağlıklı ve ışıltılı cilt için düzenli bakım"],
+          ["Anti Aging", "Yaşlanma etkilerine karşı bakım yaklaşımı"],
+          ["Leke / Akne", "Cilt ihtiyacına göre uzman yönlendirme"]
+        ],
+        note: "Düzenli cilt bakımı ve günlük cilt temizliği, sağlıklı ve ışıltılı bir cildin önemli parçalarındandır.",
+        message: "Merhaba, Sıla Özben Güzellik Salonu cilt bakımı için randevu almak istiyorum."
+      },
+
+      silk: {
+        kicker: "Buz Lazer",
+        title: "Atakent Buz Lazer",
+        text: "Buz lazer epilasyon, pürüzsüzlük hissini daha konforlu, hızlı ve modern bir deneyime dönüştürür.",
+        image: "https://images.unsplash.com/photo-1519415510236-718bdfcd89c8?auto=format&fit=crop&w=1000&q=92",
+        forText: "Pürüzsüzlük, konfor ve düzenli takip isteyenler",
+        time: "20 - 45 dk",
+        first: "Bölge analizi + seans planı",
+        feeling: "Hafiflik, rahatlık ve temiz ten hissi",
+        ray: "-24deg",
+        width: "36%",
+        services: [
+          ["Buz Lazer", "Acısız, hızlı ve modern lazer deneyimi yaklaşımı"],
+          ["Bölge Planı", "İhtiyaca göre bölge ve seans aralığı belirleme"],
+          ["Takip", "Süreç boyunca düzenli yönlendirme"]
+        ],
+        note: "Buz lazer epilasyon, Sıla Özben’in en sık tercih edilen modern hizmetlerinden biri olarak öne çıkar.",
+        message: "Merhaba, Sıla Özben Güzellik Salonu Buz Lazer Epilasyon için bilgi almak istiyorum."
+      },
+
+      frame: {
+        kicker: "Kalıcı Makyaj",
+        title: "Kalıcı Makyaj & Microblading Odası",
+        text: "Yüz ifadesini güçlendiren kalıcı makyaj, microblading, dipliner, dudak renklendirme ve kaş laminasyonu uygulamaları bu odada bir araya gelir.",
+        image: "https://images.unsplash.com/photo-1560750588-73207b1ef5b8?auto=format&fit=crop&w=1000&q=92",
+        forText: "Bakışını, kaş formunu veya yüz ifadesini güçlendirmek isteyenler",
+        time: "45 - 90 dk",
+        first: "Yüz oranı + ifade analizi",
+        feeling: "Daha belirgin, bakımlı ve kendinden emin ifade",
+        ray: "143deg",
+        width: "33%",
+        services: [
+          ["Kalıcı Makyaj", "Özel pigmentlerle uzun süreli estetik görünüm"],
+          ["Microblading", "Kaş formunu doğal şekilde belirginleştirme"],
+          ["Dipliner", "Bakışa daha net ve güçlü ifade kazandırma"],
+          ["Dudak", "Dudak renklendirme ile daha canlı görünüm"]
+        ],
+        note: "Amaç yapay bir değişim değil; kişinin mevcut yüz ifadesini daha rafine ve bakımlı hale getirmektir.",
+        message: "Merhaba, Sıla Özben Güzellik Salonu kalıcı makyaj ve microblading uygulamaları için bilgi almak istiyorum."
+      },
+
+      sculpt: {
+        kicker: "Bölgesel İncelme",
+        title: "Bölgesel İncelme",
+        text: "Vücudun belirli bölgelerindeki yağlanma ve selülit gibi ihtiyaçlara karşı kişiye özel bölgesel incelme yaklaşımı sunulur.",
+        image: "https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=1000&q=92",
+        forText: "Bölgesel yağlanma, selülit veya form hedefi olanlar",
+        time: "30 - 60 dk",
+        first: "Vücut analizi + hedef planı",
+        feeling: "Daha fit, daha şekilli ve özgüvenli duruş",
+        ray: "95deg",
+        width: "29%",
+        services: [
+          ["Bölgesel", "Hedef bölgeye göre kişiye özel bakım planı"],
+          ["Kavitasyon", "Bölgesel görünüm hedeflerine destek"],
+          ["Radyofrekans", "Sıkılaşma hissini destekleyen yaklaşım"],
+          ["Vakum Terapi", "Bölgesel bakım sürecini destekleyen uygulama"]
+        ],
+        note: "Bölgesel incelme odası, kişiye özel plan ve modern uygulama yaklaşımıyla kurgulanır.",
+        message: "Merhaba, Sıla Özben Güzellik Salonu bölgesel incelme için görüşme almak istiyorum."
+      },
+
+      nail: {
+        kicker: "Protez Tırnak",
+        title: "Protez Tırnak",
+        text: "Uzun, bakımlı ve estetik tırnak görünümü isteyenler için protez tırnak uygulamaları, güzellik deneyiminin stil tamamlayıcısıdır.",
+        image: "https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=1000&q=92",
+        forText: "Bakımlı, uzun ve güçlü tırnak görünümü isteyenler",
+        time: "60 - 90 dk",
+        first: "Tırnak formu + stil seçimi",
+        feeling: "Bakımlı, zarif ve tamamlanmış görünüm",
+        ray: "42deg",
+        width: "35%",
+        services: [
+          ["Protez", "Uzun ve estetik tırnak görünümü"],
+          ["Form", "El yapısına uygun tırnak şekli belirleme"],
+          ["Bakım", "Daha düzenli ve temiz görünüm"]
+        ],
+        note: "Protez tırnak, Sıla Özben’in sık tercih edilen hizmetlerinden biri olarak stil ve bakım hissini tamamlar.",
+        message: "Merhaba, Sıla Özben Güzellik Salonu protez tırnak için randevu almak istiyorum."
+      },
+
+      hair: {
+        kicker: "Saç Vitamini",
+        title: "Saç Vitamini",
+        text: "Saçların sağlıklı ve güçlü kalmasını destekleyen saç vitamini uygulamaları, bakım deneyimini cilt ve vücutla sınırlı bırakmaz.",
+        image: "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1000&q=92",
+        forText: "Saçlarında güç, canlılık ve bakım hissi isteyenler",
+        time: "30 - 45 dk",
+        first: "Saç ihtiyacı değerlendirmesi",
+        feeling: "Daha güçlü, canlı ve bakımlı saç hissi",
+        ray: "180deg",
+        width: "15%",
+        services: [
+          ["Saç Vitamini", "Saç sağlığını ve güçlü görünümü destekleyen bakım"],
+          ["Bakım Planı", "Saç ihtiyacına göre yönlendirme"],
+          ["Devam", "Uzun süreli bakım alışkanlığı oluşturma"]
+        ],
+        note: "Saç vitamini, Sıla Özben’in öne çıkardığı sağlıklı ve güçlü saç bakım yaklaşımının parçasıdır.",
+        message: "Merhaba, Sıla Özben Güzellik Salonu saç vitamini uygulaması için bilgi almak istiyorum."
+      },
+
+      mirror: {
+        kicker: "Sıla Özben Son Dokunuş",
+        title: "Bakım Sonrası Öneriler",
+        text: "Tüm bakım yolculuğunun sonunda hedef yalnızca güzel görünmek değil; kendini daha özgüvenli, iyi ve özel hissetmektir.",
+        image: "https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=1000&q=92",
+        forText: "Bakım sonrası devam planı isteyenler",
+        time: "15 - 25 dk",
+        first: "Sonuç değerlendirme",
+        feeling: "Sıla Özben özeni ve özgüven",
+        ray: "5deg",
+        width: "34%",
+        services: [
+          ["Sonuç", "İlk hedefle ulaşılan hissin karşılaştırılması"],
+          ["Ev Bakımı", "Organik bakım ürünleriyle destek önerisi"],
+          ["Devam Planı", "Cilt, saç, tırnak veya vücut için yeni rota"]
+        ],
+        note: "Sıla Özben’in organik ürün, sağlıklı yaşam ve uzun süreli kullanım vurgusu bu son dokunuş alanında güçlenir.",
+        message: "Merhaba, Sıla Özben Güzellik Salonu’nda bana uygun bakım planı hakkında bilgi almak istiyorum."
+      }
+    };
+
+    const roomOrder = [
+      "analysis",
+      "glow",
+      "silk",
+      "frame",
+      "sculpt",
+      "nail",
+      "hair",
+      "mirror"
+    ];
+
+    let currentRoom = "nail";
+
+    const panelKicker = document.getElementById("panelKicker");
+    const panelTitle = document.getElementById("panelTitle");
+    const panelText = document.getElementById("panelText");
+    const panelImage = document.getElementById("panelImage");
+    const panelContent = document.getElementById("panelContent");
+    const serviceList = document.getElementById("serviceList");
+    const panelNote = document.getElementById("panelNote");
+    const panelFor = document.getElementById("panelFor");
+    const panelTime = document.getElementById("panelTime");
+    const panelFirst = document.getElementById("panelFirst");
+    const panelFeeling = document.getElementById("panelFeeling");
+    const waBtn = document.getElementById("waBtn");
+    const activeRay = document.getElementById("activeRay");
+    const floorWrap = document.getElementById("floorWrap");
+
+    function setRoom(key) {
+      const room = rooms[key];
+      if (!room) return;
+      currentRoom = key;
+
+      document.querySelectorAll(".room, .mobile-room").forEach(item => {
+        item.classList.toggle("active", item.dataset.room === key);
+      });
+
+      if (activeRay) {
+        activeRay.style.transform = `rotate(${room.ray})`;
+        activeRay.style.width = room.width;
+      }
+
+      panelImage.classList.remove("switching");
+      panelContent.classList.remove("switching");
+      void panelImage.offsetWidth;
+      panelImage.classList.add("switching");
+      panelContent.classList.add("switching");
+
+      panelKicker.textContent = room.kicker;
+      panelTitle.textContent = room.title;
+      panelText.textContent = room.text;
+      panelImage.style.backgroundImage = `url('${room.image}')`;
+      panelNote.textContent = room.note;
+      panelFor.textContent = room.forText;
+      panelTime.textContent = room.time;
+      panelFirst.textContent = room.first;
+      panelFeeling.textContent = room.feeling;
+      waBtn.href = "https://wa.me/905386627102?text=" + encodeURIComponent(room.message);
+
+      serviceList.innerHTML = "";
+
+      room.services.forEach(service => {
+        const row = document.createElement("div");
+        row.innerHTML = `<b>${service[0]}</b><span>${service[1]}</span>`;
+        serviceList.appendChild(row);
+      });
+    }
+
+    function nextRoom() {
+      const index = roomOrder.indexOf(currentRoom);
+      const nextIndex = (index + 1) % roomOrder.length;
+      setRoom(roomOrder[nextIndex]);
+    }
+
+    function handleRoomSelect(button, event) {
+      if (event) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+
+      setRoom(button.dataset.room);
+
+      if (window.innerWidth <= 940) {
+        document.querySelector(".detail-panel")?.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }
+
+    document.querySelectorAll("[data-room]").forEach(button => {
+      button.setAttribute("type", "button");
+      button.setAttribute("role", "button");
+      button.setAttribute("tabindex", "0");
+    });
+
+    // Faz 4: Bazı dekoratif/arka plan katmanları click target olursa bile o noktadaki odayı yakala.
+    document.addEventListener("click", (event) => {
+      const directRoom = event.target.closest?.("[data-room]");
+      if (directRoom) {
+        handleRoomSelect(directRoom, event);
+        return;
+      }
+
+      const stack = document.elementsFromPoint(event.clientX, event.clientY);
+      const roomFromStack = stack.find(element => element.matches?.("[data-room]"));
+      if (roomFromStack) {
+        handleRoomSelect(roomFromStack, event);
+      }
+    }, true);
+
+    document.addEventListener("keydown", (event) => {
+      const roomButton = event.target.closest?.("[data-room]");
+      if (!roomButton) return;
+
+      if (event.key === "Enter" || event.key === " ") {
+        handleRoomSelect(roomButton, event);
+      }
+    }, true);
+
+    // İlk yüklemede aktif kart ve sağ panel aynı odadan başlasın.
+    setRoom(currentRoom);
+
+
+    const revealItems = document.querySelectorAll(".reveal");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            entry.target.classList.add("show");
+          }, index * 70);
+        }
+      });
+    }, {
+      threshold: 0.12
+    });
+
+    revealItems.forEach(item => observer.observe(item));
+
+    window.addEventListener("mousemove", (event) => {
+      const x = event.clientX / window.innerWidth;
+      const y = event.clientY / window.innerHeight;
+      document.documentElement.style.setProperty("--mx", `${x * 100}%`);
+      document.documentElement.style.setProperty("--my", `${y * 100}%`);
+
+      if (floorWrap && window.innerWidth > 940) {
+        const rx = (y - 0.5) * -5;
+        const ry = (x - 0.5) * 7;
+        floorWrap.style.transform = `rotateX(${rx}deg) rotateY(${ry}deg)`;
+      }
+    });
+
+    setRoom("analysis");
+  </script>
+
+
+</body></html>
