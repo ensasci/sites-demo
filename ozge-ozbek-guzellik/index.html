@@ -1,58 +1,1600 @@
-
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Özge Özbek Güzellik - Demo Site</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: 'Inter', sans-serif;
-            background: linear-gradient(135deg, #1f1c2c, #928DAB);
-            color: white;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-height: 100vh;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Özge Özbek Güzellik Ümraniye | Cilt Bakımı, Leke Bakımı ve Anti-Aging</title>
+  <meta name="description" content="Özge Özbek Güzellik Ümraniye’de cilt bakımı, leke bakımı, anti-aging ve kişiye özel güzellik uygulamaları sunar. İstiklal Mahallesi, Atatürk Mah. Yeşil Sokak’ta randevu alın." />
+  <meta name="keywords" content="Özge Özbek Güzellik, Ümraniye güzellik merkezi, Ümraniye cilt bakımı, Ümraniye leke bakımı, Ümraniye anti aging, İstiklal Mahallesi güzellik merkezi, Atatürk Mahallesi cilt bakımı, skin lab Ümraniye" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <meta name="theme-color" content="#f7f4ef" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Özge Özbek Güzellik Ümraniye | Premium Skin Lab" />
+  <meta property="og:description" content="Ümraniye’de cilt bakımı, leke bakımı, anti-aging ve kişiye özel profesyonel güzellik deneyimi." />
+  <meta property="og:locale" content="tr_TR" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": ["BeautySalon", "HealthAndBeautyBusiness", "LocalBusiness"],
+    "name": "Özge Özbek Güzellik",
+    "alternateName": "Özge Özbek Skin Lab",
+    "description": "Özge Özbek Güzellik, Ümraniye’de cilt bakımı, leke bakımı, anti-aging ve kişiye özel profesyonel güzellik uygulamaları sunan sağlık ve güzellik merkezidir.",
+    "telephone": "+905527942787",
+    "priceRange": "₺₺",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "İstiklal, Atatürk Mah. Yeşil Sk No:81 K:1",
+      "addressLocality": "Ümraniye",
+      "addressRegion": "İstanbul",
+      "postalCode": "34773",
+      "addressCountry": "TR"
+    },
+    "areaServed": [
+      "Ümraniye",
+      "İstanbul",
+      "İstiklal Mahallesi",
+      "Atatürk Mahallesi",
+      "Dudullu",
+      "Çakmak",
+      "Yamanevler",
+      "Üsküdar",
+      "Ataşehir"
+    ],
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "09:00",
+        "closes": "20:00"
+      }
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Özge Özbek Güzellik Bakım Hizmetleri",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "name": "Profesyonel Cilt Bakımı",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Ümraniye Cilt Bakımı",
+            "description": "Cildin ihtiyacına göre arındırma, nem dengesi, parlaklık ve canlı görünüm odaklı profesyonel cilt bakımı."
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Leke Görünümü Bakımı",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Ümraniye Leke Bakımı",
+            "description": "Cilt tonu eşitsizliği ve leke görünümüne yönelik kişiye özel bakım yaklaşımı."
+          }
+        },
+        {
+          "@type": "Offer",
+          "name": "Anti-Aging Bakım",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Ümraniye Anti-Aging Bakım",
+            "description": "Cilde daha taze, canlı ve bakımlı bir görünüm kazandırmaya yönelik profesyonel anti-aging bakım protokolü."
+          }
         }
-        .hero {
-            margin-top: 100px;
-            padding: 40px;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            text-align: center;
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            max-width: 800px;
-            width: 90%;
-        }
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 10px;
-        }
-        p {
-            font-size: 1.2rem;
-            opacity: 0.8;
-        }
-        .contact {
-            margin-top: 30px;
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.2);
-            border-radius: 10px;
-        }
-    </style>
+      ]
+    }
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #f7f4ef;
+      --white: #ffffff;
+      --ink: #111111;
+      --muted: #6f6b64;
+      --line: rgba(17,17,17,.1);
+      --blue: #b9e8ff;
+      --mint: #c9f3df;
+      --peach: #ffd6c9;
+      --violet: #ddd5ff;
+      --lemon: #fff2b8;
+      --green: #18c765;
+      --shadow: 0 30px 90px rgba(25, 22, 18, .12);
+      --radius: 34px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at 18% 8%, rgba(185,232,255,.65), transparent 28%),
+        radial-gradient(circle at 84% 20%, rgba(255,214,201,.72), transparent 26%),
+        radial-gradient(circle at 50% 95%, rgba(201,243,223,.75), transparent 34%),
+        var(--bg);
+      color: var(--ink);
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .page-glow {
+      position: fixed;
+      width: 440px;
+      height: 440px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(185,232,255,.34), transparent 64%);
+      pointer-events: none;
+      z-index: 1;
+      transform: translate(-50%, -50%);
+      mix-blend-mode: multiply;
+    }
+
+    .glass-nav {
+      position: fixed;
+      top: 18px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: min(1180px, calc(100% - 28px));
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 14px 12px 18px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.72);
+      background: rgba(255,255,255,.72);
+      backdrop-filter: blur(26px);
+      box-shadow: 0 18px 70px rgba(40, 35, 28, .1);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      font-weight: 950;
+      letter-spacing: -.04em;
+      white-space: nowrap;
+    }
+
+    .brand-icon {
+      width: 38px;
+      height: 38px;
+      border-radius: 15px;
+      background:
+        radial-gradient(circle at 30% 22%, #fff 0 12%, transparent 13%),
+        linear-gradient(135deg, var(--blue), var(--mint), var(--peach));
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.9), 0 12px 35px rgba(116,172,199,.25);
+      transform: rotate(-8deg);
+      flex: 0 0 auto;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      color: rgba(17,17,17,.62);
+      font-size: 14px;
+      font-weight: 750;
+    }
+
+    .nav-links a:hover {
+      color: var(--ink);
+    }
+
+    .nav-cta {
+      padding: 12px 17px;
+      border-radius: 999px;
+      background: var(--ink);
+      color: white !important;
+      font-weight: 950;
+      box-shadow: 0 14px 40px rgba(17,17,17,.18);
+    }
+
+    .hero {
+      min-height: 100vh;
+      width: min(1180px, calc(100% - 44px));
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 500px;
+      align-items: center;
+      gap: 60px;
+      padding: 132px 0 78px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-content {
+      min-width: 0;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      max-width: 100%;
+      padding: 9px 14px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.76);
+      border: 1px solid rgba(255,255,255,.84);
+      box-shadow: 0 16px 55px rgba(55, 48, 41, .08);
+      color: rgba(17,17,17,.66);
+      font-size: 13px;
+      font-weight: 850;
+      margin-bottom: 24px;
+    }
+
+    .badge span {
+      width: 8px;
+      height: 8px;
+      flex: 0 0 auto;
+      border-radius: 50%;
+      background: #30c783;
+      box-shadow: 0 0 0 6px rgba(48,199,131,.13);
+    }
+
+    h1 {
+      font-size: clamp(46px, 5.7vw, 80px);
+      line-height: .88;
+      letter-spacing: -.075em;
+      font-weight: 950;
+      max-width: 720px;
+      text-wrap: balance;
+    }
+
+    .soft-gradient {
+      background: linear-gradient(100deg, #111 0%, #54a6ce 32%, #5bbf93 62%, #d88372 100%);
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+
+    .hero-text {
+      margin-top: 26px;
+      max-width: 610px;
+      color: rgba(17,17,17,.64);
+      font-size: clamp(16px, 1.25vw, 19px);
+      line-height: 1.72;
+      font-weight: 560;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 13px;
+      margin-top: 32px;
+    }
+
+    .btn {
+      min-height: 56px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 23px;
+      border-radius: 999px;
+      font-weight: 950;
+      transition: .28s ease;
+      border: 0;
+      cursor: pointer;
+    }
+
+    .btn-dark {
+      background: var(--ink);
+      color: white;
+      box-shadow: 0 20px 55px rgba(17,17,17,.18);
+    }
+
+    .btn-light {
+      background: rgba(255,255,255,.74);
+      border: 1px solid rgba(255,255,255,.86);
+      color: var(--ink);
+    }
+
+    .btn:hover {
+      transform: translateY(-4px);
+    }
+
+    .hero-seo-strip {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 26px;
+      max-width: 650px;
+    }
+
+    .hero-seo-strip span {
+      padding: 10px 13px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.68);
+      border: 1px solid rgba(255,255,255,.78);
+      color: rgba(17,17,17,.62);
+      font-size: 13px;
+      font-weight: 850;
+    }
+
+    .hero-visual {
+      position: relative;
+      min-height: 640px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 16px;
+      perspective: 1400px;
+    }
+
+    .device-wrap {
+      position: relative;
+      width: 100%;
+      min-height: 455px;
+      border-radius: 48px;
+      padding: 18px;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.92), rgba(255,255,255,.58)),
+        linear-gradient(135deg, rgba(185,232,255,.7), rgba(201,243,223,.65), rgba(255,214,201,.7));
+      border: 1px solid rgba(255,255,255,.9);
+      box-shadow: 0 42px 100px rgba(64, 57, 48, .16);
+      transform: rotateY(-7deg) rotateX(3deg);
+      transition: .45s ease;
+      overflow: hidden;
+    }
+
+    .device-wrap:hover {
+      transform: rotateY(-3deg) rotateX(1deg) translateY(-8px);
+    }
+
+    .device-screen {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      min-height: 420px;
+      border-radius: 34px;
+      overflow: hidden;
+      background:
+        linear-gradient(180deg, rgba(0,0,0,0), rgba(0,0,0,.18)),
+        url("https://images.unsplash.com/photo-1600334129128-685c5582fd35?auto=format&fit=crop&w=1000&q=90") center/cover;
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.55);
+    }
+
+    .device-screen::before {
+      content: "";
+      position: absolute;
+      left: -20%;
+      right: -20%;
+      height: 3px;
+      top: 30%;
+      background: linear-gradient(90deg, transparent, rgba(185,232,255,.95), transparent);
+      box-shadow: 0 0 30px rgba(72,180,230,.6);
+      animation: scan 3.4s ease-in-out infinite;
+      z-index: 2;
+    }
+
+    @keyframes scan {
+      50% { top: 76%; }
+    }
+
+    .visual-card {
+      border-radius: 28px;
+      background: rgba(255,255,255,.84);
+      border: 1px solid rgba(255,255,255,.92);
+      backdrop-filter: blur(22px);
+      box-shadow: 0 24px 70px rgba(58, 52, 44, .1);
+      padding: 18px;
+    }
+
+    .visual-card strong {
+      display: block;
+      font-size: 25px;
+      letter-spacing: -.055em;
+      margin-bottom: 6px;
+    }
+
+    .visual-card p {
+      color: rgba(17,17,17,.56);
+      line-height: 1.45;
+      font-size: 13px;
+      font-weight: 750;
+    }
+
+    .visual-top-card {
+      position: absolute;
+      left: -28px;
+      top: 28px;
+      width: 235px;
+      z-index: 5;
+      animation: float 5.5s ease-in-out infinite;
+    }
+
+    .visual-bottom-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 14px;
+      position: relative;
+      z-index: 4;
+      margin-top: -4px;
+    }
+
+    .mini-protocol {
+      background: rgba(17,17,17,.92);
+      color: white;
+    }
+
+    .mini-protocol p {
+      color: rgba(255,255,255,.64);
+    }
+
+    @keyframes float {
+      50% { transform: translateY(-12px); }
+    }
+
+    .section {
+      width: min(1180px, calc(100% - 44px));
+      margin: 0 auto;
+      padding: 78px 0;
+      position: relative;
+      z-index: 3;
+    }
+
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 36px;
+      margin-bottom: 30px;
+    }
+
+    .kicker {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: .18em;
+      color: rgba(17,17,17,.48);
+      font-weight: 950;
+      margin-bottom: 12px;
+    }
+
+    h2 {
+      font-size: clamp(42px, 5vw, 76px);
+      line-height: .9;
+      letter-spacing: -.075em;
+      max-width: 800px;
+    }
+
+    .section-copy {
+      max-width: 450px;
+      color: rgba(17,17,17,.6);
+      line-height: 1.72;
+      font-weight: 570;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .service-card {
+      min-height: 330px;
+      padding: 26px;
+      border-radius: var(--radius);
+      background: rgba(255,255,255,.66);
+      border: 1px solid rgba(255,255,255,.86);
+      box-shadow: 0 20px 70px rgba(52, 47, 40, .08);
+      position: relative;
+      overflow: hidden;
+      transition: .3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow);
+    }
+
+    .service-card::after {
+      content: "";
+      position: absolute;
+      width: 220px;
+      height: 220px;
+      right: -80px;
+      top: -80px;
+      border-radius: 50%;
+      filter: blur(3px);
+      opacity: .85;
+    }
+
+    .blue::after { background: var(--blue); }
+    .mint::after { background: var(--mint); }
+    .peach::after { background: var(--peach); }
+    .violet::after { background: var(--violet); }
+    .lemon::after { background: var(--lemon); }
+
+    .service-card .num {
+      position: relative;
+      z-index: 2;
+      color: rgba(17,17,17,.38);
+      font-weight: 950;
+      margin-bottom: 78px;
+    }
+
+    .service-card h3 {
+      position: relative;
+      z-index: 2;
+      font-size: 32px;
+      line-height: .95;
+      letter-spacing: -.06em;
+      margin-bottom: 14px;
+    }
+
+    .service-card p {
+      position: relative;
+      z-index: 2;
+      color: rgba(17,17,17,.61);
+      line-height: 1.62;
+      font-weight: 570;
+    }
+
+    .local-seo,
+    .experience,
+    .booking {
+      display: grid;
+      grid-template-columns: .95fr 1.05fr;
+      gap: 16px;
+      align-items: stretch;
+    }
+
+    .dark-panel {
+      border-radius: 42px;
+      padding: 38px;
+      background: #111;
+      color: white;
+      position: relative;
+      overflow: hidden;
+      min-height: 520px;
+      box-shadow: var(--shadow);
+    }
+
+    .dark-panel::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 20% 18%, rgba(185,232,255,.36), transparent 34%),
+        radial-gradient(circle at 80% 26%, rgba(255,214,201,.32), transparent 30%);
+    }
+
+    .dark-panel > * {
+      position: relative;
+      z-index: 2;
+    }
+
+    .dark-panel .kicker {
+      color: rgba(255,255,255,.56);
+    }
+
+    .dark-panel h2 {
+      color: white;
+      margin-top: 90px;
+    }
+
+    .dark-panel p {
+      margin-top: 24px;
+      color: rgba(255,255,255,.66);
+      line-height: 1.75;
+      font-weight: 540;
+    }
+
+    .content-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .content-card,
+    .step,
+    details,
+    .booking-card {
+      background: rgba(255,255,255,.66);
+      border: 1px solid rgba(255,255,255,.84);
+      box-shadow: 0 18px 60px rgba(52,47,40,.08);
+    }
+
+    .content-card {
+      padding: 24px;
+      border-radius: 30px;
+    }
+
+    .content-card h3 {
+      font-size: 22px;
+      letter-spacing: -.04em;
+      margin-bottom: 9px;
+    }
+
+    .content-card p {
+      color: rgba(17,17,17,.6);
+      line-height: 1.66;
+      font-weight: 560;
+    }
+
+    .experience-panel {
+      border-radius: 42px;
+      background: rgba(255,255,255,.68);
+      border: 1px solid rgba(255,255,255,.86);
+      padding: 38px;
+      min-height: 520px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+
+    .experience-panel::before {
+      content: "";
+      position: absolute;
+      width: 420px;
+      height: 420px;
+      border-radius: 50%;
+      right: -160px;
+      top: -120px;
+      background: radial-gradient(circle, rgba(185,232,255,.9), transparent 68%);
+    }
+
+    .experience-panel > * {
+      position: relative;
+      z-index: 2;
+    }
+
+    .experience-panel h2 {
+      margin-top: 80px;
+    }
+
+    .experience-panel p {
+      margin-top: 24px;
+      color: rgba(17,17,17,.62);
+      line-height: 1.72;
+      font-weight: 560;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 14px;
+    }
+
+    .step {
+      padding: 24px;
+      border-radius: 30px;
+      display: grid;
+      grid-template-columns: 58px 1fr;
+      gap: 16px;
+      align-items: start;
+      transition: .28s ease;
+    }
+
+    .step:hover {
+      transform: translateX(8px);
+    }
+
+    .step span {
+      width: 48px;
+      height: 48px;
+      border-radius: 17px;
+      display: grid;
+      place-items: center;
+      background: #111;
+      color: white;
+      font-weight: 950;
+    }
+
+    .step h3 {
+      font-size: 20px;
+      letter-spacing: -.03em;
+      margin-bottom: 7px;
+    }
+
+    .step p {
+      color: rgba(17,17,17,.58);
+      line-height: 1.62;
+      font-weight: 560;
+    }
+
+    .geo-block {
+      border-radius: 46px;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(201,243,223,.86), transparent 34%),
+        radial-gradient(circle at 80% 25%, rgba(221,213,255,.86), transparent 34%),
+        rgba(255,255,255,.66);
+      border: 1px solid rgba(255,255,255,.86);
+      box-shadow: var(--shadow);
+      padding: 42px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+      align-items: center;
+    }
+
+    .geo-block p {
+      color: rgba(17,17,17,.62);
+      line-height: 1.76;
+      font-weight: 560;
+      margin-top: 18px;
+    }
+
+    .geo-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .geo-list div {
+      padding: 17px 18px;
+      border-radius: 22px;
+      background: rgba(255,255,255,.62);
+      border: 1px solid rgba(255,255,255,.75);
+      font-weight: 850;
+      color: rgba(17,17,17,.72);
+    }
+
+    .faq-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    details {
+      border-radius: 28px;
+      padding: 22px;
+    }
+
+    summary {
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: 950;
+      letter-spacing: -.03em;
+      list-style: none;
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+
+    details p {
+      color: rgba(17,17,17,.62);
+      line-height: 1.7;
+      font-weight: 560;
+      margin-top: 14px;
+    }
+
+    .booking {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .booking-card {
+      border-radius: 40px;
+      padding: 32px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .booking-card h3 {
+      font-size: 36px;
+      line-height: .95;
+      letter-spacing: -.06em;
+      margin-bottom: 22px;
+    }
+
+    .info-line {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 15px 0;
+      border-top: 1px solid var(--line);
+      color: rgba(17,17,17,.58);
+      font-weight: 700;
+    }
+
+    .info-line strong {
+      color: var(--ink);
+      text-align: right;
+    }
+
+    .closed {
+      color: #c95546 !important;
+    }
+
+    .final {
+      width: min(1180px, calc(100% - 44px));
+      margin: 30px auto 34px;
+      min-height: 430px;
+      border-radius: 52px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 56px 24px;
+      background:
+        radial-gradient(circle at 30% 15%, rgba(185,232,255,.72), transparent 32%),
+        radial-gradient(circle at 76% 20%, rgba(255,214,201,.75), transparent 30%),
+        linear-gradient(135deg, rgba(255,255,255,.86), rgba(255,255,255,.58));
+      border: 1px solid rgba(255,255,255,.9);
+      box-shadow: var(--shadow);
+      position: relative;
+      z-index: 3;
+    }
+
+    .final-inner {
+      max-width: 850px;
+    }
+
+    .final p {
+      max-width: 700px;
+      margin: 22px auto 30px;
+      color: rgba(17,17,17,.62);
+      line-height: 1.74;
+      font-size: 18px;
+      font-weight: 560;
+    }
+
+    .whatsapp {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      z-index: 90;
+      min-height: 58px;
+      padding: 0 22px 0 16px;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: linear-gradient(135deg, #19d66b, #0fa958);
+      color: white;
+      font-weight: 950;
+      letter-spacing: -.02em;
+      box-shadow:
+        0 22px 70px rgba(15,169,88,.32),
+        inset 0 1px 0 rgba(255,255,255,.28);
+      transition: .28s ease;
+    }
+
+    .whatsapp::before {
+      content: "✦";
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      background: rgba(255,255,255,.22);
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.24);
+    }
+
+    .whatsapp:hover {
+      transform: translateY(-4px) scale(1.015);
+      box-shadow:
+        0 28px 80px rgba(15,169,88,.42),
+        inset 0 1px 0 rgba(255,255,255,.28);
+    }
+
+    .premium-footer {
+      width: min(1180px, calc(100% - 44px));
+      margin: 0 auto 28px;
+      position: relative;
+      z-index: 3;
+      border-radius: 42px;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 12% 18%, rgba(185,232,255,.42), transparent 30%),
+        radial-gradient(circle at 88% 20%, rgba(255,214,201,.48), transparent 28%),
+        rgba(255,255,255,.68);
+      border: 1px solid rgba(255,255,255,.86);
+      box-shadow: var(--shadow);
+    }
+
+    .footer-top {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr .8fr .8fr;
+      gap: 24px;
+      padding: 36px;
+    }
+
+    .footer-brand {
+      max-width: 360px;
+    }
+
+    .footer-logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 22px;
+      font-weight: 950;
+      letter-spacing: -.05em;
+      margin-bottom: 14px;
+    }
+
+    .footer-brand p,
+    .footer-col p,
+    .footer-col a {
+      color: rgba(17,17,17,.62);
+      line-height: 1.65;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .footer-col h4 {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: .14em;
+      color: rgba(17,17,17,.46);
+      margin-bottom: 14px;
+    }
+
+    .footer-col {
+      display: grid;
+      align-content: start;
+      gap: 8px;
+    }
+
+    .footer-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 18px;
+    }
+
+    .footer-badges span {
+      padding: 9px 11px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.62);
+      border: 1px solid rgba(255,255,255,.76);
+      color: rgba(17,17,17,.62);
+      font-size: 12px;
+      font-weight: 850;
+    }
+
+    .footer-bottom {
+      padding: 18px 36px;
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      border-top: 1px solid rgba(17,17,17,.08);
+      color: rgba(17,17,17,.5);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .demo-note {
+      width: min(1180px, calc(100% - 44px));
+      margin: 0 auto 34px;
+      position: relative;
+      z-index: 3;
+      text-align: center;
+      color: rgba(17,17,17,.48);
+      font-size: 13px;
+      font-weight: 750;
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: .75s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 1080px) {
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 34px;
+        padding-top: 118px;
+      }
+
+      .hero-visual {
+        min-height: auto;
+      }
+
+      .device-wrap {
+        transform: none;
+        min-height: 440px;
+      }
+
+      .visual-top-card {
+        left: 22px;
+        top: 22px;
+      }
+    }
+
+    @media (max-width: 980px) {
+      .nav-links a:not(.nav-cta) {
+        display: none;
+      }
+
+      .experience,
+      .booking,
+      .local-seo,
+      .geo-block {
+        grid-template-columns: 1fr;
+      }
+
+      .services-grid,
+      .faq-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .section-head {
+        flex-direction: column;
+        align-items: start;
+      }
+
+      .footer-top {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .glass-nav {
+        top: 10px;
+        width: calc(100% - 20px);
+      }
+
+      .brand span:last-child {
+        max-width: 145px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+
+      .nav-cta {
+        padding: 10px 13px;
+        font-size: 13px;
+      }
+
+      .hero,
+      .section,
+      .final,
+      .premium-footer,
+      .demo-note {
+        width: min(100% - 24px, 1180px);
+      }
+
+      .hero {
+        padding-top: 108px;
+      }
+
+      h1 {
+        font-size: clamp(42px, 15vw, 58px);
+        letter-spacing: -.07em;
+      }
+
+      h2 {
+        font-size: 43px;
+      }
+
+      .hero-text {
+        font-size: 16px;
+      }
+
+      .device-wrap {
+        min-height: 440px;
+        border-radius: 36px;
+        padding: 14px;
+      }
+
+      .device-screen {
+        min-height: 410px;
+        border-radius: 28px;
+      }
+
+      .visual-top-card {
+        position: relative;
+        left: auto;
+        top: auto;
+        width: 100%;
+        order: -1;
+      }
+
+      .visual-bottom-grid {
+        grid-template-columns: 1fr;
+        margin-top: 0;
+      }
+
+      .experience-panel,
+      .booking-card,
+      .dark-panel,
+      .geo-block {
+        padding: 28px;
+      }
+
+      .step {
+        grid-template-columns: 1fr;
+      }
+
+      .info-line {
+        flex-direction: column;
+      }
+
+      .info-line strong {
+        text-align: left;
+      }
+
+      .footer-top {
+        grid-template-columns: 1fr;
+        padding: 28px;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        padding: 18px 28px;
+      }
+
+      .demo-note {
+        padding-bottom: 82px;
+      }
+
+      .whatsapp {
+        left: 16px;
+        right: 16px;
+        bottom: 16px;
+        justify-content: center;
+        padding: 0 18px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-    <div class="hero">
-        <h1>Özge Özbek Güzellik</h1>
-        <p>İstanbul, Ümraniye</p>
-        <div class="contact">
-            <p>📍 İstiklal, Atatürk Mah Yeşil Sk No:81 K:1, 34773 Ümraniye/İstanbul </p>
-            <p>📞 05527942787</p>
-        </div>
-        <p><i>(Bu, geçerli bir API anahtarı olmadığında oluşturulan dummy bir sayfadır.)</i></p>
+  <div class="page-glow" id="pageGlow"></div>
+
+  <nav class="glass-nav" aria-label="Ana menü">
+    <a href="#" class="brand" aria-label="Özge Özbek Güzellik ana sayfa">
+      <span class="brand-icon"></span>
+      <span>Özge Özbek Skin Lab</span>
+    </a>
+
+    <div class="nav-links">
+      <a href="#bakimlar">Bakımlar</a>
+      <a href="#umraniye">Ümraniye</a>
+      <a href="#deneyim">Deneyim</a>
+      <a href="#sss">SSS</a>
+      <a href="#iletisim">İletişim</a>
+      <a class="nav-cta" href="tel:05527942787">Randevu Al</a>
     </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content reveal">
+        <div class="badge">
+          <span></span>
+          Ümraniye’de yeni nesil sağlık ve güzellik merkezi
+        </div>
+
+        <h1>
+          Ümraniye’de <span class="soft-gradient">cilt bakımı ve güzellik</span> için yeni nesil skin lab.
+        </h1>
+
+        <p class="hero-text">
+          Özge Özbek Güzellik; Ümraniye İstiklal Mahallesi’nde cilt bakımı, leke bakımı, anti-aging bakım protokolleri ve kişiye özel profesyonel güzellik uygulamaları sunar. Temiz, modern ve güven veren atmosferiyle klasik güzellik salonu deneyimini daha premium bir bakım yolculuğuna dönüştürür.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-dark" href="https://wa.me/905527942787?text=Merhaba%20%C3%96zge%20%C3%96zbek%20G%C3%BCzellik%20i%C3%A7in%20randevu%20almak%20istiyorum." target="_blank" rel="noopener">
+            WhatsApp’tan Randevu Al
+          </a>
+          <a class="btn btn-light" href="#bakimlar">
+            Bakım Protokollerini İncele
+          </a>
+        </div>
+
+        <div class="hero-seo-strip" aria-label="Hizmet etiketleri">
+          <span>Ümraniye cilt bakımı</span>
+          <span>Leke bakımı</span>
+          <span>Anti-aging bakım</span>
+          <span>Profesyonel güzellik merkezi</span>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="device-wrap">
+          <div class="device-screen"></div>
+
+          <div class="visual-card visual-top-card">
+            <strong>Skin Scan</strong>
+            <p>Cildin ihtiyacına göre bakım yaklaşımı.</p>
+          </div>
+        </div>
+
+        <div class="visual-bottom-grid">
+          <div class="visual-card">
+            <strong>Glow Plan</strong>
+            <p>Daha canlı, daha dengeli ve daha bakımlı görünüm hedefi.</p>
+          </div>
+
+          <div class="visual-card mini-protocol">
+            <strong>Özel Protokol</strong>
+            <p>Cilt bakım rotası danışanın ihtiyacına göre planlanır.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="bakimlar">
+      <div class="section-head reveal">
+        <div>
+          <div class="kicker">Skin Protocols</div>
+          <h2>Klasik hizmet listesi değil, kişiye özel bakım protokolü.</h2>
+        </div>
+        <p class="section-copy">
+          Özge Özbek Güzellik’te bakım süreci sadece işlem seçmekten ibaret değildir. Cildin ihtiyacı, görünüm hedefi ve danışanın beklentisi birlikte değerlendirilerek daha bilinçli bir güzellik deneyimi sunulur.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-card blue reveal">
+          <div class="num">01</div>
+          <h3>Profesyonel Cilt Bakımı</h3>
+          <p>
+            Ümraniye’de cilt bakımı arayanlar için cildin nem dengesi, canlılık ihtiyacı, gözenek görünümü ve genel bakım ihtiyacına göre kişiselleştirilmiş bakım deneyimi sunulur.
+          </p>
+        </article>
+
+        <article class="service-card mint reveal">
+          <div class="num">02</div>
+          <h3>Leke Görünümü Bakımı</h3>
+          <p>
+            Cilt tonu eşitsizliği, mat görünüm ve leke görünümü için daha aydınlık, daha dengeli ve daha bakımlı bir cilt görünümü hedeflenir.
+          </p>
+        </article>
+
+        <article class="service-card peach reveal">
+          <div class="num">03</div>
+          <h3>Anti-Aging Protokol</h3>
+          <p>
+            Cilde daha dinlenmiş, daha taze ve daha bakımlı bir ifade kazandırmaya yönelik anti-aging bakım yaklaşımıyla profesyonel bir yenilenme hissi sunulur.
+          </p>
+        </article>
+
+        <article class="service-card violet reveal">
+          <div class="num">04</div>
+          <h3>Nem Dengesi Bakımı</h3>
+          <p>
+            Kuruluk, matlık ve cansız görünüm hisseden ciltler için nem desteği, daha yumuşak his ve daha sağlıklı görünüm hedeflenir.
+          </p>
+        </article>
+
+        <article class="service-card lemon reveal">
+          <div class="num">05</div>
+          <h3>Gözenek Görünümü Bakımı</h3>
+          <p>
+            Cilt dokusunun daha pürüzsüz görünmesine destek olan, arındırma ve bakım adımlarını bir araya getiren profesyonel bakım deneyimi.
+          </p>
+        </article>
+
+        <article class="service-card blue reveal">
+          <div class="num">06</div>
+          <h3>Glow Bakım Deneyimi</h3>
+          <p>
+            Özel günler, davetler veya kendini daha iyi hissetmek isteyenler için daha canlı, taze ve ışıltılı görünüm odaklı bakım yaklaşımı.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="umraniye">
+      <div class="local-seo">
+        <div class="dark-panel reveal">
+          <div class="kicker">Local Beauty Destination</div>
+          <h2>Ümraniye’de ulaşılabilir, modern ve güven veren güzellik merkezi.</h2>
+          <p>
+            Özge Özbek Güzellik; İstiklal Mahallesi, Atatürk Mahallesi, Dudullu, Çakmak, Yamanevler, Ataşehir ve Üsküdar çevresinden gelen danışanlar için kolay ulaşılabilir bir konumda yer alır.
+          </p>
+        </div>
+
+        <div class="content-list">
+          <article class="content-card reveal">
+            <h3>Ümraniye cilt bakımı arayanlar için</h3>
+            <p>
+              Cilt bakımı yaptırmak isteyen danışanlar için hijyenik, sakin ve modern bir atmosfer sunulur. Amaç sadece kısa süreli bir bakım hissi değil; cildin ihtiyacına göre daha doğru bir bakım rutini oluşturmaktır.
+            </p>
+          </article>
+
+          <article class="content-card reveal">
+            <h3>Leke görünümü ve ton eşitsizliği için bakım yaklaşımı</h3>
+            <p>
+              Cilt tonu eşitsizliği, mat görünüm ve leke görünümü gibi şikayetlerde süreç kişiye göre planlanır. Danışanın beklentisi dinlenir, cildin ihtiyacına uygun bakım adımları değerlendirilir.
+            </p>
+          </article>
+
+          <article class="content-card reveal">
+            <h3>Anti-aging bakımda doğal ve bakımlı görünüm hedefi</h3>
+            <p>
+              Anti-aging bakım protokollerinde amaç abartılı bir değişim değil; daha taze, daha dinlenmiş ve daha bakımlı bir görünüm hissidir.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="deneyim">
+      <div class="experience">
+        <div class="experience-panel reveal">
+          <div class="kicker">Experience Design</div>
+          <h2>Güzellik merkezi değil, deneyim alanı.</h2>
+          <p>
+            Bu yaklaşımın amacı danışana ilk andan itibaren “burada özenli, temiz, profesyonel ve kaliteli bir hizmet alırım” hissini vermektir. Bakım süreci; analiz, planlama, uygulama ve bakım sonrası önerilerle daha bütünsel bir deneyime dönüşür.
+          </p>
+        </div>
+
+        <div class="timeline">
+          <div class="step reveal">
+            <span>1</span>
+            <div>
+              <h3>İlk Cilt Değerlendirmesi</h3>
+              <p>Cilt görünümü, ihtiyaç, beklenti ve bakım hedefi anlaşılır.</p>
+            </div>
+          </div>
+
+          <div class="step reveal">
+            <span>2</span>
+            <div>
+              <h3>Kişiye Özel Bakım Protokolü</h3>
+              <p>Herkese aynı işlem yerine, cilt ihtiyacına göre daha doğru bakım rotası oluşturulur.</p>
+            </div>
+          </div>
+
+          <div class="step reveal">
+            <span>3</span>
+            <div>
+              <h3>Konforlu Uygulama Deneyimi</h3>
+              <p>Hijyen, sakin atmosfer ve profesyonel dokunuş bir arada sunulur.</p>
+            </div>
+          </div>
+
+          <div class="step reveal">
+            <span>4</span>
+            <div>
+              <h3>Bakım Sonrası Yönlendirme</h3>
+              <p>Cildin daha iyi korunması ve bakım etkisinin desteklenmesi için öneriler paylaşılır.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="geo-block reveal">
+        <div>
+          <div class="kicker">AI & GEO Friendly Content</div>
+          <h2>Özge Özbek Güzellik neden tercih edilir?</h2>
+          <p>
+            Ümraniye’de cilt bakımı, leke bakımı veya anti-aging bakım arayan kişiler için Özge Özbek Güzellik; merkezi konumu, kişiye özel bakım yaklaşımı, modern atmosferi ve randevu odaklı iletişimiyle öne çıkar.
+          </p>
+        </div>
+
+        <div class="geo-list">
+          <div>✓ Açık adres, telefon ve çalışma saatleri net</div>
+          <div>✓ Hizmetler detaylı ve lokal arama niyetine uygun</div>
+          <div>✓ Ümraniye ve çevre bölgeler doğal şekilde işlenmiş</div>
+          <div>✓ SSS ve schema yapısı ile AI cevaplarına uygun</div>
+          <div>✓ WhatsApp randevu akışı dönüşüm odaklı</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="sss">
+      <div class="section-head reveal">
+        <div>
+          <div class="kicker">Sık Sorulan Sorular</div>
+          <h2>Randevu öncesi merak edilenler.</h2>
+        </div>
+        <p class="section-copy">
+          Özge Özbek Güzellik hakkında konum, hizmetler, çalışma saatleri ve randevu süreciyle ilgili en çok merak edilen cevaplar.
+        </p>
+      </div>
+
+      <div class="faq-grid">
+        <details class="reveal">
+          <summary>Özge Özbek Güzellik nerede?</summary>
+          <p>Özge Özbek Güzellik, İstiklal, Atatürk Mah. Yeşil Sk No:81 K:1, 34773 Ümraniye/İstanbul adresinde hizmet verir.</p>
+        </details>
+
+        <details class="reveal">
+          <summary>Hangi hizmetler sunuluyor?</summary>
+          <p>Profesyonel cilt bakımı, leke görünümü bakımı, anti-aging bakım protokolleri, nem dengesi bakımı, gözenek görünümü bakımı ve glow bakım deneyimi sunulur.</p>
+        </details>
+
+        <details class="reveal">
+          <summary>Randevu nasıl alınır?</summary>
+          <p>Randevu almak için 0552 794 27 87 numarası aranabilir veya sayfadaki WhatsApp randevu butonu üzerinden direkt mesaj gönderilebilir.</p>
+        </details>
+
+        <details class="reveal">
+          <summary>Çalışma saatleri nedir?</summary>
+          <p>Özge Özbek Güzellik pazartesi, salı, çarşamba, perşembe, cuma ve cumartesi günleri 09:00–20:00 saatleri arasında açıktır. Pazar günü kapalıdır.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="section" id="iletisim">
+      <div class="section-head reveal">
+        <div>
+          <div class="kicker">Book Your Session</div>
+          <h2>Randevu ve iletişim.</h2>
+        </div>
+        <p class="section-copy">
+          Özge Özbek Güzellik’e ulaşmak, bakım seçeneklerini öğrenmek veya randevu oluşturmak için iletişime geçebilirsiniz.
+        </p>
+      </div>
+
+      <div class="booking">
+        <div class="booking-card reveal">
+          <h3>Konum</h3>
+
+          <div class="info-line">
+            <span>Adres</span>
+            <strong>İstiklal, Atatürk Mah. Yeşil Sk No:81 K:1, Ümraniye/İstanbul</strong>
+          </div>
+
+          <div class="info-line">
+            <span>Telefon</span>
+            <strong><a href="tel:05527942787">0552 794 27 87</a></strong>
+          </div>
+
+          <div class="info-line">
+            <span>WhatsApp</span>
+            <strong>
+              <a href="https://wa.me/905527942787?text=Merhaba%20%C3%96zge%20%C3%96zbek%20G%C3%BCzellik%20i%C3%A7in%20randevu%20almak%20istiyorum." target="_blank" rel="noopener">
+                Mesaj Gönder
+              </a>
+            </strong>
+          </div>
+
+          <div class="info-line">
+            <span>Yol Tarifi</span>
+            <strong>
+              <a href="https://www.google.com/maps/search/?api=1&query=%C4%B0stiklal%2C%20Atat%C3%BCrk%20Mah%20Ye%C5%9Fil%20Sk%20No%3A81%20K%3A1%2C%2034773%20%C3%9Cmraniye%2F%C4%B0stanbul" target="_blank" rel="noopener">
+                Google Maps
+              </a>
+            </strong>
+          </div>
+        </div>
+
+        <div class="booking-card reveal">
+          <h3>Çalışma Saatleri</h3>
+
+          <div class="info-line"><span>Pazartesi</span><strong>09:00–20:00</strong></div>
+          <div class="info-line"><span>Salı</span><strong>09:00–20:00</strong></div>
+          <div class="info-line"><span>Çarşamba</span><strong>09:00–20:00</strong></div>
+          <div class="info-line"><span>Perşembe</span><strong>09:00–20:00</strong></div>
+          <div class="info-line"><span>Cuma</span><strong>09:00–20:00</strong></div>
+          <div class="info-line"><span>Cumartesi</span><strong>09:00–20:00</strong></div>
+          <div class="info-line"><span>Pazar</span><strong class="closed">Kapalı</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="final reveal">
+      <div class="final-inner">
+        <div class="kicker">Özge Özbek Skin Lab</div>
+        <h2>Güzellik artık daha temiz, daha modern, daha kişisel.</h2>
+        <p>
+          Ümraniye’de cilt bakımı, leke bakımı ve anti-aging bakım için Özge Özbek Güzellik’te kişiye özel bakım deneyimini keşfedin. Randevu oluşturmak için hemen WhatsApp üzerinden iletişime geçebilirsiniz.
+        </p>
+
+        <a class="btn btn-dark" href="https://wa.me/905527942787?text=Merhaba%20%C3%96zge%20%C3%96zbek%20G%C3%BCzellik%20i%C3%A7in%20randevu%20almak%20istiyorum." target="_blank" rel="noopener">
+          Hemen Randevu Talep Et
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <a class="whatsapp" href="https://wa.me/905527942787?text=Merhaba%20%C3%96zge%20%C3%96zbek%20G%C3%BCzellik%20i%C3%A7in%20randevu%20almak%20istiyorum." target="_blank" rel="noopener">
+    WhatsApp Randevu
+  </a>
+
+  <footer class="premium-footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <span class="brand-icon"></span>
+          <span>Özge Özbek Skin Lab</span>
+        </div>
+        <p>
+          Ümraniye’de cilt bakımı, leke görünümü bakımı, anti-aging protokoller ve kişiye özel güzellik deneyimi sunan modern sağlık ve güzellik merkezi.
+        </p>
+
+        <div class="footer-badges">
+          <span>Ümraniye Cilt Bakımı</span>
+          <span>Leke Bakımı</span>
+          <span>Anti-Aging</span>
+          <span>Skin Lab</span>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Hizmetler</h4>
+        <a href="#bakimlar">Profesyonel Cilt Bakımı</a>
+        <a href="#bakimlar">Leke Görünümü Bakımı</a>
+        <a href="#bakimlar">Anti-Aging Protokol</a>
+        <a href="#bakimlar">Glow Bakım Deneyimi</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>İletişim</h4>
+        <a href="tel:05527942787">0552 794 27 87</a>
+        <a href="https://wa.me/905527942787?text=Merhaba%20%C3%96zge%20%C3%96zbek%20G%C3%BCzellik%20i%C3%A7in%20randevu%20almak%20istiyorum." target="_blank" rel="noopener">WhatsApp Randevu</a>
+        <a href="https://www.google.com/maps/search/?api=1&query=%C4%B0stiklal%2C%20Atat%C3%BCrk%20Mah%20Ye%C5%9Fil%20Sk%20No%3A81%20K%3A1%2C%2034773%20%C3%9Cmraniye%2F%C4%B0stanbul" target="_blank" rel="noopener">Yol Tarifi Al</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Konum</h4>
+        <p>İstiklal, Atatürk Mah. Yeşil Sk No:81 K:1</p>
+        <p>34773 Ümraniye / İstanbul</p>
+        <p>Pzt - Cmt: 09:00–20:00</p>
+        <p>Pazar: Kapalı</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>© 2026 Özge Özbek Güzellik</div>
+      <div>Ümraniye Cilt Bakımı • Leke Bakımı • Anti-Aging</div>
+    </div>
+  </footer>
+
+  <div class="demo-note">
+    Bu web sitesi Özge Özbek Skin Lab demo sunumu için üretilmiştir.
+  </div>
+
+  <script>
+    const pageGlow = document.getElementById("pageGlow");
+
+    window.addEventListener("mousemove", function(event) {
+      if (!pageGlow) return;
+      pageGlow.style.left = event.clientX + "px";
+      pageGlow.style.top = event.clientY + "px";
+    });
+
+    const observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, {
+      threshold: 0.12
+    });
+
+    document.querySelectorAll(".reveal").forEach(function(element) {
+      observer.observe(element);
+    });
+
+    const visual = document.querySelector(".hero-visual");
+    const device = document.querySelector(".device-wrap");
+
+    if (visual && device) {
+      visual.addEventListener("mousemove", function(event) {
+        if (window.innerWidth < 1080) return;
+
+        const rect = visual.getBoundingClientRect();
+        const x = (event.clientX - rect.left) / rect.width - 0.5;
+        const y = (event.clientY - rect.top) / rect.height - 0.5;
+
+        device.style.transform =
+          "rotateY(" + (-7 + x * 7) + "deg) rotateX(" + (3 - y * 6) + "deg) translateY(-6px)";
+      });
+
+      visual.addEventListener("mouseleave", function() {
+        if (window.innerWidth < 1080) {
+          device.style.transform = "none";
+        } else {
+          device.style.transform = "rotateY(-7deg) rotateX(3deg)";
+        }
+      });
+    }
+  </script>
 </body>
 </html>
