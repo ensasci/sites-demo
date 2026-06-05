@@ -4,9 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Özge Özbek Güzellik Ümraniye | Cilt Bakımı ve Güzellik Merkezi</title>
-  <meta name="description" content="Özge Özbek Güzellik Ümraniye’de cilt bakımı, leke bakımı, anti-aging ve kişiye özel güzellik uygulamaları sunar. WhatsApp üzerinden randevu alın." />
-  <meta name="keywords" content="Özge Özbek Güzellik, Ümraniye güzellik merkezi, Ümraniye cilt bakımı, leke bakımı, anti aging, sağlık ve güzellik merkezi Ümraniye" />
+  <title>Ekin Ekinci Güzellik Salonu Ümraniye | Cilt Bakımı ve Güzellik Merkezi</title>
+  <meta name="description" content="Ekin Ekinci Güzellik Salonu Ümraniye’de cilt bakımı, leke bakımı, anti-aging ve kişiye özel güzellik uygulamaları sunar. 4,9 puanlı güzellik salonu için WhatsApp üzerinden randevu alın." />
+  <meta name="keywords" content="Ekin Ekinci Güzellik Salonu, Ümraniye güzellik salonu, Ümraniye cilt bakımı, leke bakımı Ümraniye, anti aging Ümraniye, güzellik merkezi Ümraniye, Alemdağ Caddesi güzellik salonu" />
   <meta name="robots" content="index, follow" />
   <meta name="theme-color" content="#0b0b0b" />
 
@@ -14,25 +14,30 @@
   {
     "@context": "https://schema.org",
     "@type": ["BeautySalon", "HealthAndBeautyBusiness", "LocalBusiness"],
-    "name": "Özge Özbek Güzellik",
-    "description": "Ümraniye’de cilt bakımı, leke bakımı, anti-aging ve kişiye özel profesyonel güzellik uygulamaları sunan güzellik merkezi.",
-    "telephone": "+905527942787",
+    "name": "Ekin Ekinci Güzellik Salonu",
+    "description": "Ümraniye’de cilt bakımı, leke bakımı, anti-aging ve kişiye özel profesyonel güzellik uygulamaları sunan güzellik salonu.",
+    "telephone": "+905335526396",
     "priceRange": "₺₺",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "93"
+    },
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "İstiklal, Atatürk Mah. Yeşil Sk No:81 K:1",
+      "streetAddress": "Çarşı İş Merkezi, Atatürk, Alemdağ Cd No:124 D:14 K:6",
       "addressLocality": "Ümraniye",
       "addressRegion": "İstanbul",
-      "postalCode": "34773",
+      "postalCode": "34764",
       "addressCountry": "TR"
     },
     "areaServed": ["Ümraniye", "İstanbul", "Ataşehir", "Üsküdar", "Dudullu", "Çakmak", "Yamanevler"],
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
-        "opens": "09:00",
-        "closes": "20:00"
+        "dayOfWeek": ["Monday","Tuesday","Thursday","Friday","Saturday","Sunday"],
+        "opens": "10:00",
+        "closes": "19:00"
       }
     ]
   }
@@ -74,13 +79,6 @@
       text-decoration: none;
     }
 
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-
     .site-shell {
       width: min(1440px, 100%);
       margin: 0 auto;
@@ -93,7 +91,7 @@
       right: 0;
       z-index: 50;
       display: grid;
-      grid-template-columns: 280px 1fr 220px;
+      grid-template-columns: 310px 1fr 220px;
       border-bottom: 1px solid var(--line);
       background: rgba(11, 11, 11, .88);
       backdrop-filter: blur(18px);
@@ -113,6 +111,7 @@
       font-weight: 950;
       letter-spacing: -.05em;
       font-size: 20px;
+      white-space: nowrap;
     }
 
     .brand-mark {
@@ -121,6 +120,7 @@
       background: var(--acid);
       margin-right: 12px;
       transform: rotate(45deg);
+      flex: 0 0 auto;
     }
 
     .nav {
@@ -211,6 +211,25 @@
       font-size: clamp(17px, 1.35vw, 21px);
       line-height: 1.72;
       font-weight: 520;
+    }
+
+    .rating-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 22px;
+      padding: 12px 14px;
+      border: 1px solid var(--line);
+      color: var(--white);
+      font-weight: 900;
+      width: fit-content;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+      font-size: 13px;
+    }
+
+    .rating-pill span {
+      color: var(--acid);
     }
 
     .hero-actions {
@@ -304,7 +323,7 @@
     }
 
     .hero-main-image::before {
-      content: "ÖZGE ÖZBEK GÜZELLİK";
+      content: "EKİN EKİNCİ GÜZELLİK SALONU";
       position: absolute;
       left: 26px;
       top: 26px;
@@ -641,7 +660,7 @@
       z-index: 2;
     }
 
-    .gallery-panel .gallery-text {
+    .gallery-text {
       position: relative;
       z-index: 3;
       max-width: 420px;
@@ -977,7 +996,7 @@
 
     @media (max-width: 1100px) {
       .topbar {
-        grid-template-columns: 240px 1fr 190px;
+        grid-template-columns: 260px 1fr 190px;
       }
 
       .hero,
@@ -1036,6 +1055,14 @@
       .brand {
         min-height: 66px;
         padding: 0 18px;
+        max-width: 220px;
+        overflow: hidden;
+      }
+
+      .brand-text {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
 
       .nav {
@@ -1207,7 +1234,7 @@
     <header class="topbar">
       <a class="brand" href="#">
         <span class="brand-mark"></span>
-        Özge Özbek
+        <span class="brand-text">Ekin Ekinci</span>
       </a>
 
       <nav class="nav">
@@ -1219,7 +1246,7 @@
       </nav>
 
       <div class="nav-action">
-        <a href="tel:05527942787">Randevu</a>
+        <a href="tel:05335526396">Randevu</a>
       </div>
     </header>
 
@@ -1228,24 +1255,29 @@
         <div class="hero-left">
           <div>
             <div class="hero-code reveal">
-              <span>OO / 01</span>
-              <span>Ümraniye Sağlık ve Güzellik Merkezi</span>
+              <span>EE / 01</span>
+              <span>Ümraniye Güzellik Salonu</span>
             </div>
 
             <div class="hero-title reveal">
               <h1>
-                Cilt<br>
-                <span class="outline">Bakımı</span><br>
+                Güzellik<br>
+                <span class="outline">Bakım</span><br>
                 <span class="acid">Atölyesi</span>
               </h1>
             </div>
 
             <p class="hero-copy reveal">
-              Özge Özbek Güzellik; Ümraniye’de cilt bakımı, leke görünümü bakımı, anti-aging protokoller ve kişiye özel güzellik uygulamalarını sade, güçlü ve profesyonel bir deneyime dönüştürür.
+              Ekin Ekinci Güzellik Salonu; Ümraniye’de cilt bakımı, leke görünümü bakımı, anti-aging protokoller ve kişiye özel güzellik uygulamalarını sade, güçlü ve profesyonel bir deneyime dönüştürür.
             </p>
 
+            <div class="rating-pill reveal">
+              <span>★ 4,9</span>
+              93 Google yorumu
+            </div>
+
             <div class="hero-actions reveal">
-              <a class="btn btn-acid" href="https://wa.me/905527942787?text=Merhaba%20%C3%96zge%20%C3%96zbek%20G%C3%BCzellik%20i%C3%A7in%20randevu%20almak%20istiyorum." target="_blank" rel="noopener">
+              <a class="btn btn-acid" href="https://wa.me/905335526396?text=Merhaba%20Ekin%20Ekinci%20G%C3%BCzellik%20Salonu%20i%C3%A7in%20randevu%20almak%20istiyorum." target="_blank" rel="noopener">
                 WhatsApp Randevu
               </a>
               <a class="btn btn-line" href="#bakimlar">
@@ -1260,12 +1292,12 @@
               <strong>Ümraniye / İstanbul</strong>
             </div>
             <div class="meta-item">
-              <span>Uzmanlık</span>
-              <strong>Cilt Bakımı</strong>
+              <span>Puan</span>
+              <strong>4,9 / 93 yorum</strong>
             </div>
             <div class="meta-item">
               <span>Saat</span>
-              <strong>09:00–20:00</strong>
+              <strong>10:00–19:00</strong>
             </div>
           </div>
         </div>
@@ -1282,12 +1314,12 @@
           <div class="hero-panel">
             <div class="panel-cell">
               <small>Yaklaşım</small>
-              <strong>Tek tip işlem değil, kişiye göre bakım planı.</strong>
+              <strong>Kişiye özel bakım, güçlü salon deneyimi.</strong>
             </div>
 
             <div class="panel-cell">
               <small>Randevu</small>
-              <strong>0552 794 27 87</strong>
+              <strong>0533 552 63 96</strong>
             </div>
           </div>
         </div>
@@ -1295,21 +1327,21 @@
 
       <div class="ticker">
         <div class="ticker-track">
-          <span>Ümraniye Cilt Bakımı</span>
+          <span>Ümraniye Güzellik Salonu</span>
+          <span>•</span>
+          <span>Cilt Bakımı</span>
           <span>•</span>
           <span>Leke Bakımı</span>
           <span>•</span>
           <span>Anti-Aging</span>
           <span>•</span>
-          <span>Glow Bakım</span>
+          <span>Ekin Ekinci</span>
           <span>•</span>
-          <span>Ümraniye Cilt Bakımı</span>
+          <span>Ümraniye Güzellik Salonu</span>
+          <span>•</span>
+          <span>Cilt Bakımı</span>
           <span>•</span>
           <span>Leke Bakımı</span>
-          <span>•</span>
-          <span>Anti-Aging</span>
-          <span>•</span>
-          <span>Glow Bakım</span>
           <span>•</span>
         </div>
       </div>
@@ -1319,7 +1351,7 @@
           <div class="index">SECTION / 02</div>
           <h2>Bakım Menüsü</h2>
           <p>
-            Daha güçlü görsel kullanımıyla her hizmet, kendi atmosferi olan bir bakım protokolü gibi sunulur.
+            Ekin Ekinci Güzellik Salonu’nda bakım süreci; cildin ihtiyacı, danışanın beklentisi ve görünüm hedefiyle birlikte değerlendirilir.
           </p>
         </aside>
 
@@ -1384,7 +1416,7 @@
         <div class="section-content">
           <div class="story-grid">
             <div class="story-big reveal">
-              <h2>Güzellik burada sessiz bir lüks.</h2>
+              <h2>Güzellik burada güçlü bir deneyim.</h2>
             </div>
 
             <div class="story-card reveal">
@@ -1433,9 +1465,9 @@
       <section class="section local-board" id="umraniye">
         <aside class="section-aside">
           <div class="index">LOCAL / GEO</div>
-          <h2>Ümraniye’de Konumlanan Bakım Atölyesi</h2>
+          <h2>Ümraniye’de Ekin Ekinci Güzellik Salonu</h2>
           <p>
-            İstiklal Mahallesi, Atatürk Mahallesi, Dudullu, Çakmak, Yamanevler, Ataşehir ve Üsküdar çevresinden ulaşım için uygundur.
+            Atatürk Mahallesi, Alemdağ Caddesi, Çarşı İş Merkezi konumunda yer alan salon; Ümraniye, Üsküdar, Ataşehir, Dudullu, Çakmak ve Yamanevler çevresinden ulaşım için uygundur.
           </p>
         </aside>
 
@@ -1444,24 +1476,24 @@
             <article class="local-item reveal">
               <small>Ümraniye</small>
               <div>
-                <h3>Cilt Bakımı</h3>
-                <p>Ümraniye’de cilt bakımı arayanlar için modern, temiz ve kişiye özel bakım yaklaşımı.</p>
+                <h3>Güzellik Salonu</h3>
+                <p>Ümraniye’de güzellik salonu arayanlar için modern, temiz ve kişiye özel bakım yaklaşımı.</p>
               </div>
             </article>
 
             <article class="local-item reveal">
-              <small>Leke Bakımı</small>
+              <small>Puan</small>
               <div>
-                <h3>Ton Eşitsizliği</h3>
-                <p>Mat görünüm, leke görünümü ve cilt tonu eşitsizliği için profesyonel bakım rotası.</p>
+                <h3>4,9 Google Puanı</h3>
+                <p>93 yorumla güçlü sosyal kanıt sunan Ekin Ekinci Güzellik Salonu, randevu odaklı hizmet verir.</p>
               </div>
             </article>
 
             <article class="local-item reveal">
-              <small>Anti-Aging</small>
+              <small>Konum</small>
               <div>
-                <h3>Taze Görünüm</h3>
-                <p>Daha dinlenmiş ve bakımlı bir ifade hedefleyen anti-aging bakım deneyimi.</p>
+                <h3>Alemdağ Caddesi</h3>
+                <p>Çarşı İş Merkezi, Atatürk Mahallesi, Alemdağ Caddesi üzerinde merkezi konum.</p>
               </div>
             </article>
 
@@ -1469,7 +1501,7 @@
               <small>Randevu</small>
               <div>
                 <h3>WhatsApp</h3>
-                <p>0552 794 27 87 üzerinden hızlıca bilgi alabilir ve randevu oluşturabilirsiniz.</p>
+                <p>0533 552 63 96 üzerinden hızlıca bilgi alabilir ve randevu oluşturabilirsiniz.</p>
               </div>
             </article>
           </div>
@@ -1486,8 +1518,8 @@
         <div class="section-content">
           <div class="faq-list">
             <details class="reveal">
-              <summary>Özge Özbek Güzellik nerede?</summary>
-              <p>İstiklal, Atatürk Mah. Yeşil Sk No:81 K:1, 34773 Ümraniye/İstanbul adresinde hizmet verir.</p>
+              <summary>Ekin Ekinci Güzellik Salonu nerede?</summary>
+              <p>Çarşı İş Merkezi, Atatürk, Alemdağ Cd No:124 D:14 K:6, 34764 Ümraniye/İstanbul adresinde hizmet verir.</p>
             </details>
 
             <details class="reveal">
@@ -1497,12 +1529,12 @@
 
             <details class="reveal">
               <summary>Randevu nasıl alınır?</summary>
-              <p>0552 794 27 87 numarası aranabilir veya WhatsApp randevu bağlantısı üzerinden mesaj gönderilebilir.</p>
+              <p>0533 552 63 96 numarası aranabilir veya WhatsApp randevu bağlantısı üzerinden mesaj gönderilebilir.</p>
             </details>
 
             <details class="reveal">
               <summary>Çalışma saatleri nedir?</summary>
-              <p>Pazartesi - Cumartesi 09:00–20:00 saatleri arasında açıktır. Pazar günü kapalıdır.</p>
+              <p>Pazartesi, Salı, Perşembe, Cuma, Cumartesi ve Pazar günleri 10:00–19:00 saatleri arasında açıktır. Çarşamba günü kapalıdır.</p>
             </details>
           </div>
         </div>
@@ -1522,35 +1554,39 @@
 
               <div class="info-line">
                 <span>Adres</span>
-                <strong>İstiklal, Atatürk Mah. Yeşil Sk No:81 K:1, Ümraniye/İstanbul</strong>
+                <strong>Çarşı İş Merkezi, Atatürk, Alemdağ Cd No:124 D:14 K:6, Ümraniye/İstanbul</strong>
               </div>
 
               <div class="info-line">
                 <span>Telefon</span>
-                <strong><a href="tel:05527942787">0552 794 27 87</a></strong>
+                <strong><a href="tel:05335526396">0533 552 63 96</a></strong>
               </div>
 
               <div class="info-line">
                 <span>WhatsApp</span>
-                <strong><a href="https://wa.me/905527942787?text=Merhaba%20%C3%96zge%20%C3%96zbek%20G%C3%BCzellik%20i%C3%A7in%20randevu%20almak%20istiyorum." target="_blank" rel="noopener">Mesaj Gönder</a></strong>
+                <strong><a href="https://wa.me/905335526396?text=Merhaba%20Ekin%20Ekinci%20G%C3%BCzellik%20Salonu%20i%C3%A7in%20randevu%20almak%20istiyorum." target="_blank" rel="noopener">Mesaj Gönder</a></strong>
               </div>
 
               <div class="info-line">
                 <span>Yol Tarifi</span>
-                <strong><a href="https://www.google.com/maps/search/?api=1&query=%C4%B0stiklal%2C%20Atat%C3%BCrk%20Mah%20Ye%C5%9Fil%20Sk%20No%3A81%20K%3A1%2C%2034773%20%C3%9Cmraniye%2F%C4%B0stanbul" target="_blank" rel="noopener">Google Maps</a></strong>
+                <strong>
+                  <a href="https://www.google.com/maps/search/?api=1&query=%C3%87ar%C5%9F%C4%B1%20%C4%B0%C5%9F%20Merkezi%2C%20Atat%C3%BCrk%2C%20Alemda%C4%9F%20Cd%20No%3A124%20D%3A14%20K%3A6%2C%2034764%20%C3%9Cmraniye%2F%C4%B0stanbul" target="_blank" rel="noopener">
+                    Google Maps
+                  </a>
+                </strong>
               </div>
             </div>
 
             <div class="contact-card">
               <h3>Saatler</h3>
 
-              <div class="info-line"><span>Pazartesi</span><strong>09:00–20:00</strong></div>
-              <div class="info-line"><span>Salı</span><strong>09:00–20:00</strong></div>
-              <div class="info-line"><span>Çarşamba</span><strong>09:00–20:00</strong></div>
-              <div class="info-line"><span>Perşembe</span><strong>09:00–20:00</strong></div>
-              <div class="info-line"><span>Cuma</span><strong>09:00–20:00</strong></div>
-              <div class="info-line"><span>Cumartesi</span><strong>09:00–20:00</strong></div>
-              <div class="info-line"><span>Pazar</span><strong class="closed">Kapalı</strong></div>
+              <div class="info-line"><span>Pazartesi</span><strong>10:00–19:00</strong></div>
+              <div class="info-line"><span>Salı</span><strong>10:00–19:00</strong></div>
+              <div class="info-line"><span>Çarşamba</span><strong class="closed">Kapalı</strong></div>
+              <div class="info-line"><span>Perşembe</span><strong>10:00–19:00</strong></div>
+              <div class="info-line"><span>Cuma</span><strong>10:00–19:00</strong></div>
+              <div class="info-line"><span>Cumartesi</span><strong>10:00–19:00</strong></div>
+              <div class="info-line"><span>Pazar</span><strong>10:00–19:00</strong></div>
             </div>
           </div>
         </div>
@@ -1564,24 +1600,24 @@
 
         <div class="final-right">
           <p>
-            Ümraniye’de cilt bakımı, leke bakımı ve anti-aging bakım için Özge Özbek Güzellik’te kişiye özel bakım deneyimini keşfedin.
+            Ümraniye’de güzellik salonu, cilt bakımı, leke bakımı ve anti-aging bakım için Ekin Ekinci Güzellik Salonu’nda kişiye özel bakım deneyimini keşfedin.
           </p>
 
-          <a class="btn btn-acid" href="https://wa.me/905527942787?text=Merhaba%20%C3%96zge%20%C3%96zbek%20G%C3%BCzellik%20i%C3%A7in%20randevu%20almak%20istiyorum." target="_blank" rel="noopener">
+          <a class="btn btn-acid" href="https://wa.me/905335526396?text=Merhaba%20Ekin%20Ekinci%20G%C3%BCzellik%20Salonu%20i%C3%A7in%20randevu%20almak%20istiyorum." target="_blank" rel="noopener">
             WhatsApp’tan Randevu Al
           </a>
         </div>
       </section>
     </main>
 
-    <a class="whatsapp" href="https://wa.me/905527942787?text=Merhaba%20%C3%96zge%20%C3%96zbek%20G%C3%BCzellik%20i%C3%A7in%20randevu%20almak%20istiyorum." target="_blank" rel="noopener">
+    <a class="whatsapp" href="https://wa.me/905335526396?text=Merhaba%20Ekin%20Ekinci%20G%C3%BCzellik%20Salonu%20i%C3%A7in%20randevu%20almak%20istiyorum." target="_blank" rel="noopener">
       WhatsApp Randevu
     </a>
 
     <footer class="footer">
       <div>
-        <h3>Özge Özbek Güzellik</h3>
-        <p>Ümraniye’de cilt bakımı, leke bakımı, anti-aging ve kişiye özel güzellik deneyimi sunan modern bakım merkezi.</p>
+        <h3>Ekin Ekinci Güzellik Salonu</h3>
+        <p>Ümraniye’de cilt bakımı, leke bakımı, anti-aging ve kişiye özel güzellik deneyimi sunan modern güzellik salonu.</p>
       </div>
 
       <div>
@@ -1594,22 +1630,23 @@
 
       <div>
         <h4>İletişim</h4>
-        <a href="tel:05527942787">0552 794 27 87</a>
-        <a href="https://wa.me/905527942787?text=Merhaba%20%C3%96zge%20%C3%96zbek%20G%C3%BCzellik%20i%C3%A7in%20randevu%20almak%20istiyorum." target="_blank" rel="noopener">WhatsApp Randevu</a>
+        <a href="tel:05335526396">0533 552 63 96</a>
+        <a href="https://wa.me/905335526396?text=Merhaba%20Ekin%20Ekinci%20G%C3%BCzellik%20Salonu%20i%C3%A7in%20randevu%20almak%20istiyorum." target="_blank" rel="noopener">WhatsApp Randevu</a>
         <a href="#iletisim">Adres ve Saatler</a>
       </div>
 
       <div>
         <h4>Konum</h4>
-        <p>İstiklal, Atatürk Mah. Yeşil Sk No:81 K:1</p>
-        <p>34773 Ümraniye / İstanbul</p>
-        <p>Pzt - Cmt: 09:00–20:00</p>
-        <p>Pazar: Kapalı</p>
+        <p>Çarşı İş Merkezi, Atatürk, Alemdağ Cd No:124 D:14 K:6</p>
+        <p>34764 Ümraniye / İstanbul</p>
+        <p>Pzt - Salı: 10:00–19:00</p>
+        <p>Perşembe - Pazar: 10:00–19:00</p>
+        <p>Çarşamba: Kapalı</p>
       </div>
     </footer>
 
     <div class="demo-note">
-      Bu web sitesi Özge Özbek Skin Lab demo sunumu için üretilmiştir.
+      Bu web sitesi Ekin Ekinci Güzellik Salonu demo sunumu için üretilmiştir.
     </div>
   </div>
 
